@@ -149,15 +149,15 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
+    xalign 0.5
+    yalign 0.8
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
-    xpos gui.dialogue_xpos
+    xpos 550
     xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
+    ypos -70
 
     adjust_spacing False
 
@@ -243,6 +243,9 @@ screen quick_menu():
     if quick_menu:
 
         hbox:
+
+            yoffset -26
+
             style_prefix "quick"
             style "quick_menu"
 
