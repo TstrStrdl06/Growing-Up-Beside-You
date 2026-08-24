@@ -1,3 +1,59 @@
+transform t11:
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 1.15
+        xcenter 1280 yoffset -20
+        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+
+transform t21:
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 1.15
+        xcenter 850 yoffset -20
+        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+
+transform t22:
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 1.15
+        xcenter 1700 yoffset -20
+        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+
+transform t31:
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 1.15
+        xcenter 640 yoffset -20
+        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+
+transform t32:
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 1.15
+        xcenter 1280 yoffset -20
+        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+
+transform t33:
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 1.15
+        xcenter 1920 yoffset -20
+        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+
+transform lhide:
+    ease 1.0 xoffset -2000
+
+
+
+
+
+
 
 
 

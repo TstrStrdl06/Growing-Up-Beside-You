@@ -4,7 +4,7 @@ label StoryStart:
 
     "It was finally sunny again." 
     "For the past few days, it had felt like the rain would never stop." 
-    show stella 8y1
+    show stella 8y1 at t11
     "Stella looked up at the blue sky with wide, curious eyes." 
     "She did not like rainy days." 
     "Rain made the ground dirty." 
@@ -85,25 +85,29 @@ label StoryStart:
     "Warm light spilled through it and touched the street outside." 
     "Stella looked up." 
     "A small hanging sign swung gently above the door." 
+    show stella 8y8
     "She narrowed her eyes and tried to read the words." 
-    s "Home..." 
+    s 8y6"Home..." 
     s "Plate..." 
+    show stella 8y5
     "The words came out slowly." 
-    "Home Plate." 
+    "{i}Home Plate.{/i}" 
     "It sounded strange." 
     "But also a little friendly." 
     "Her father reached for the door and pulled it open." 
     "A bell rang above them." 
     "Jingle." 
-    "The sound was bright and small." 
+    "The sound was bright and small."
+    show stella 8y1
     "And then Stella smelled something." 
     "She froze." 
     "It was warm." 
     "Sweet." 
     "Salty." 
     "A smell she did not know how to name." 
-    s "Wow..." 
-    s "We never smell that at home." 
+    s 8y4 "Wow..." 
+    s "We never smell that at home."
+    show stella 8y1 
     dad "I heard that." 
     "Stella stepped inside with her parents." 
     "The room was warmer than outside." 
@@ -115,23 +119,32 @@ label StoryStart:
     "It looked less like a restaurant..." 
     "And more like someone had turned their own home into a place where people could 
     eat." 
+    show stella 8y10
     "Stella tugged on her mother's sleeve." 
-    s "Mom." 
-    s "Is this really a restaurant?" 
+    s 8y11 "Mom." 
+    s 8y7 "Is this really a restaurant?" 
+    show stella 8y5
     "Her mother smiled." 
     mom "It is." 
     mom "This place has been here for a long time." 
     mom "You probably just never noticed it before." 
-    s "It doesn't look like one." 
+    s 8y7 "It doesn't look like one." 
+    show stella 8y5
     mom "That's part of its charm." 
     mom "They make simple food here." 
     mom "But it tastes wonderful." 
     "Stella kept looking around." 
     "Her eyes moved from the tables, to the window, to the little shelves near the wall." 
     "Then a voice came from behind the counter." 
+    hide stella
+    show stella 8y5 at t22
+    show him 52 at t21
     h "Ah!" 
     h "Welcome, welcome." 
-    h "Sorry, I'll be right there." 
+    h 11 "Sorry, I'll be right there." 
+    show him at lhide
+    pause 1.0
+    hide him
     "Stella blinked." 
     "Before she could answer, she moved a little closer to her mother." 
     "Behind the counter, someone was moving quickly." 
