@@ -503,20 +503,23 @@ label StoryStart:
     "After dinner, Stella's parents stayed at the table and kept talking." 
     "Stella wiped her oily little mouth with a napkin." 
     "Then she let out a small burp." 
-    s "Oops..." 
+    s 8y4 "Oops..." 
     "Her face warmed at once." 
+    show stella 8y5
     "She quickly covered her mouth with both hands." 
     "Then she looked toward the counter." 
     "The big brother was still there." 
     "He seemed to be preparing food for another guest." 
-    "Her mother noticed Stella looking around." 
-    mom "You can go and look, sweetheart." 
-    mom "Just walk slowly." 
-    mom "And don't bother the other guests, alright?" 
+
+    mom 2 "You can go and look, sweetheart." 
+    mom 2 "Just walk slowly." 
+    mom 1 "And don't bother the other guests, alright?" 
+
+    "The big brother was still there."
     "Stella's eyes brightened." 
-    s "Okay!" 
-    "She slipped down from her chair." 
-    "Her feet touched the floor with a soft tap." 
+    s 8y3 "Okay!" 
+
+    show stella 8y1
     "Then she began to wander around the restaurant." 
     "Near the dining area, there was a small quiet corner." 
     "It looked fresh and clean." 
@@ -525,12 +528,16 @@ label StoryStart:
     "Some had letters Stella could read." 
     "Some had shapes she had never seen before." 
     "Some looked like they came from places very far away." 
+
+    show stella 8y10
     "Stella stared at them for a while." 
     "There were also photographs on the shelf." 
     "Most of them showed the big brother with different people." 
     "Different towns. Different skies. Different faces." 
     "Stella tilted her head." 
     "He must have been to many places." 
+
+    show stella 8y1
     "She looked back toward the counter." 
     "Normally, Stella did not like talking to strangers." 
     "Strangers were strange." 
@@ -538,6 +545,8 @@ label StoryStart:
     "But this stranger made really good food." 
     "And that made him a little less strange." 
     "Maybe even interesting." 
+
+    show stella 8y10
     "Stella took one small step toward the counter." 
     "Then another." 
     "The big brother was working on a dessert now." 
@@ -545,7 +554,7 @@ label StoryStart:
     "Stella stood near the counter." 
     "She looked left." 
     "Then right." 
-    "Then at him." 
+    "Then at him."
 
     menu:   
         
@@ -556,50 +565,66 @@ label StoryStart:
 
             "Stella held her hands behind her back." 
             "She took one more step forward." 
-            s "Um..." 
+            s 8y11 "Um..." 
             "Her voice came out smaller than she wanted." 
             "But she did not run away." 
-            s "What are you making?" 
-            "The big brother looked down at her." 
-            "Then he looked at the bowl in his hands." 
-            h "Hmm." 
-            h "That is a very important question." 
+            s 8y7 "What are you making?" 
+
+            show him at t21
+            show stella at t22
+            h 11 "Hmm." 
+            h 11 "That is a very important question." 
             "Stella waited." 
-            h "Sadly, it is also a secret." 
-            s "Why?" 
-            h "Because desserts taste better when they arrive mysteriously." 
+            h 41 "Sadly, it is also a secret." 
+
+            s 8y7 "Why?" 
+            h 24 "Because desserts taste better when they arrive mysteriously." 
+
+            show stella 8y8
             "Stella frowned." 
-            s "That's not true." 
-            h "Have you tested it?" 
-            s "No." 
-            h "Then we can't be sure." 
+            s 8y8 "That's not true." 
+
+            h 24 "Have you tested it?" 
+            s 8y6 "No." 
+            h 11 "Then we can't be sure." 
+
             "He stirred something in the bowl." 
             "The smell of cream became a little stronger." 
+            show stella 8y10
             "Stella stood on her toes, trying to see." 
-            h "Hey, careful. A good mystery needs patience." 
-            s "Umm… I don't like mysteries." 
-            h "Really? But most kids like mysteries." 
-            s "Well, I like knowing things." 
-            h "Ah." 
-            h "That is much more dangerous." 
+
+            h 21 "Hey, careful. A good mystery needs patience." 
+            s 8y7 "Umm… I don't like mysteries." 
+
+            h 11 "Really? But most kids like mysteries." 
+            s 8y11 "Well, I like knowing things." 
+
+            h 41 "Ah." 
+            h 42 "That is much more dangerous." 
+
             "Stella puffed her cheeks." 
-            s "Fine. Then I don't care." 
-            "She turned around and started walking back to her parents. She had only taken 
-            three steps when his voice followed her." 
-            h "Hey, Stella." 
+            s 8y8 "Fine. Then I don't care." 
+            "She turned around and started walking back to her parents. She had only taken three steps when his voice followed her." 
+
+            h 11 "Hey, Stella." 
+
             "She stopped." 
             "Very slowly, she looked back." 
             "The big brother was holding a small bowl." 
             "Inside was a scoop of vanilla ice cream. Strawberry sauce shone over the top." 
             "There were tiny pieces of fresh strawberry beside it." 
-            h "One mysterious dessert." 
-            h "For the young lady who does not like mysteries." 
+
+            h 52 "One mysterious dessert." 
+            h 11 "For the young lady who does not like mysteries." 
+
             "Stella stared at the bowl." 
-            s "..." 
-            s "I only don't like them before I know what they are." 
-            h "That sounds very reasonable." 
+            show stella 8y7
+            s 8y11 "..." 
+            s 8y11 "I only don't like them before I know what they are." 
+
+            h 24 "That sounds very reasonable." 
             "He placed the bowl on a small tray and handed her a spoon." 
-            h "Enjoy." 
+            h 12 "Enjoy." 
 
             $ memory_first_dessert = "vanilla_strawberry_ice_cream" 
 
@@ -609,88 +634,110 @@ label StoryStart:
             "She looked at the dessert." 
             "Then at the counter." 
             "Then back at the bookshelf." 
+            show stella 8y5
             "Maybe it was better not to bother him." 
             "She stayed near the quiet corner and pretended to read the titles." 
-            "But the book in front of her had strange letters on it, she could not read a single 
-            word." 
             "Her eyes slowly moved back toward the counter." 
+
+            show stella 8y10
             "The big brother was still working. He added something white into a bowl." 
             "Then something red." 
             "Stella tried not to stare. She failed." 
+
             "Maybe she could just walk a little closer." 
             "Not to talk. Just to quickly see." 
             "Yeah, that was different." 
             "Stella thought about it." 
             "Then thought about it again." 
+
+            show stella 8y1
             "Finally, she turned around." 
             "But before she could take a step, he was already there." 
-            "He stood a few feet away, holding a small bowl." 
-            h "Looking for something?" 
+
+            show stella 8y4 at t22
+            show him 11 at t21
+            h 11 "Looking for something?" 
+
             "Stella blinked." 
-            s "No." 
+            s 8y7 "No." 
             "Her eyes dropped to the bowl." 
-            "Inside was vanilla ice cream with strawberry sauce." 
-            "Tiny pieces of fresh strawberry sat neatly on the side." 
-            h "Good. Then this can be a surprise." 
+
+            h 12 "Good. Then this can be a surprise." 
             "Stella looked up at him." 
-            s "Is it for me?" 
-            h "If you want it." 
+            s 8y11 "Is it for me?" 
+            h 24 "If you want it." 
+
             "Stella hesitated. Only for a second." 
-            s "I want it." 
+            s 8y3 "I want it." 
             "The big brother smiled and handed her the bowl." 
-            h "Then it's yours." 
+            h 11 "Then it's yours." 
             "Stella took the spoon carefully, she tried not to look too happy." 
+            show stella 8y2
             "She was not sure if it worked." 
+
 
         "Pretend not to care.": 
 
             $ emotional_honesty -= 1 
+            show stella 8y10
             "Stella noticed herself staring." 
             "So she quickly looked away." 
-            s "I'm not curious." 
+            s 8y6 "I'm not curious." 
+
             "She said it very softly." 
             "Then she crossed her arms and turned toward the bookshelf." 
-            "But the smell of cream was still there." 
-            "And somehow, she kept looking back." 
-            h "Not curious?" 
+
+            show him at t21
+            show stella at t22
+            h 21 "Not curious?" 
             "The voice came from behind the counter." 
             "Stella froze." 
-            h "That's interesting. I wonder who said that." 
+
+            h 24 "That's interesting. I wonder who said that." 
+
+            show stella 8y5
             "Stella's face turned warm." 
-            s "I didn't say anything." 
-            h "Oh?" 
-            h "Then perhaps the bookshelf said it." 
+            s 8y7 "I didn't say anything." 
+
+            h 21 "Oh?" 
+            h 24 "Then perhaps the bookshelf said it." 
+
             "Stella looked at the books." 
-            s "Are you silly, books don't talk." 
-            h "Well, most of them don't." 
-            s "Most?" 
-            h "Another mystery." 
+            s 8y6 "Are you silly, books don't talk." 
+
+            h 11 "Well, most of them don't." 
+            s 8y11 "Most?" 
+            h 41 "Another mystery." 
+
             "Stella stared at him. He looked completely serious." 
             "That somehow made it worse." 
-            s "You're weird." 
-            h "I've been told." 
+            show stella 8y8
+            s 8y8 "You're weird." 
+
+            h 52 "I've been told." 
+
             "Stella quickly turned away." 
+            show stella 8y5
             "She suddenly wanted to go back to her parents." 
-            "Before she could escape, he called out gently." 
-            h "Hey, Stella." 
+            h 11 "Hey, Stella." 
+
             "She stopped." 
             "When she looked back, he was holding a small bowl." 
-            "Vanilla ice cream sat inside it." 
-            "Strawberry sauce curled over the top." 
-            "It looked cold, sweet, and unfairly pretty." 
-            h "For someone who is absolutely not curious." 
+            h 24 "For someone who is absolutely not curious." 
+
+            show stella 8y8
             "Stella pressed her lips together." 
             "Then she walked back to the counter." 
-            s "I'm only taking it because it will melt." 
-            h "That’s very practical." 
+            s 8y4 "I'm only taking it because it will melt." 
+
+            h 42 "That’s very practical." 
             "He handed her the spoon." 
-            h "Enjoy." 
+            h 12 "Enjoy." 
+
             "Stella took the bowl with both hands." 
+            show stella 8y5
             "She was still embarrassed. But she did not walk away." 
 
-    jump Story2
-
-label Story2:
 
     "Year 8 - Story 2: The Scraped Knee"
 
@@ -703,7 +750,7 @@ label Story2:
     "They did not find a single grouse." 
     "What Stella found instead was a squirrel." 
     "It burst out of the grass right in front of her." 
-    s "Ah!" 
+    s 8y4 "Ah!" 
     "Stella jumped back." 
     "Her foot caught on a root." 
     "The next thing she knew, the sky was above her." 
@@ -712,6 +759,7 @@ label Story2:
     "Her friends shouted her name." 
     "Someone asked if she was okay." 
     "Stella sat up slowly." 
+    show stella 8y5
     "Her knee hurt. A lot." 
     "The skin was scraped raw, and a little blood had started to show." 
     "It was not a huge wound. Not the kind adults made scary faces at." 
@@ -719,8 +767,10 @@ label Story2:
     "After a while, the other children had to go home." 
     "Stella said she could walk by herself. And so she did." 
     "She sniffled as she made her way back toward town." 
+    show stella 8y7
     "Her knee burned whenever her skirt brushed against it." 
     "She tried not to look at the blood. Looking at it made it hurt more." 
+    show stella 8y10
     "After walking for a while, she noticed something familiar." 
     "Warm light. A wide window." 
     "A small sign above the door. Home Plate." 
@@ -730,16 +780,18 @@ label Story2:
     "She looked at the light shining through the window." 
     "For a moment, she wanted to go inside and rest." 
 
+    show stella 8y4
     if memory_first_meal_choice == "salmon_sashimi": 
         "If she had money, maybe she could even order the salmon sashimi again." 
-
     else: 
-        "If she had money, maybe she could even order the chicken thigh rice bowl again." 
+        "If she had money, maybe she could even order the chicken thigh rice bowl again."
 
     "The thought made her stomach wake up." 
+    show stella 8y7
     "Stella placed a hand over her stomach." 
-    s "..." 
-    "Now she was hurt and hungry. That felt extremely unfair." 
+    s 8y11 "..." 
+    show stella 8y7
+    "Now she was hurt and hungry. That felt extremely unfair."
     "She looked toward the sky." 
     "The day was getting late." 
     "The blue had faded into a softer color." 
@@ -750,7 +802,7 @@ label Story2:
 
     $ h_name = "???"
 
-    h "Hey." 
+    h 11 "Hey." 
 
     $ h_name = "Him"
 
@@ -759,48 +811,54 @@ label Story2:
     "The big brother from Home Plate stood by the open door." 
     "Warm light spilled around him." 
     "His eyes moved from her face to her knee, and his smile faded into something gentler." 
-    h "What happened there?"
+
+    h 32 "What happened there?"
 
     menu:
 
         "Tell him she's fine.": 
 
-            $ dependency -= 1 
-            $ emotional_honesty -= 1
+            $ dependency =- 1 
+            $ emotional_honesty =- 1
             $ scraped_knee_response = "fine"
 
+            show stella 8y5
             "Stella quickly wiped the corner of her eye with the back of her hand." 
-            s "I'm fine." 
+            s 8y4 "I'm fine." 
+
             "She said it a little too fast." 
-            "Her knee was still bleeding, and standing straight made it sting even more." 
-            h "Fine?" 
+            h 21 "Fine?" 
             "He looked at her knee, then back at her face." 
-            h "I’m sure there are “finer” moments for you than this."
+            h 32 "I’m sure there are “finer” moments for you than this."
+
             "Stella looked down." 
-            "A tiny red mark had fallen near her shoe."
+            show stella 8y8
             "She frowned, as if the blood had betrayed her." 
-            s "It's not that bad." 
-            h "Maybe not. But it still looks like it hurts." 
-            "Stella did not answer. That was close enough to yes." 
-            h "Come inside for a minute. I'll clean it properly." 
+            s 8y7 "It's not that bad." 
+
+            h 13 "Maybe not. But it still looks like it hurts." 
+            h 11 "Come inside for a minute. I'll clean it properly." 
 
         "Admit it hurts.": 
 
                 $ emotional_honesty =+ 1
                 $ scraped_knee_response = "hurts"
 
-                "Stella looked down at her knee. For a moment, she tried to make herself say it was nothing." 
-                "But the skin burned every time she moved." 
-                s "It hurts." 
+                show stella 8y5
+                "Stella looked down at her knee." 
+                s 8y7 "It hurts." 
                 "Her voice came out small, but honest." 
-                h "I thought it might." 
+
+                h 12 "I thought it might." 
                 "He stepped aside and opened the door a little wider." 
-                h "Come on." 
-                h "Let's get that cleaned before it gets angry." 
+                h 11 "Come on." 
+                h 11 "Let's get that cleaned before it gets angry." 
+
                 "Stella sniffed." 
-                s "Wounds… can get angry?" 
-                h "Of course. Small ones especially." 
-                "She was not sure if he was joking. But somehow, that made it a little easier to walk inside." 
+                show stella 8y11
+                s 8y11 "Wounds… can get angry?" 
+
+                h 24 "Of course. Small ones especially." 
 
         "Cry.":
 
@@ -808,24 +866,30 @@ label Story2:
                 $ emotional_honesty =+ 1 
                 $ scraped_knee_response = "cry"
 
+                show stella 8y5
                 "Stella tried to answer. She really did." 
-                "But the moment someone asked what happened, her throat tightened." 
                 "Her eyes filled again before she could stop them." 
-                s "I..." 
-                "That was all she managed." 
+                s 8y11 "I..." 
                 "A few tears slipped down her cheeks." 
+                show stella 8y7
                 "She looked embarrassed immediately, as if crying had been an accident." 
-                h "Hey, hey." 
+
+                h 32 "Hey, hey." 
                 "His voice became softer." 
-                h "It's alright. Scraped knees are allowed to hurt." 
+                h 11 "It's alright. Scraped knees are allowed to hurt." 
+
                 "Stella sniffed hard." 
-                s "A squirrel jumped out." 
-                h "A squirrel?" 
+                s 8y11 "A squirrel jumped out." 
+
+                h 21 "A squirrel?" 
                 "He nodded very seriously." 
-                h "A very, very dangerous opponent." 
+                h 42 "A very, very dangerous opponent." 
+
+                show stella 8y12
                 "Stella gave a tiny, broken laugh through her tears." 
-                h "Come inside." 
-                h "We'll clean this up." 
+
+                h 12 "Come inside." 
+                h 11 "We'll clean this up." 
 
     "The bell above the door rang as Stella stepped into Home Plate." 
     "The restaurant was quieter than the last time she had been there." 
@@ -833,35 +897,46 @@ label Story2:
     "The warm smell of the kitchen wrapped around her at once, and for a second Stella 
     almost forgot how much her knee hurt." 
     "Him pulled out a chair near the counter." 
-    h "Sit here. I'll be quick." 
+    h 11 "Sit here. I'll be quick." 
     "Stella climbed onto the chair carefully, keeping one leg stretched out." 
     "He returned with a small white box, a clean cloth, and a bottle that looked far too serious." 
     "Stella eyed the bottle." 
-    s "Is that going to hurt?" 
-    h "A little." 
+    s 8y7 "Is that going to hurt?" 
+
+    h 13 "A little." 
     "That was not the answer she wanted." 
-    h "But only for a second." 
-    "That was not much better. He crouched in front of her and cleaned the scrape as gently as he could." 
+
+    h 12 "But only for a second." 
+    "That was not much better." 
+    "He crouched in front of her and cleaned the scrape as gently as he could." 
     "Stella grabbed the edge of the chair when the sting came." 
-    s "Ow..." 
-    h "I know. Almost done." 
+    s 8y7 "Ow..." 
+
+    h 32 "I know. Almost done." 
     "He worked carefully, never rushing her, and when the wound was clean, he placed a small Band-Aid over her knee." 
     "It had tiny stars printed on it." 
+
+    show stella 8y10
     "Stella stared at it." 
-    s "You have star Band-Aids?" 
-    h "For emergencies." 
-    s "This is an emergency?" 
-    h "A squirrel attack? Definitely." 
+    s 8y11 "You have star Band-Aids?" 
+
+    h 11 "For emergencies." 
+
+    s 8y4 "This is an emergency?" 
+    h 42 "A squirrel attack? Definitely." 
+
+    show stella 8y12
     "Stella looked at the Band-Aid again." 
     "Her knee still hurt, but it felt less scary now." 
-    "He closed the small white box and stood up." 
-    h "There, the squirrel has been defeated." 
+
+    h 52 "There, the squirrel has been defeated." 
     "Stella looked down at the star-shaped Band-Aid on her knee." 
     "It still hurt, but not as much as before. Or maybe it only felt that way because someone had cleaned it." 
     "He glanced toward the window." 
     "The sky outside had grown softer and darker." 
-    h "It's getting late." 
-    h "Do you want me to walk you home?" 
+
+    h 32 "It's getting late." 
+    h 11 "Do you want me to walk you home?" 
 
     if scraped_knee_response == "fine": 
 
@@ -891,30 +966,34 @@ label Story2:
             $ trust =+ 1 
 
             "Stella held the edge of the chair for a moment." 
-            s "Yes, please." 
+            s 8y11 "Yes, please." 
             "The words came out quieter than she expected." 
             "He did not make fun of her for it. He only nodded, as if needing help was the most normal thing in the world." 
-            h "Alright. Let me close the front for a minute." 
+            h 11 "Alright. Let me close the front for a minute." 
             "A few moments later, they stepped out of Home Plate together." 
             "The evening air felt cooler now. Stella walked carefully, trying not to bend her knee too much." 
             "He slowed his steps without saying anything about it." 
             "That made Stella feel a little less embarrassed." 
-            h "You know, next time you fight a squirrel, you should bring backup." 
-            s "I wasn't fighting it." 
-            h "Then… it attacked first?" 
-            s "It just jumped out." 
-            h "Whoa, a surprise attack." 
-            s "Yes exactly."
+            h 41 "You know, next time you fight a squirrel, you should bring backup." 
+
+            s 8y7 "I wasn't fighting it." 
+            h 24 "Then… it attacked first?" 
+
+            s 8y11 "It just jumped out." 
+            h 42 "Whoa, a surprise attack." 
+            s 8y3 "Yes exactly."
             "By the time they reached her street, Stella was almost smiling." 
             "Her knee still hurt, but the walk home did not feel as long as before." 
-            h "Here we are. Can you make it from here?" 
-            "Stella nodded." 
-            s "Yeah." 
-            h "Good. Tell your parents to keep the Band-Aid on until tomorrow." 
-            s "Okay." 
+            h 11 "Here we are. Can you make it from here?" 
+            "Stella nodded."    
+            s 8y3 "Yeah." 
+
+            h 12 "Good. Tell your parents to keep the Band-Aid on until tomorrow." 
+            s 8y3 "Okay." 
+
             "She hesitated at the gate, then looked back at him." 
-            s "Thank you." 
-            h "Anytime, Stella." 
+            s 8y11 "Thank you." 
+            h 12 "Anytime, Stella." 
 
 
 
@@ -922,22 +1001,25 @@ label Story2:
 
             $ dependency -= 0.5 
 
+            show stella 8y6
             "Stella straightened her back a little." 
-            s "No." 
-            s "I can go by myself." 
+            s 8y6 "No." 
+            s 8y6 "I can go by myself." 
+
             "He studied her face for a moment. Stella wondered if he was going to argue." 
             "He did not." 
-            h "Alright. Then I'll walk you to the door." 
-            "He opened the door for her, and the little bell rang above them." 
-            "Outside, the street looked dimmer than before." 
-            "Home was still a short walk away." 
-            "Stella stepped onto the road and tested her knee." 
-            "It hurt, but she could manage." 
-            h "Slow steps, no racing invisible squirrels now." 
-            "Stella looked back at him."
-            s "There aren't invisible squirrels."
-            h "That's exactly what they want you to think."
-            "Despite herself, Stella smiled."
+
+            h 12 "Alright. Then I'll walk you to the door." 
+            h 24 "Slow steps, no racing invisible squirrels now." 
+
+            show stella 8y10
+            "Stella looked back at him." 
+            s 8y6 "There aren't invisible squirrels." 
+
+            h 42 "That's exactly what they want you to think." 
+
+            show stella 8y2
+            "Despite herself, Stella smiled." 
             "He stayed by the door as she started walking." 
             "She did not turn around right away." 
             "But after a few steps, she glanced back." 
@@ -951,41 +1033,39 @@ label Story2:
 
             $ memory_halfway_walk = True 
 
+            show stella 8y7
             "Stella looked toward the road outside, then back at him." 
-            s "Can you walk with me halfway?" 
+            s 8y11 "Can you walk with me halfway?" 
+
             "The answer surprised her a little. It was not yes, but it was not no either." 
             "He smiled, very softly." 
-            h "Halfway?" 
+
+            h 12 "Halfway?" 
+
             "Stella nodded." 
-            s "I can do the rest." 
-            h "That sounds fair." 
+            s 8y11 "I can do the rest." 
+
+            h 11 "That sounds fair." 
             "He turned off the light behind the counter and came around to the front." 
-            h "Halfway it is." 
+            h 12 "Halfway it is." 
             "They walked together under the evening sky. Stella counted her steps at first, careful not to limp too much." 
             "After a while, she stopped counting. He did not walk too fast, he did not ask too many questions." 
             "He just stayed beside her until they reached the old streetlamp near the corner." 
-            h "Well, this is halfway." 
+            h 11 "Well, this is halfway." 
             "Stella looked down the road." 
             "Home was close enough now. Still, part of her wished the streetlamp were a little farther away." 
-            s "I can go from here." 
-            h "I know." 
-            "He said it like he really did." 
+            s 8y11 "I can go from here." 
+            h 12 "I know." 
+
             "Stella took one step forward, then stopped." 
-            s "Ok, thanks." 
-            h "You're welcome." 
+            s 8y11 "Ok, thanks." 
+            h 12 "You're welcome." 
             "She walked the rest of the way home by herself." 
             "But when she reached her gate, she looked back." 
             "The streetlamp was small in the distance. He was still standing beneath it." 
             "Only after Stella waved did he turn back toward Home Plate."
 
-    jump Story3
-
-
-
-
-label Story3:
-
-    "Yeah 8 - Story 3: The Storm"
+    "Year 8 - Story 3: The Storm"
 
     "A few weeks later, Stella went out to play with the children from town again. Not hunting for squirrels or specific creatures this time…"
     "Her parents were away for the day, visiting a nearby settlement for work. They had promised they would be home before dinner."
@@ -994,7 +1074,7 @@ label Story3:
     "Then she had immediately followed her friends farther than she probably should have."
     "The sky had been cloudy all afternoon, but nobody paid much attention to it. The rain from earlier that week had finally stopped, and the grass near the old path was soft enough to run on."
     "Stella was halfway through chasing one of the older children around a tree when the first drop touched her nose."
-    s "Huh?"
+    s 8y4 "Huh?"
     "She looked up."
     "Another drop landed on her cheek."
     "Then another."
@@ -1004,7 +1084,7 @@ label Story3:
     "Stella looked around, everyone was already leaving."
     "She had not brought an umbrella."
     "Of course she had not brought an umbrella. It had not been raining when she left."
-    s "Oh come on… that's not fair..."
+    s 8y6 "Oh come on… that's not fair..."
     "The rain grew heavier as she ran back toward the street."
     "Her hair stuck to her face. Her sleeves turned dark with water, and her shoes made awful little sounds in the mud."
     "She thought about going home."
@@ -1014,22 +1094,23 @@ label Story3:
     "The thought came so quickly that Stella barely noticed making a decision."
     "She turned toward the familiar warm window and ran."
     "The bell above the door rang loudly when she pushed it open."
-    h "Stella?"
+    h 24 "Stella?"
     "She stood in the doorway, dripping rain onto the floor."
     "For a moment, she suddenly remembered that this was still a restaurant."
     "Maybe she should have knocked, or at least should have asked first."
     "But the big brother only blinked once, then reached for a towel behind the counter."
-    h "Well."
-    h "Either the rain followed you in, or you've been swimming with your clothes on."
-    s "It started raining very bigly."
-    h "Hmm,,, I noticed."
+    h 42 "Well." 
+    h 24 "Either the rain followed you in, or you've been swimming with your clothes on." 
+
+    s 8y7 "It started raining very bigly." 
+
+    h 21 "Hmm... I noticed."
     "Stella took the towel with both hands."
     "She rubbed it over her hair, trying not to make too much of a mess."
-    s "I was going to go home… But this place was closer."
-    "He looked toward the window."
-    "The rain was already running down the glass in thick lines."
-    h "That's alright."
-    h "You can stay here until it stops."
+    s 8y7 "I was going to go home… But this place was closer."
+
+    h 12 "That's alright."
+    h 11 "You can stay here until it stops."
     "Stella nodded."
     "That had been her plan too, wait for the rain to stop."
     "Then go home before her parents came back."
@@ -1037,22 +1118,27 @@ label Story3:
     "Except… the rain did not stop."
     "It grew louder."
     "The warm light inside Home Plate made the window look darker than before. Outside, the street blurred into grey water and moving shadows."
-    "Stella sat near the counter with the towel around her shoulders."
+    "Stella sat near the counter with the towel around her shoulders." 
+    show stella 8y1
     "At first, she tried to act calm, she watched Him clean a cup."
     "Then she looked at the shelves and counted the chairs."
-    "Then thunder cracked above the town."
-    "The sound was so sudden that Stella jumped."
+    "Then thunder cracked above the town." 
+    show stella 8y7
+    "The sound was so sudden that Stella jumped." 
     "Her hands tightened around the towel."
     "The big brother looked over."
     h "Oh wow, that was a loud one."
-    "Stella forced herself to sit up straighter."
-    s "Ha, I'm not scared."
-    "Another flash of light crossed the window."
+    h 21 "Oh wow, that was a loud one." 
+    "Stella forced herself to sit up straighter." 
+    s 8y6 "Ha, I'm not scared." 
+    show stella 8y7
+    "Another flash of light crossed the window." 
     "A second later, the thunder rolled again, lower and longer than before."
     "Stella did not jump this time, not too much."
-    "But she did pull the towel a little closer around herself."
-    "The big brother set the cup down and leaned gently against the counter."
-    h "Are you scared of storms?"
+    "Stella did not jump this time, not too much." 
+    "But she did pull the towel a little closer around herself." 
+
+    h 13 "Are you scared of storms?"
     
     menu:
 
@@ -1060,23 +1146,29 @@ label Story3:
             
             $ emotional_honesty =+ 1
             
+            show stella 8y7
             "Stella held the towel closer around her shoulders, for a moment, she looked like she wanted to deny it again."
             "But then another low roll of thunder moved across the sky."
             "This time, she did not pretend she had not heard it."
-            s "Yes..."
-            s "A little."
-            "The big brother did not laugh, he only nodded, like that answer made perfect sense."
-            h "That is a very reasonable thing to be scared of."
-            s "But… I'm not little."
-            h "I know, I didn't say you were, thunder can scare very old people too."
+            s 8y7 "Yes..."
+            s 8y7 "A little."
+
+            h 12 "That is a very reasonable thing to be scared of."
+
+            s 8y6 "But… I'm not little."
+
+            h 11 "I know, I didn't say you were, thunder can scare very old people too."
+
             "Stella looked up."
-            s "Really?"
-            h "Mhm. Really."
+            s 8y11 "Really?"
+
+            h 12 "Mhm. Really."
             "He glanced toward the window, where rain was still running down the glass."
-            h "Would you like to hear a story?"
-            s "A story?"
-            h "About storms."
-            h "And why they sound so angry sometimes."
+            h 11 "Would you like to hear a story?"
+
+            s 8y4 "A story?"
+            h 11 "About storms."
+            h 12 "And why they sound so angry sometimes."
 
 
 
@@ -1084,28 +1176,33 @@ label Story3:
 
             $ emotional_honesty =- 1
 
+            show stella 8y6
             "Stella frowned. She had already said she was not scared."
             "Why was he asking again?"
-            s "Not really."
+            s 8y6 "Not really."
             "Her voice came out a little sharper than she meant it to."
-            s "I said I'm not scared."
+            s 8y6 "I said I'm not scared."
             "The big brother raised both hands slightly, as if surrendering."
-            h "Fair enough."
-            h "Then you are braver than me."
+            h 52 "Fair enough."
+            h 11 "Then you are braver than me."
+
             "Stella blinked."
-            s "…You're scared of thunder?"
-            h "Of course. Only very foolish people are never scared of anything."
+            s 8y11 "…You're scared of thunder?"
+
+            h 24 "Of course. Only very foolish people are never scared of anything."
             "That made Stella quiet for a moment, she looked toward the window again."
             "The rain hit the glass so hard that it sounded like tiny stones."
-            s "But you're… you’re old!"
-            h "Ahaha… even grown-ups are just children who got taller."
+            s 8y4 "But you're… you’re old!"
+            h 42 "Ahaha… even grown-ups are just children who got taller."
+            show stella 8y2
             "Stella was not sure if that was true, but she liked the sound of it."
-            "The big brother leaned against the counter and looked at the storm outside."
-            h "Do you want to know what I was told about storms when I was young?"
-            s "You were young?"
-            "He smiled."
-            h "Once."
-            h "A very long time ago."
+
+            h 12 "Do you want to know what I was told about storms when I was young?"
+
+            s 8y4 "You were young?"
+
+            h 52 "Once."
+            h 12 "A very long time ago."
 
 
 
@@ -1114,25 +1211,33 @@ label Story3:
             $ emotional_honesty =+ 1
             $ trust =+ 1
 
+            show stella 8y10
             "Stella thought about it properly this time. She did not want to lie."
             "But she also did not want to sound like a baby."
-            s "Sometimes."
+            s 8y11 "Sometimes."
+
             "The big brother waited, so Stella tried again."
-            s "Usually I'm not scared. Because, well… Rain is just rain."
-            s "And thunder is just loud."
+            s 8y11 "Usually I'm not scared. Because, well… Rain is just rain."
+            s 8y11 "And thunder is just loud."
             "Another flash crossed the window. A few seconds later, thunder rolled over the roof."
             "Stella's hands tightened around the towel."
-            s "But today's one is really big."
-            "The big brother nodded."
-            h "It is. It’s weird… some storms arrive quietly."
-            h "Some storms want the whole sky to know they are here."
+            s 8y7 "But today's one is really big."
+
+            h 12 "It is. It’s weird… some storms arrive quietly."
+            h 11 "Some storms want the whole sky to know they are here."
+
             "Stella looked at him."
-            s "Why?"
-            h "That depends on which story you believe."
-            s "There are different stories?"
-            h "Of course, always."
+            s 8y11 "Why?"
+
+            h 21 "That depends on which story you believe."
+
+            s 8y4 "There are different stories?"
+
+            h 11 "Of course, always."
+
             "He pulled a chair a little closer."
-            h "Do you want to hear one?"
+            h 12 "Do you want to hear one?"
+
             "Stella hesitated, then nodded."
 
 
@@ -1141,61 +1246,91 @@ label Story3:
     "Home Plate became a little softer."
     "The storm outside was still loud, but the room felt warmer around it."
     "He brought over a small cup of warm milk and placed it in front of Stella."
-    h "Careful. It's hot."
+    h 11 "Careful. It's hot."
+
     "Stella wrapped both hands around the cup."
     "The warmth pressed into her fingers."
     "Outside, thunder muttered again, but this time she did not jump as much."
     "The big brother sat across from her, close enough that she could hear him over the
     rain."
-    h "Alright."
-    h "This is an old story, older than the road outside."
-    h "Maybe even older than this town "
+    "He sat across from her..."
+    h 12 "Alright."
+    h 11 "This is an old story, older than the road outside."
+    h 12 "Maybe even older than this town."
+
     "Stella leaned forward a little."
-    s "Is it true?"
-    "The big brother smiled."
-    h "Hmm, that depends."
-    s "On what?"
-    h "On whether you listen like a child..."
-    h "Or like someone trying to prove the storyteller wrong."
+    show stella 8y10
+    s 8y11 "Is it true?"
+
+    h 24 "Hmm, that depends."
+
+    s 8y11 "On what?"
+
+    h 11 "On whether you listen like a child..."
+    h 24 "Or like someone trying to prove the storyteller wrong."
+
     "Stella narrowed her eyes."
-    s "I think I can do both."
-    h "I believe you."
+    show stella 8y6
+    s 8y6 "I think I can do both."
+
+    h 12 "I believe you."
     "He looked out toward the storm."
-    h "Long ago, before this town had streets, and before people learned to complain about wet shoes..."
-    h "There was a god who liked to travel."
+    h 11 "Long ago, before this town had streets, and before people learned to complain about wet shoes..."
+    h 11 "There was a god who liked to travel."
+
     "Stella blinked."
-    s "A real god?"
-    h "In the story, yes."
-    s "What kind of god?"
-    h "A very forgetful one."
+    s 8y4 "A real god?"
+
+    h 24 "In the story, yes."
+
+    s 8y11 "What kind of god?"
+
+    h 41 "A very forgetful one."
+
+    show stella 8y10
     "Stella immediately looked more interested."
-    h "He travelled across mountains, forests, oceans, and skies."
-    h "Sometimes he walked."
-    h "Sometimes he flew."
-    h "And sometimes, when he was feeling dramatic, he flew while carrying a very large bass drum under one arm."
-    s "What… Why?"
-    h "Nobody knows."
-    h "I guess gods are allowed to have strange hobbies."
+    h 11 "He travelled across mountains, forests, oceans, and skies."
+    h 11 "Sometimes he walked."
+    h 42 "Sometimes he flew."
+    h 24 "And sometimes, when he was feeling dramatic, he flew while carrying a very large bass drum under one arm."
+
+    show stella 8y4
+    s 8y4 "What… Why?"
+
+    h 21 "Nobody knows."
+    h 24 "I guess gods are allowed to have strange hobbies."
     "Stella made a small sound that was almost a laugh."
-    h "One day, while he was flying above the clouds, the drum slipped."
-    s "He dropped it?"
-    h "He did."
-    h "A terrible mistake… Very embarrassing."
-    h "Not that he would admit that."
+    show stella 8y2
+    h 21 "One day, while he was flying above the clouds, the drum slipped."
+
+    s 8y4 "He dropped it?"
+
+    h 52 "He did."
+    h 24 "A terrible mistake… Very embarrassing."
+    h 41 "Not that he would admit that."
     "The big brother looked toward the window for a moment, as if checking the sky."
     h "The drum fell down, down, down..."
-    h "Until Sister Cloud caught it."
-    s "Sister Cloud?"
-    h "That is what the old story calls her."
-    h "She was soft, round, and very proud of herself."
-    h "She looked at the drum and thought it was the most wonderful thing she had ever seen."
-    s "Did she give it back?"
-    h "Absolutely not."
-    "Stella gasped."
-    s "That's stealing."
-    h "It is borrowing forever."
-    s "That's stealing."
-    h "A very cloud-like kind of stealing."
+    h 11 "Until Sister Cloud caught it."
+
+    s 8y4 "Sister Cloud?"
+
+    h 11 "That is what the old story calls her."
+    h 11 "She was soft, round, and very proud of herself."
+    h 12 "She looked at the drum and thought it was the most wonderful thing she had ever seen."
+
+    s 8y11 "Did she give it back?"
+
+    h 14 "Absolutely not."
+
+    show stella 8y4
+    s 8y4 "That's stealing."
+
+    h 24 "It is borrowing forever."
+
+    s 8y6 "That's stealing."
+
+    h 42 "A very cloud-like kind of stealing."
+    show stella 8y2
     "Stella hugged her cup closer, but she was smiling now."
     h "The god came back and found Sister Cloud sitting on his drum."
     h "She pretended not to know anything."
@@ -1211,84 +1346,136 @@ label Story3:
     h "For about one afternoon."
     "Thunder rolled softly outside, as if it had heard him."
     "Stella looked at the window, then quickly looked back."
-    h "Now, Sister Cloud had a neighbour - Brother Lightning."
-    h "Brother Lightning was bright, loud, and very annoying."
-    s "Like boys at my school!"
-    h "Exactly like boys at school."
-    h "He liked Sister Cloud very much."
-    h "But Sister Cloud did not like him back."
-    s "Why?"
-    h "Because every time he wanted her attention, he flashed at her."
-    h "Like this."
+    h 11 "Now, Sister Cloud had a neighbour - Brother Lightning."
+    h 24 "Brother Lightning was bright, loud, and very annoying."
+
+    s 8y3 "Like boys at my school!"
+
+    h 42 "Exactly like boys at school."
+
+    h 11 "He liked Sister Cloud very much."
+    h 12 "But Sister Cloud did not like him back."
+
+    s 8y11 "Why?"
+
+    h 24 "Because every time he wanted her attention, he flashed at her."
+    h 24 "Like this."
     "The big brother lifted one hand and flicked his fingers."
-    h "Flash."
+    h 11 "Flash."
+
     "Outside, lightning lit the window for one sharp second."
     "Stella's eyes widened."
+    show stella 8y4
+
     "The big brother paused."
-    h "Whoa, good timing there."
-    s "Did you do that?"
-    h "No."
-    h "Brother Lightning is just very committed to the story."
+    h 24 "Whoa, good timing there."
+
+    s 8y4 "Did you do that?"
+
+    h 12 "No."
+    h 24 "Brother Lightning is just very committed to the story."
+    show stella 8y2
     "Stella stared at him for a moment, then giggled."
-    h "Anyway, every time Brother Lightning flashed at Sister Cloud, he would say
-    something foolish."
-    h "'Look at me.' 'Am I not bright?' 'Do I not shine beautifully?'"
-    h "Sister Cloud found this very tiring."
-    s "So what did she do?"
-    h "She picked up the god's bass drum."
-    h "And the next time Brother Lightning flashed at her..."
+
+    h 11 "Anyway, every time Brother Lightning flashed at Sister Cloud, he would say something foolish."
+    h 11 "'Look at me.' 'Am I not bright?' 'Do I not shine beautifully?'"
+
+    h 21 "Sister Cloud found this very tiring."
+
+    s 8y11 "So what did she do?"
+
+    h 11 "She picked up the god's bass drum."
+    h 24 "And the next time Brother Lightning flashed at her..."
     "The big brother tapped the table once."
-    h "Boom."
+    h 14 "Boom."
+
     "Another roll of thunder answered outside, deeper this time."
     "Stella jumped a little, but then she laughed."
-    h "She hit the drum as hard as she could."
-    h "'Go away!' she shouted."
-    h "'You are too bright, too noisy, and I am trying to have a peaceful evening!'"
-    s "But she's the noisy one."
-    h "Yes."
-    h "Sister Cloud never noticed that part."
+    show stella 8y12
+
+    h 42 "She hit the drum as hard as she could."
+    h 14 "'Go away!' she shouted."
+    h 14 "'You are too bright, too noisy, and I am trying to have a peaceful evening!'"
+
+    s 8y4 "But she's the noisy one."
+
+    h 24 "Yes."
+    h 11 "Sister Cloud never noticed that part."
+
+    show stella 8y12
     "Stella laughed properly this time."
-    h "So when you see lightning, that is Brother Lightning trying to get Sister Cloud's attention."
-    h "And when thunder comes after it..."
-    h "That is Sister Cloud hitting the old drum and telling him to leave her alone."
-    s "Does he leave?"
-    h "Usually not."
-    s "Then he's stupid."
-    h "Very."
-    h "But also very persistent."
+    h 11 "So when you see lightning, that is Brother Lightning trying to get Sister Cloud's attention."
+    h 11 "And when thunder comes after it..."
+    h 12 "That is Sister Cloud hitting the old drum and telling him to leave her alone."
+
+    s 8y11 "Does he leave?"
+
+    h 21 "Usually not."
+
+    s 8y6 "Then he's stupid."
+
+    h 42 "Very."
+    h 11 "But also very persistent."
     "Rain continued to rush against the window, but Stella's shoulders had loosened under the towel."
+    show stella 8y10
     "She looked outside again."
     "This time, when lightning flashed, she did not look away as quickly."
-    s "So the thunder isn't angry?"
-    h "Maybe a little, but not at you."
-    h "Most storms are not angry at anyone below them."
-    h "They are just very old arguments happening very high up."
+
+    s 8y11 "So the thunder isn't angry?"
+
+    h 12 "Maybe a little, but not at you."
+    h 11 "Most storms are not angry at anyone below them."
+    h 12 "They are just very old arguments happening very high up."
     "Stella thought about that."
-    s "And the god just let Sister Cloud keep the drum?"
-    h "He did."
-    s "Wasn't he sad?"
+    "Stella thought about that."
+    s 8y10 "And the god just let Sister Cloud keep the drum?"
+
+    h 11 "He did."
+
+    s 8y11 "Wasn't he sad?"
+
     "The big brother was quiet for a moment."
+    show him 31
     "His smile softened, just a little."
-    h "Perhaps."
-    h "But sometimes, when something you carried for a long time falls into someone else's hands... You let them keep it."
-    s "Why?"
-    h "Because they make a better story with it than you did."
+    h 32 "Perhaps."
+
+    h 11 "But sometimes, when something you carried for a long time falls into someone else's hands... You let them keep it."
+
+    s 8y11 "Why?"
+
+    h 13 "Because they make a better story with it than you did."
+    show him 11
     "Stella did not fully understand that, but she liked the way he said it."
+
     "Outside, thunder rolled again."
-    "This time, Stella imagined a round, grumpy cloud beating a giant drum with both hands."
-    "She pressed her lips together."
+    "...
+    Stella pressed her lips together."
     "Then she laughed."
-    s "Brother Lightning is really annoying."
-    h "Terribly annoying."
-    s "And Sister Cloud is kind of mean."
-    h "A little."
-    s "And the god is bad at carrying things."
+
+    show stella 8y12
+    s 8y3 "Brother Lightning is really annoying."
+
+    h 42 "Terribly annoying."
+
+    s 8y6 "And Sister Cloud is kind of mean."
+
+    h 24 "A little."
+
+    s 8y11 "And the god is bad at carrying things."
+
+    show him 21
     "The big brother looked offended."
-    h "Well, that seems a bit unfair."
-    s "He dropped a giant drum."
-    h "A ‘giant one’, and everyone drops something eventually."
-    s "Not giant drums."
-    h "You would be surprised."
+    h 14 "Well, that seems a bit unfair."
+
+    s 8y6 "He dropped a giant drum."
+
+    h 24 "A ‘giant one’, and everyone drops something eventually."
+
+    s 8y6 "Not giant drums."
+
+    h 52 "You would be surprised."
+
+    show stella 8y2
     "Stella smiled into her cup of warm milk."
     "The storm was still loud."
     "The rain still filled the window, and thunder still shook the sky from time to time."
@@ -1296,43 +1483,60 @@ label Story3:
     "And that made it less frightening."
     "By evening, the rain had softened."
     "The thunder was no longer shaking the windows, and the sky outside had turned into a deep, wet grey."
+    show stella 8y10
     "Stella sat near the bookshelf with one of the books from the shelf open on her lap."
     "It was not a normal printed book. At least it did not look like one."
     "The pages were filled with handwritten notes, small sketches, and names of foods from places Stella had never heard of."
     "Some of the words were written in languages she could not read at all."
     "Some were written in letters she knew, but arranged in ways that still felt wrong."
     "She dragged one finger under a line and tried her best."
-    s "Seaweed roll with..."
-    s "High... cal... calcium..."
-    s "Car... bo... nate flower?"
+    s 8y11 "Seaweed roll with..."
+    s 8y11 "High... cal... calcium..."
+    s 8y4 "Car... bo... nate flower?"
+
     "Stella stared at the page."
-    s "Is this really food?"
-    "The big brother was clearing a table nearby. The last guests had left a few minutes ago, leaving behind empty cups and the smell of soup."
-    h "You'd be surprised."
-    h "When you grow up, you'll find that the world is full of different kinds of people."
-    h "And different kinds of things those people like to eat."
+    show stella 8y7
+    s 8y4 "Is this really food?"
+
+    "The big brother was clearing a table nearby..."
+    h 11 "You'd be surprised."
+    h 12 "When you grow up, you'll find that the world is full of different kinds of people."
+    h 11 "And different kinds of things those people like to eat."
+
     "Stella looked down at the strange recipe again."
-    s "My mom and dad have been to lots of different countries."
-    s "I think they've even been to other planets."
+    s 8y11 "My mom and dad have been to lots of different countries."
+    s 8y11 "I think they've even been to other planets."
+
     "She thought for a moment."
-    s "They told me there are people who look like fish."
+    s 8y4 "They told me there are people who look like fish."
 
     if memory_first_meal_choice == "salmon_sashimi":
 
         "Stella paused."
         "Then she slowly looked up at him."
-        s "...Do you think eating salmon sashimi counts as eating their cousins?"
+        show stella 8y7
+        s 8y11 "...Do you think eating salmon sashimi counts as eating their cousins?"
+
         "The big brother stopped wiping the table."
         "For one long second, he looked completely serious."
-        h "Hmm, that depends."
-        s "On what?"
-        h "On whether you plan to apologies to the salmon first."
+        show him 21
+        h 21 "Hmm, that depends."
+
+        s 8y11 "On what?"
+
+        h 24 "On whether you plan to apologies to the salmon first."
+
         "Stella stared at him."
-        s "That's not helpful."
-        h "Most food questions become less helpful if you think about them for too long."
+        show stella 8y8
+        s 8y8 "That's not helpful."
+
+        h 42 "Most food questions become less helpful if you think about them for too long."
+
         "Stella looked back down at the book."
-        s "Umm, I don't want to think about it anymore."
-        h "A wise decision."
+        show stella 8y5
+        s 8y11 "Umm, I don't want to think about it anymore."
+
+        h 12 "A wise decision."
 
     "Stella turned another page."
     s "Dad said the cafeteria at one of his old work places had seaweed rolls."
@@ -1363,20 +1567,32 @@ label Story3:
             "Stella closed the book carefully."
             "She held it against her chest for a second, then climbed down from the chair."
             "The big brother looked over when he heard her footsteps."
-            s "Um."
+
+            show stella 8y11
+            s 8y11 "Um."
+
             "She stood near the counter, suddenly less sure than she had been a moment ago."
-            h "Yes?"
+
+            h 12 "Yes?"
+
             "Stella looked down at her shoes."
-            s "Thank you."
-            h "For the milk?"
-            s "For the milk."
-            s "And the story."
-            s "And..."
+            s 8y11 "Thank you."
+
+            h 11 "For the milk?"
+
+            s 8y11 "For the milk."
+            s 8y11 "And the story."
+            s 8y11 "And..."
+
             "She pressed her lips together, then forced the rest out before she could change her mind."
-            s "I liked talking to you."
+            s 8y11 "I liked talking to you."
+
             "The big brother's expression softened."
+            show him 12
             "He did not tease her this time."
-            h "I liked talking to you too, Stella, you are very smart."
+            h 11 "I liked talking to you too, Stella, you are very smart."
+
+            show stella 8y5
             "Stella's face warmed."
 
 
@@ -1386,6 +1602,7 @@ label Story3:
             $ emotional_honesty -= 2
             $ dependency -= 2
 
+            show stella 8y10
             "Stella looked at him, then looked back down at the book."
             "The words on the page suddenly seemed very interesting."
             "She did want to say thank you and she did want to say the story helped."
@@ -1400,16 +1617,20 @@ label Story3:
             $ emotional_honesty -= 1
             $ dependency -= 1
             
+            show stella 8y1
             "Stella closed the book and placed it back on the shelf."
             "The storm was almost over, her parents would be home soon, and she probably
             should not stay out too late."
             "She looked toward the counter once, as if she might say something."
             "Then she decided not to."
-            s "I should go home."
-            "The big brother looked up from the counter."
-            h "Already?"
-            s "The rain is smaller now."
-            h "I guess that is true."
+
+            s 8y11 "I should go home."
+
+            h 12 "Already?"
+
+            s 8y11 "The rain is smaller now."
+
+            h 11 "I guess that is true."
             "Stella nodded, even though part of her felt like she was leaving something unfinished."
 
 
@@ -1417,34 +1638,55 @@ label Story3:
     "The rain had thinned into a soft silver curtain by the time Stella finally moved toward the door."
     "The street outside was still wet, and the evening air looked colder than it had before."
     "The big brother glanced at the window, then at Stella."
-    h "Oh, wait a second."
+    h 21 "Oh, wait a second."
+
     "Stella stopped with one hand already near the door."
-    s "What?"
+    show stella 8y4
+    s 8y4 "What?"
+
     "He disappeared behind the counter for a moment."
     "Stella heard a drawer open, then close."
     "When he came back, he was holding a small scarf."
     "It was soft and pale, with a little stitched star near one end."
     "He stepped closer and held it out to her."
-    h "Take this."
-    s "Is it yours?"
-    h "For now, it's yours."
-    s "But..."
-    h "You can bring it back next time."
+
+    h 11 "Take this."
+
+    s 8y11 "Is it yours?"
+
+    h 12 "For now, it's yours."
+
+    s 8y11 "But..."
+
+    h 11 "You can bring it back next time."
+
     "Next time."
     "The words stayed in Stella's head for a second."
+
+    show stella 8y10
     "She took the scarf with both hands."
     "It was still warm from being kept inside."
+
     "The big brother crouched slightly and wrapped it around her neck, careful not to make it too tight."
-    h "There, that should keep the storm from trying to follow you home."
+
+    h 12 "There, that should keep the storm from trying to follow you home."
+
     "Stella touched the scarf."
-    s "I don't think storms follow people."
-    h "Usually not, but this one seemed very interested in you."
+    s 8y11 "I don't think storms follow people."
+
+    h 42 "Usually not, but this one seemed very interested in you."
+
+    show stella 8y2
     "Stella looked toward the window."
+
     "The rain tapped lightly against the glass now, no longer loud enough to shake the room."
-    s "I think Sister Cloud got tired."
-    h "Or Brother Lightning finally gave up."
-    s "Good. Because he was annoying."
-    h "Very annoying."
+    s 8y11 "I think Sister Cloud got tired."
+
+    h 11 "Or Brother Lightning finally gave up."
+
+    s 8y3 "Good. Because he was annoying."
+
+    h 42 "Very annoying."
     "Stella smiled."
     "The bell above the door moved a little in the wind."
     "The tables were clean, the lights were warm."
@@ -1455,9 +1697,10 @@ label Story3:
     "The chair near the shelf."
     "The path from the door to the place where he stood."
     "This restaurant did not feel strange anymore."
-    h "Ready?"
+    h 11 "Ready?"
+
     "Stella nodded."
-    s "Yeah."
+    s 8y3 "Yeah."
     "He opened the door for her."
     "Cool air slipped inside, carrying the smell of rain."
     "Stella stepped out, then turned back."
@@ -1470,26 +1713,34 @@ label Story3:
 
     if emotional_honesty >= 3:
 
+        show stella 8y10
         "The words came a little easier this time, not completely easy."
         "But easier."
         "Stella touched the scarf with both hands."
-        s "I'll bring it back."
+        s 8y11 "I'll bring it back."
+
         "She paused."
         "Then she looked up at him properly."
-        s "Next time."
+        s 8y11 "Next time."
+
         "The big brother smiled."
-        h "And I'll be here."
+        h 12 "And I'll be here."
+
         "For some reason, Stella believed him at once."
         "She stepped away from the door, then turned around one more time."
-        s "And..."
+        s 8y11 "And..."
         "The word almost disappeared. But she caught it before it could."
-        s "Thanks for letting me stay."
-        s "I liked the story."
+        s 8y11 "Thanks for letting me stay."
+        s 8y11 "I liked the story."
+
         "His smile softened."
-        h "I'm glad."
-        h "Thank you for being such a good listener."
-        s "Maybe next time you can tell me another one."
-        h "Yeah… yeah I can."
+        h 12 "I'm glad."
+        h 11 "Thank you for being such a good listener."
+
+        show stella 8y3
+        s 8y3 "Maybe next time you can tell me another one."
+
+        h 12 "Yeah… yeah I can."
         "Stella walked home under the fading rain."
         "The scarf was a little too big for her, and she had to hold one end so it would not slip."
         "Her shoes splashed through small puddles."
@@ -1520,13 +1771,18 @@ label Story3:
         her."
         "But the words stayed somewhere behind her teeth."
         "So Stella only nodded."
+
+        show stella 8y1
         "The big brother looked at her for a moment."
         "He did not push, he did not ask her to say more."
         "He only smiled, as if he had heard something she had not said."
-        h "Bring it back next time, when you come here."
-        "Stella looked up."
-        s "Okay."
-        h "I'll be here."
+
+        h 12 "Bring it back next time, when you come here."
+
+        show stella 8y11
+        s 8y11 "Okay."
+
+        h 11 "I'll be here."
         "She stepped out into the wet street before her face could feel too warm."
         "The scarf was a little too big for her, and she had to hold one end so it would not slip."
         "Her shoes splashed through small puddles."
@@ -1558,9 +1814,11 @@ label Story3:
         "The words next time still felt a little strange."
         "Not bad, just strange."
         "She looked down at the wet street outside, then back at him."
-        s "I'll bring it back."
-        "Her voice was quiet, but steady."
-        h "No rush."
+
+        s 8y11 "I'll bring it back."
+
+        h 12 "No rush."
+
         "The big brother smiled."
         "Stella stepped outside."
         "The scarf was a little too big for her, and she had to hold one end so it would not slip."
