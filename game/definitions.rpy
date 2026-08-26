@@ -5,6 +5,13 @@ transform t11:
         zoom 1.15
         xcenter 1280 yoffset -20
         easein .25 yoffset 0 zoom 1.20 alpha 1.0
+    on replace:
+        alpha 1.00 
+        parallel:
+            easein .25 xcenter 1280 zoom 1.20 
+        parallel:
+            easein .15 yoffset 0 ypos 1.03 
+
 
 transform t21:
     yanchor 1.0 subpixel True
@@ -13,6 +20,12 @@ transform t21:
         zoom 1.15
         xcenter 850 yoffset -20
         easein .25 yoffset 0 zoom 1.20 alpha 1.0
+    on replace:
+        alpha 1.00 
+        parallel:
+            easein .25 xcenter 850 zoom 1.20 
+        parallel:
+            easein .15 yoffset 0 ypos 1.03 
 
 transform t22:
     yanchor 1.0 subpixel True
@@ -21,6 +34,12 @@ transform t22:
         zoom 1.15
         xcenter 1700 yoffset -20
         easein .25 yoffset 0 zoom 1.20 alpha 1.0
+    on replace:
+        alpha 1.00 
+        parallel:
+            easein .25 xcenter 1700 zoom 1.20 
+        parallel:
+            easein .15 yoffset 0 ypos 1.03 
 
 transform t31:
     yanchor 1.0 subpixel True
@@ -29,6 +48,12 @@ transform t31:
         zoom 1.15
         xcenter 640 yoffset -20
         easein .25 yoffset 0 zoom 1.20 alpha 1.0
+    on replace:
+        alpha 1.00 
+        parallel:
+            easein .25 xcenter 640 zoom 1.20 
+        parallel:
+            easein .15 yoffset 0 ypos 1.03 
 
 transform t32:
     yanchor 1.0 subpixel True
@@ -37,6 +62,12 @@ transform t32:
         zoom 1.15
         xcenter 1280 yoffset -20
         easein .25 yoffset 0 zoom 1.20 alpha 1.0
+    on replace:
+        alpha 1.00 
+        parallel:
+            easein .25 xcenter 1280 zoom 1.20 
+        parallel:
+            easein .15 yoffset 0 ypos 1.03 
 
 transform t33:
     yanchor 1.0 subpixel True
@@ -45,9 +76,15 @@ transform t33:
         zoom 1.15
         xcenter 1920 yoffset -20
         easein .25 yoffset 0 zoom 1.20 alpha 1.0
+    on replace:
+        alpha 1.00 
+        parallel:
+            easein .25 xcenter 1920 zoom 1.20 
+        parallel:
+            easein .15 yoffset 0 ypos 1.03 
 
 transform lhide:
-    ease 1.0 xoffset -2000
+    ease 0.4 xoffset -2000
 
 
 
@@ -81,9 +118,35 @@ image him 52 = "images/him/52.png"
 
 
 
+# Mom -----------------------------------------------------------
+
+image mom 1 = "images/mom/1.png"
+image mom 2 = "images/mom/2.png"
+image mom 3 = "images/mom/3.png"
+image mom 4 = "images/mom/4.png"
+image mom 5 = "images/mom/5.png"
+image mom 6 = "images/mom/6.png"
+image mom 7 = "images/mom/7.png"
+image mom 8 = "images/mom/8.png"
+
+
+
+
+# Dad -----------------------------------------------------------
+
+image dad 1 = "images/dad/1.png"
+image dad 2 = "images/dad/2.png"
+image dad 3 = "images/dad/3.png"
+image dad 4 = "images/dad/4.png"
+image dad 5 = "images/dad/5.png"
+image dad 6 = "images/dad/6.png"
+
+
 
 
 # Stella: Age 8 -------------------------------------------------
+
+image 8yblush = "images/setlla/1/blush.png"
 
 image stella 8y1 = "images/stella/1/1.png"
 image stella 8y2 = "images/stella/1/2.png"
@@ -96,6 +159,7 @@ image stella 8y8 = "images/stella/1/8.png"
 image stella 8y9 = "images/stella/1/9.png"
 image stella 8y10 = "images/stella/1/10.png"
 image stella 8y11 = "images/stella/1/11.png"
+image stella 8y12 = "images/stella/1/12.png"
 
 
 
@@ -106,9 +170,9 @@ image stella 8y11 = "images/stella/1/11.png"
 
 
 define s = DynamicCharacter('s_name', image='stella', what_prefix='"', what_suffix='"', ctc_position="fixed")
-define h = DynamicCharacter('h_name', image='Him', what_prefix='"', what_suffix='"', ctc_position="fixed")
-define dad = DynamicCharacter('dad_name', image='Dad', what_prefix='"', what_suffix='"', ctc_position="fixed")
-define mom = DynamicCharacter('mom_name', image='Mom', what_prefix='"', what_suffix='"', ctc_position="fixed")
-define m = DynamicCharacter('m_name', image='Mina', what_prefix='"', what_suffix='"', ctc_position="fixed")
+define h = DynamicCharacter('h_name', image='him', what_prefix='"', what_suffix='"', ctc_position="fixed")
+define dad = DynamicCharacter('dad_name', image='dad', what_prefix='"', what_suffix='"', ctc_position="fixed")
+define mom = DynamicCharacter('mom_name', image='mom', what_prefix='"', what_suffix='"', ctc_position="fixed")
+define m = DynamicCharacter('m_name', image='mina', what_prefix='"', what_suffix='"', ctc_position="fixed")
 define extra = DynamicCharacter('extra_name', image='extra', what_prefix='"', what_suffix='"', ctc_position="fixed")
-define lena = DynamicCharacter('l_name', image='Lena', what_prefix='"', what_suffix='"', ctc_position="fixed")
+define lena = DynamicCharacter('l_name', image='lena', what_prefix='"', what_suffix='"', ctc_position="fixed")

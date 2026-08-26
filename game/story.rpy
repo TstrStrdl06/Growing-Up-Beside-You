@@ -4,7 +4,9 @@ label StoryStart:
 
     "It was finally sunny again." 
     "For the past few days, it had felt like the rain would never stop." 
-    show stella 8y1 at t11
+    show stella 8y1 at t32
+    show mom 1 at t31
+    show dad 1 at t33
     "Stella looked up at the blue sky with wide, curious eyes." 
     "She did not like rainy days." 
     "Rain made the ground dirty." 
@@ -15,8 +17,9 @@ label StoryStart:
     show stella 8y1
     "She asked it with a small frown." 
     "Her mother held her hand as they walked."
-    mom "Well, if it never rained, there wouldn't be any grass." 
+    mom 4 "Well, if it never rained, there wouldn't be any grass." 
     mom "Little plants need water too, you know." 
+    show mom 3
     show stella 8y5
     "Stella frowned harder." 
     "That sounded strange." 
@@ -25,52 +28,64 @@ label StoryStart:
     "But she decided not to think about that for too long." 
     "Her stomach was already much more important." 
     show stella 8y10
-    dad "Hey, sweetheart." 
+    dad 2 "Hey, sweetheart." 
+    show dad 1
     "Her father walked a few steps ahead of them." 
     "He turned around with a smile." 
-    dad "Do you remember where we're going today?" 
+    dad 2 "Do you remember where we're going today?" 
+    show dad 1  
     "Stella thought about it." 
     s 8y11 "We're going to a... rest-rant?" 
     show stella 8y10
     "Her father laughed." 
-    dad "Close." 
+    dad 2 "Close." 
     dad "A restaurant." 
     dad "Res-tau-rant." 
+    show dad 1
     s 8y6 "{cps=20}Rest... tau... rant."
     show stella 8y9 
-    dad "Perfect." 
+    dad 2 "Perfect." 
     dad "You've never eaten at this place before." 
     dad "So your mom and I thought we could take you there today."
     show stella 8y2
+    show dad 1
     "Stella nodded quickly." 
     s 8y3 "Good." 
+    show dad 3
     s "Finally, we can eat something nice." 
     s "We've been eating Dad's cooking for days." 
+    show dad 5
     s 8y4 "I think my stomach is almost broken." 
     show stella 8y10
     "Her mother tried not to laugh." 
     "Her father looked wounded." 
     show stella 8y1
-    dad "Hey." 
+    dad 6 "Hey." 
     dad "A little support here?" 
     dad "Tell her my cooking isn't that bad." 
+    show dad 3
     "Her mother looked away." 
-    mom "Well..." 
-    mom "Changing flavours once in a while is always nice." 
-    dad "Wow." 
-    dad "Betrayed by my own family." 
+    mom 2 "Well..." 
+    mom "Changing flavours once in a while is always nice."
+    show mom 1 
+    dad 4 "Wow." 
+    dad "Betrayed by my own family."
+    show dad 5 
     show stella 8y9
     "Stella giggled." 
     "Her mother gave her hand a gentle squeeze." 
     show stella 8y1
-    mom "Stella." 
+    show dad 3
+    mom 6 "Stella." 
     mom "When we get there, remember to say hello to the man who owns the restaurant." 
+    show mom 5
     s 8y7 "Why?" 
     s "I don't know him." 
     s 8y6 "I don't want to say hello to strange people." 
     show stella 8y8
-    mom "Because we should be polite." 
+    mom 8 "Because we should be polite." 
     mom "That's what a proper young lady does." 
+    show mom 7
     show stella 8y5
     "Stella blinked." 
     s 8y7 "What's a young lady?" 
@@ -87,7 +102,7 @@ label StoryStart:
     "A small hanging sign swung gently above the door." 
     show stella 8y8
     "She narrowed her eyes and tried to read the words." 
-    s 8y6"Home..." 
+    s 8y6 "Home..." 
     s "Plate..." 
     show stella 8y5
     "The words came out slowly." 
@@ -108,7 +123,8 @@ label StoryStart:
     s 8y4 "Wow..." 
     s "We never smell that at home."
     show stella 8y1 
-    dad "I heard that." 
+    dad 4 "I heard that." 
+    show dad 1
     "Stella stepped inside with her parents." 
     "The room was warmer than outside." 
     "Not just because of the lights." 
@@ -125,64 +141,91 @@ label StoryStart:
     s 8y7 "Is this really a restaurant?" 
     show stella 8y5
     "Her mother smiled." 
-    mom "It is." 
-    mom "This place has been here for a long time." 
-    mom "You probably just never noticed it before." 
+    mom 4 "It is." 
+    mom 2 "This place has been here for a long time." 
+    mom "You probably just never noticed it before."
+    show mom 1 
     s 8y7 "It doesn't look like one." 
     show stella 8y5
-    mom "That's part of its charm." 
+    mom 2 "That's part of its charm." 
     mom "They make simple food here." 
     mom "But it tastes wonderful." 
+    show mom 1
     "Stella kept looking around." 
     "Her eyes moved from the tables, to the window, to the little shelves near the wall." 
     "Then a voice came from behind the counter." 
-    hide stella
+    hide mom
+    hide dad
+    #hide stella
     show stella 8y5 at t22
     show him 52 at t21
     h "Ah!" 
     h "Welcome, welcome." 
     h 11 "Sorry, I'll be right there." 
     show him at lhide
-    pause 1.0
-    hide him
-    "Stella blinked." 
+    show dad 1 at t33
+    show stella 8y1 at t32
+    show mom 1 at t31 
+    "Stella blinked."
+    show stella:
+        ease 0.2 xoffset -300
     "Before she could answer, she moved a little closer to her mother." 
+    hide him
     "Behind the counter, someone was moving quickly." 
     "A figure stepped out from the warm light of the kitchen." 
     "Stella leaned forward a little." 
+    show stella:
+        ease 0.2 xoffset 0
     "Curiosity pulled her out from behind her mother before she realised it." 
+    show stella 8y5 at t22
+    show him 12 at t31
+    show dad:
+        ease 0.2 xoffset 300
+    show mom 1 at t11
     "The figure finally stepped behind the counter." 
     "Now she could see him clearly." 
     "He was a young man with golden hair and a gentle smile." 
     "There was a pair of headphones resting over his ears." 
     "He set down the tray in his hands, then slipped the headphones off." 
-    h "Sorry about that." 
+    h 52 "Sorry about that." 
     h "I was preparing some ingredients in the back." 
-    h "Mr. and Mrs. Parker, it's good to see—" 
+    h 11 "Mr. and Mrs. Parker, it's good to see—{w=0.5}{nw}" 
+    show him 23
     "He stopped halfway." 
     "His eyes moved toward Stella." 
-    h "Oh?" 
+    h 24"Oh?" 
     h "Now this is a rare little guest." 
-    "Stella immediately felt shy." 
+    show him 23
+    "Stella immediately felt shy."
+    show stella:
+        ease 0.2 xoffset -100 
     "She stepped closer to her mother again." 
-    dad "That's right." 
+    dad 2 "That's right." 
     dad "The weather finally cleared up, so we thought we'd take our girl around town." 
     dad "And of course, we had to come here for something good." 
-    dad "We'll sit over here, if that's alright." 
-    "The man smiled and nodded." 
+    dad "We'll sit over here, if that's alright."
+    show dad 1
+    show him 12 
+    show stella:
+        ease 0.2 xoffset 0
+    "The man smiled and nodded."
     "He moved with easy practice." 
     "Before Stella knew it, there were three glasses of water on the table." 
     "Stella sat close to her mother." 
     "She still had not let go of her hand." 
     "Her mother looked down at her." 
-    mom "Stella." 
+    mom 8 "Stella." 
     mom "Do you remember what we talked about?" 
+    show mom 7
     "Stella looked at the restaurant owner." 
     "She was quiet for a moment." 
-    s "Hello, mis—" 
-    s "Big brother." 
+    s 8y7 "Hello, mis—" 
+    s "Big brother."
+    show him 52
+    show stella 8y1
     "The man laughed softly." 
-    h "Hello, Stella." 
+    h 11 "Hello, Stella." 
+    show him 12
     "Stella felt her face grow warm." 
     "Now that he was closer, she noticed his eyes." 
     "They were gold." 
@@ -191,29 +234,35 @@ label StoryStart:
     "Probably." 
     "Stella sat beside her mother and held her glass with both hands." 
     "The man turned to her parents first." 
-    h "The usual?" 
+    h 24 "The usual?" 
     h "My signature chicken thigh rice bowl?" 
+    show him 23
     "Her father took a sip of water and grinned." 
-    dad "Tempting." 
+    dad 2 "Tempting." 
     dad "But today, I'll have a steak." 
     dad "Medium rare." 
-    mom "And I'll have the chicken thigh salad." 
-    mom "With a little teriyaki sauce this time, please." 
-    h "Of course." 
+    show dad 1
+    mom 2 "And I'll have the chicken thigh salad." 
+    mom 4 "With a little teriyaki sauce this time, please." 
+    show mom 1
+    h 11 "Of course." 
+    show him 12
     "He nodded, then looked at Stella." 
     "His voice became a little softer." 
-    h "And what about you, little lady?" 
+    h 24 "And what about you, little lady?" 
     h "What would you like to eat?" 
     h "If you can think of it, I can probably make it." 
+    show him 23
     "Stella blinked." 
     "Only then did she realise something." 
     "There was no menu." 
     "She looked at her mother, unsure what to do." 
     "Her mother gave her hand a gentle squeeze." 
-    mom "It's alright, sweetheart." 
+    mom 2 "It's alright, sweetheart." 
     mom "Just tell him what you want." 
     mom "He's very good." 
     mom "He can make almost anything." 
+    show mom 1
     "Stella swallowed." 
     "Then she looked back at him." 
 
@@ -223,85 +272,127 @@ label StoryStart:
 
             $ memory_first_meal_choice = "chicken"
 
-            s "I'll eat whatever you make." 
+            s 8y4 "I'll eat whatever you make." 
+            show stella 8y5
             "Her voice was quiet, but she still managed to say it." 
-            h "Whatever I make?" 
+            h 24 "Whatever I make?"
+            show him 23 
             "He placed a hand over his heart." 
-            h "That's a lot of trust for someone you just met." 
+            h 24 "That's a lot of trust for someone you just met." 
+            show him 12
             "Stella suddenly wondered if she had said something strange." 
-            s "Is that bad?" 
-            h "Not at all." 
+            s 8y7 "Is that bad?" 
+            show stella 8y5
+            h 11 "Not at all." 
             h "It just means I have to do a good job." 
-            dad "Careful." 
+            show him 12
+            dad 2 "Careful."
+            show stella 8y1
             dad "Once he starts showing off, there's no stopping him." 
-            mom "Let him show off, that's why we're here." 
+            show dad 1
+            mom 2 "Let him show off, that's why we're here."
+            show mom 1 
             "The man smiled." 
-            h "Alright then." 
+            h 11 "Alright then." 
             h "One surprise meal for Stella." 
             h "I'll make something warm." 
             h "Something good for a sunny day after too much rain." 
+            show him 12
 
         "I want sashimi. Salmon, if you have it!": 
 
             $ memory_first_meal_choice = "salmon_sashimi"
 
-            s "I want sashimi." 
+            s 8y3 "I want sashimi." 
             s "Salmon, if you have it!" 
+            show stella 8y1
+            show him 12
             "Her answer came out faster than she expected." 
             "Her father raised his eyebrows." 
-            dad "Oh?" 
+            dad 2 "Oh?" 
             dad "Someone knows what she wants." 
-            mom "She's been saying she wants to try it again." 
+            show dad 1
+            mom 2 "She's been saying she wants to try it again." 
+            show mom 1
             "The man smiled, amused." 
-            h "Salmon sashimi." 
+            h 11 "Salmon sashimi." 
             h "Good choice." 
             h "But only if you promise not to blame me if you decide grown-up food is too grown
             up." 
-            s "I won't." 
+            show him 12
+            s 8y4 "I won't." 
             s "I like fish." 
-            h "Then I'll make sure it's a good one." 
+            show stella 8y1
+            h 42 "Then I'll make sure it's a good one." 
+            show him 51
             "He thought for a moment." 
-            h "Maybe with a little rice." 
-            h "And something sweet on the side." 
-            s "Sweet?" 
-            h "A chef's secret." 
-            dad "He says that when he hasn't decided yet." 
-            h "Completely untrue." 
+            h 11 "Maybe with a little rice." 
+            h "And something sweet on the side."
+            show him 12 
+            s 8y7 "Sweet?" 
+            show stella 8y5
+            h 42 "A chef's secret." 
+            show him 12
+            dad 2 "He says that when he hasn't decided yet."
+            show dad 1 
+            h 14 "Completely untrue." 
+            show him 12
 
         "The chicken rice thing you said.":
 
-            $ memory_first_meal_choice == "chicken"
+            $ memory_first_meal_choice = "chicken"
 
-            s "I want the thing you said." 
-            h "The thing I said?" 
-            s "The chicken something rice thing." 
-            dad "Excellent taste." 
+            s 8y4 "I want the thing you said." 
+            show stella 8y1 
+            h 11 "The thing I said?"
+            show him 22 
+            s 8y11 "The chicken something rice thing."
+            show him 12 
+            show stella 8y10
+            dad 2 "Excellent taste."
+            show stella 8y1 
             dad "That's my girl." 
-            mom "You only say that because she picked your favorite." 
+            show dad 1
+            mom 6 "You only say that because she picked your favorite." 
+            show mom 1
+            show him 52
             "The man laughed." 
-            h "The signature chicken thigh rice bowl, a classic." 
-            s "Is it good?" 
-            h "Very good." 
+            h 11 "The signature chicken thigh rice bowl, a classic." 
+            show him 12
+            s 8y4 "Is it good?" 
+            show stella 8y1
+            h 11 "Very good." 
             h "But I may have to make yours a little smaller." 
-            h "Unless you plan to defeat the whole bowl by yourself." 
+            h 52 "Unless you plan to defeat the whole bowl by yourself." 
+            show him 24
             "Stella sat up a little straighter." 
-            s "I can defeat it." 
-            h "Too late." 
-            h "The rice bowl has accepted the challenge." 
+            s 8y6 "I can defeat it."
+            show stella 8y8 
+            h 24 "Too late." 
+            show stella 8y1
+            h 52 "The rice bowl has accepted the challenge."
+            show him 12
     
     "Not long after, he came out from behind the counter." 
     "He carried three steaming plates with practiced ease." 
-    h "Here we are." 
-    h "One sixteen-ounce ribeye steak." 
-    h "Medium rare, for the gentleman." 
+    h 52 "Here we are." 
+    h 11 "One sixteen-ounce ribeye steak." 
+    h 42 "Medium rare, for the gentleman." 
+    show him 12
     "He set the first plate in front of Stella's father." 
-    dad "Now that's what I'm talking about." 
-    h "Fresh vegetable salad." 
+    dad 2 "Now that's what I'm talking about." 
+    show dad 1
+    h 11 "Fresh vegetable salad." 
     h "With grilled chicken thigh and teriyaki sauce, for the lady." 
+    show him 12
     "He placed the second plate in front of Stella's mother." 
-    mom "Thank you." 
+    show him 51
+    mom 4 "Thank you." 
+    show mom 1
     "Then he turned to Stella." 
-    h "And for our little guest..." 
+    h 52 "And for our little guest..." 
+    show him 51
+    show stella 8y2
 
     if memory_first_meal_choice == "salmon_sashimi": 
         "He lowered the final plate in front of her." 
@@ -311,13 +402,18 @@ label StoryStart:
         "There was a small bowl of rice beside them." 
         "A few pieces of fruit sat neatly at the edge of the plate." 
         "It looked too pretty to eat." 
-        h "Salmon sashimi." 
-        h "With rice, fruit, and a little something sweet." 
-        s "It's so pretty..." 
-        dad "She's never looked at my cooking like that." 
-        mom "There may be a reason for that." 
+        h 11 "Salmon sashimi." 
+        h "With rice, fruit, and a little something sweet."
+        show him 12 
+        s 8y3 "It's so pretty..."
+        show stella 8y2 
+        dad 6 "She's never looked at my cooking like that." 
+        show dad 5
+        mom 4 "There may be a reason for that." 
+        show mom 1
         "The man smiled." 
-        h "Enjoy." 
+        show dad 1
+        h 52 "Enjoy." 
         "Stella picked up a piece carefully." 
         "She looked at it for a moment." 
         "Then she took a small bite." 
@@ -326,14 +422,19 @@ label StoryStart:
         "It tasted clean, a little sweet." 
         "Nothing like the food she had eaten at home." 
         "Stella's eyes lit up." 
-        s "Mmm!" 
-        s "It tastes like..." 
+        s 8y9 "Mmm!" 
+        s 8y12 "It tastes like..." 
+        show stella 8y9
         "She stopped. She did not know what it tasted like." 
-        s "It tastes… fancy." 
-        h "Fancy? I'll take that." 
-        mom "Do you like it?" 
+        s 8y11 "It tastes… fancy."
+        show stella 8y1 
+        h 24 "Fancy? I'll take that." 
+        mom 8 "Do you like it?" 
+        show mom 3
         "Stella nodded quickly." 
-        s "I like it." 
+        s 8y12 "I like it." 
+        show mom 1
+        show stella 8y1
 
     else: 
 
@@ -345,35 +446,59 @@ label StoryStart:
         "There were vegetables on one side, bright and neat." 
         "It smelled sweet. Salty." 
         "And so warm that Stella's stomach answered before she could." 
-        h "Chicken thigh rice bowl. Home Plate style." 
-        dad "Excellent choice." 
-        dad "Or excellent chef's choice." 
-        mom "Either way, it looks wonderful." 
+        h 11 "Chicken thigh rice bowl. Home Plate style." 
+        show him 12
+        dad 2 "Excellent choice." 
+        dad "Or excellent chef's choice."
+        show dad 1 
+        mom 2 "Either way, it looks wonderful." 
+        show mom 1
         "The man smiled." 
-        h "Enjoy." 
+        h 11 "Enjoy." 
+        show him 12
         "Stella held her spoon with both hands." 
         "She scooped up a small piece of chicken and rice." 
         "Then she took her first bite." 
+        show stella 8y9
         "For a second, she forgot to speak." 
         "The chicken was soft inside." 
         "The sauce was sweet, but not too sweet." 
         "The rice was warm enough to make her cheeks feel warm too." 
         "Stella looked down at the bowl." 
         "Then she looked up at him." 
-        s "This is really good." 
+        s 8y3 "This is really good."
+        show stella 8y2  
         "Her father grinned." 
-        dad "Better than Dad's cooking?" 
+        dad 4 "Better than Dad's cooking?" 
+        show dad 3
+        show stella 8y1
         "Stella paused. It was a very serious question." 
-        s "A lot better." 
-        dad "Oof." 
-        mom "You asked." 
+        s 8y4 "A lot better." 
+        dad 6 "Oof." 
+        show dad 5
+        mom 6 "You asked." 
+        show mom 5
+        show him 51
         "The man tried not to laugh." 
-        h "High praise. And a harsh review for your father." 
+        show mom 1
+        show dad 1
+        h 52 "High praise. And a harsh review for your father." 
+        show him 12
+        show stella 8y9 
         "Stella took another bite." 
         "The room felt warmer than before." 
         "Maybe it was the food, maybe it was the light… Maybe it was the way everyone 
         laughed around the table." 
+        show stella 8y2
         "Whatever it was, Stella decided she liked it here." 
+
+    # Scene change
+    hide dad
+    hide mom
+    hide stella
+    hide him
+
+    show stella 8y1 at t11
 
     "After dinner, Stella's parents stayed at the table and kept talking." 
     "Stella wiped her oily little mouth with a napkin." 
