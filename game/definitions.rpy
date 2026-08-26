@@ -146,7 +146,7 @@ image dad 6 = "images/dad/6.png"
 
 # Stella: Age 8 -------------------------------------------------
 
-image 8yblush = "images/setlla/1/blush.png"
+image 8yblush = "images/stella/1/blush.png"
 
 image stella 8y1 = "images/stella/1/1.png"
 image stella 8y2 = "images/stella/1/2.png"
