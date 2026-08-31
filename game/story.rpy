@@ -1927,8 +1927,10 @@ label StoryStart:
     "The big brother, well, Stella doesn’t call him that now – the owner was behind the counter, wiping a glass with a clean cloth."
     "He looked up when the bell rang."
     "For some reason, he did not seem surprised to see her."
+    show h 13
     h "Good afternoon."
     "Stella made a small sound."
+    show s 12y1
     s "Mm."
     "That was almost a greeting."
     "She walked to her usual seat near the shelf and dropped her bag beside the chair."
@@ -1948,8 +1950,11 @@ label StoryStart:
     "She rolled her eyes and looked away."
     "A moment later, the owner came over and placed a small paper bag on the table."
     "Stella looked at it."
+    show s 12y5
     s "What is that?"
+    show h 42
     h "Cookies."
+    show s 12y1
     s "I didn't order it."
     h "No. But you looked like someone who might need to bite something."
     "Stella stared at him."
@@ -1962,12 +1967,16 @@ label StoryStart:
     "She was not ready to talk."
     "Talking would make the whole thing real again."
     "Then, while carrying the plates back toward the counter, the owner said casually,"
+    show h 13
     h "So."
+    show h 21
     h "Lost the competition?"
     "Stella looked up so fast that the cookie in her hand nearly broke."
     s "You..."
+    show s 12y5
     s "How did you know?"
     "He nodded toward her bag."
+    show h 13
     h "I saw the folded participation certificate."
     "Stella looked down."
     "Her bag was half open."
@@ -1976,9 +1985,11 @@ label StoryStart:
     "She was almost certain she had zipped the bag earlier."
     "Almost certain."
     "The owner kept his tone light."
+    show h 52
     h "It had a very cheerful little star on it."
     "Stella's shoulders sank, suddenly, she did not want another cookie."
     "She placed the half-eaten one back on the napkin and looked down at the table."
+    show h 21
     h "Something didn't go the way you hoped?"
 
 
@@ -1989,6 +2000,7 @@ label StoryStart:
             $ emotional_honesty =- 1
 
             "Stella's fingers curled around the edge of the paper bag."
+            show s 12y1
             s "…The judging wasn't fair."
             "The words came out quickly."
             s "Some of the models looked like they were made by professionals."
@@ -2002,6 +2014,7 @@ label StoryStart:
             "She stopped."
             "The sentence sounded right, it also sounded smaller than she wanted it to."
             "The owner set the plates down on the next table."
+            show h 52
             h "That does sounds frustrating."
             "Stella looked away."
             s "It was..."
@@ -2020,12 +2033,15 @@ label StoryStart:
             "For a moment, she looked like she might blame the judges, or the other students."
             "Or that stupid silver model with folding landing gear."
             "But instead, her voice came out quieter."
+            show s 12y7
             s "I just wasn't good enough."
             "The owner did not answer immediately, that made the words sit between them."
             "Heavy and embarrassing."
             s "I thought mine was good, not the best, maybe."
+            show s 12y3
             s "But good."
             "She swallowed."
+            show s 12y1
             s "Then I saw everyone else's."
             "Her hand moved toward the cookie bag, then stopped."
             s "It looked like something a kid made."
@@ -2034,6 +2050,7 @@ label StoryStart:
             "The owner's expression softened."
             h "That does not make it stupid."
             "Stella kept looking at the table."
+            show s 12y7
             s "It felt stupid."
 
 
@@ -2043,6 +2060,7 @@ label StoryStart:
             $ emotional_honesty =- 2
 
             "Stella shrugged, it was too big a shrug."
+            show s 12y1
             s "It's no big deal."
             "The owner looked at her."
             "Stella reached for another cookie, even though she did not really want it."
@@ -2053,12 +2071,15 @@ label StoryStart:
             "It tasted annoyingly sweet."
             h "That sounds very small."
             s "It is."
+            show h 21
             h "Then why did you fold the certificate twice before putting it away?"
             "Stella stopped chewing, her face grew warm."
             s "Because it was ugly."
+            show h 42
             h "The cheerful star right there?"
             s "Especially that cheerful star."
             "The owner gave a small nod, but his eyes stayed gentle."
+            show h 13
             h "Of course."
             "Stella looked down."
             "The cookie suddenly felt dry in her mouth."
@@ -2069,114 +2090,170 @@ label StoryStart:
     "The owner finished clearing the table."
     "Then he picked up the half-eaten cookie from Stella's napkin, looked at it, and placed it back down carefully."
     h "You know..."
+    show h 31
     h "I failed very badly once."
     "Stella looked up."
+    show s 12y5
     s "You?"
+    show h 12
     h "Me."
     s "At what?"
     h "Food."
     "Stella stared at him, then she looked around Home Plate."
     "The counter, the shelves, the warm lights."
     "The smell of something cooking softly in the back."
+    show s 12y1
     s "You failed at food?"
+    show h 52
     h "More than once."
     "Stella did not look convinced."
     "The owner pulled out the chair across from her and sat down."
+    show h 14
     h "Before Home Plate, I tried to open a different place."
+    show h 13
     h "A much bigger place, bigger kitchen, bigger menu."
     h "Bigger sign, a very serious sign."
     "Stella tried to imagine it."
     s "Was it here?"
     h "No, somewhere else."
     "His eyes moved, very briefly, toward the window."
+    show h 52
     h "Far enough that people there did not know me yet."
     h "I thought that would be good, I thought if nobody knew me, I could become whatever kind of person I wanted to be."
     "Stella was quiet, that sounded strange."
+    show h 13
     h "I found a partner, someone who said he understood business."
+    show h 52
     h "He wore nice jackets, used big words, and had the kind of smile that made other people nod before they knew what they were agreeing to."
     s "That sounds very suspicious."
     h "It was, unfortunately, I noticed that a little late."
     "He smiled as he said it, but it was not quite a joke."
+    show h 14
     h "We spent too much money on tables."
     h "Too much money on decorations, and on ingredients I did not know how to use properly."
+    show h 52
     h "The menu had twelve pages."
+    show s 12y5
     s " Twelve?"
+    show h 13
     h " Twelve."
+    show h 14
     h "I wanted it to be impressive."
+    show h 52
     h "If someone asked for seafood, we had seafood. If someone asked for roasted meat,
     we had roasted meat."
     h "If someone asked for a dessert with a name longer than the plate, we probably had three of them."
+    show s 12y3
     s "That sounds pretty good."
     h "It sounded good. Yes."
     "He leaned back slightly."
+    show h 12
     h "Then opening week came."
+    show h 14
     h "The kitchen was too busy, the staff were too tired, the food took too long."
+    show h 13
     h "Some dishes came out cold, some burnt."
+    show h 42
     h "…One soup was somehow both."
     "Stella blinked."
+    show s 12y1
     s "How can soup be burnt?"
+    show h 52
     h "Trust me, it is a question that still haunts me."
     "Despite herself, Stella almost smiled."
+    show h 13
     h "People came the first week because it was new."
     h "Fewer came the second week."
+    show h 52
     h "By the third week, the dining room had started to sound very large."
     "His voice became quieter."
     "Stella looked down at the table."
     "The folded certificate inside her bag suddenly felt heavier."
+    show h 31
     h "Then my partner disappeared."
+    show s 12y5
     s "He disappeared?"
+    show h 13
     h "Not in a dramatic way."
+    show h 31
     h "Just a locked office, unpaid bills, and a note that said he was very sorry."
+    show s 12y1
     s "Was he sorry?"
+    show h 13
     h "Not enough to come back."
     "Stella frowned."
+    show s 12y9
     s "Ugh, that's awful."
     h "It was… inconvenient."
     "He looked at his hands for a moment."
     "The cloth he had used to wipe the glass was still looped around one wrist."
+    show h 31
     h "At the time, I thought I had failed because I did not know enough."
+    show h 13
     h "So I tried to learn more."
     h "More recipes, techniques."
     h "More names for things."
+    show h 14
     h "I thought if I could understand everything, I could fix everything."
     "He paused."
     "For a second, his face looked much older than it usually did."
+    show h 12
     h "But knowing a thing and being good at a thing are not the same."
     "Stella held the edge of the cookie bag."
+    show h 52
     h "I had watched people eat for a very long time."
     h "I thought that meant I understood how to feed them."
     "Stella did not know why that sentence sounded odd, maybe it was just the way he said it."
     "Like he was not only talking about restaurants."
+    show h 31
     h "I was wrong."
     "He gave a small, almost embarrassed laugh."
+    show h 14
     h "People don’t come back because the menu was long."
+    show h 13
     h "They don’t come back because the plates were pretty."
     h "They came back when they felt warm."
     "Stella looked at the cookies."
     "Small and round."
     "Still warm in the middle."
     h "So I stopped trying to build the perfect restaurant."
+    show h 14
     h "I learned to make simple things properly."
+    show h 42
     h "Rice bowls, soup, steak."
+    show h 13
     h "Chicken with teriyaki sauce."
+    show h 52
     h "Desserts that children pretend not to want."
     "Stella looked away."
+    show s 12y1
     s "Hey… I didn't pretend that much."
     h "Of course not."
     "He smiled, then continued."
+    show h 12
     h "It took a long time."
+    show h 13
     h "I made a lot of food nobody praised."
+    show h 52
     h "I made bread so hard it could have been used as a building material."
     "Stella's mouth twitched."
+    show h 14
     h "And little by little, I learned."
+    show h 13
     h "Of course, not all at once."
+    show h 52
     h "Just one meal after another."
+    show h 13
     h "One mistake after another."
     h "One person coming back, then another."
     "He looked around the room."
+    show h 14
     h "Eventually, I found this little house."
+    show h 13
     h "It did not look like a restaurant."
+    show h 52
     h "That was what I liked about it."
+    show h 13
     h "I fixed the kitchen, put in some tables."
     h "Hung the sign outside."
     h "And I promised myself the menu would never be twelve pages again."
@@ -2190,21 +2267,31 @@ label StoryStart:
     "Stella looked down."
     h "But it tells you where something broke, if you can bear to look at it."
     "That made Stella quiet, he did not rush her."
+    show h 31
     h "Most people think disappointment means they cared too much."
+    show h 52
     h "But it doesn’t necessarily mean that."
+    show h 31
     h "Disappointment simply means something mattered to you."
     "Stella's fingers tightened slightly around the paper bag."
+    show s 12y5
     s "So what?"
     "Her voice was smaller than before."
+    show s 12y7
     s "I'm supposed to be happy I cared?"
+    show h 14
     h "No. You are allowed to be upset."
     h "You are allowed to think the judges missed something."
+    show h 52
     h "You are even allowed to hate the cheerful little star on that certificate."
     "Stella looked at him."
     h "But after that..."
     "He tapped the table lightly with one finger."
+    show h 13
     h "After you finish being upset..."
+    show h 31
     h "The important question is not whether today hurt. Because, it did."
+    show h 52
     h "The important question is what you do with it."
     "Stella looked toward her bag."
     "The model inside was still there."
@@ -2213,7 +2300,9 @@ label StoryStart:
     "But, still hers."
     "The owner stood and picked up the empty plate from the next table."
     "His voice returned to its usual lightness, but not completely."
+    show h 13
     h "So."
+    show h 52
     h "What now?"
 
     menu:
@@ -2222,17 +2311,20 @@ label StoryStart:
             $ trust =+ 1
 
             "Stella looked at her bag for a long moment."
+            show s 12y1
             s "I'll try again."
             "The words surprised her a little."
             "They did not sound happy, but they sounded solid."
             "The owner looked at her."
             h "Good."
+            show h 13
             h "Then today wasn't a waste."
             "Stella frowned."
             s "Sigh It felt like a waste."
             h "Hey now, most useful days do, at first."
             "He picked up the empty cup from the next table and carried it toward the
             counter."
+            show h 52
             h "A day that tells you what needs fixing is annoying."
             h "But not useless."
             "Stella looked down at the folded certificate in her bag."
@@ -2252,27 +2344,37 @@ label StoryStart:
 
             "Stella stared down at the table."
             "The sentence came out before she could stop it."
+            show s 12y2
             s "Maybe I'm not meant for this..."
             "Once she said it, the words seemed to grow larger."
             "The owner was quiet for a moment."
             "Then he pulled the chair across from her a little straighter."
+            show h 13
             h "One competition seems like a very small sample size."
             "Stella looked up."
+            show s 12y5
             s "What?"
+            show h 14
             h "If someone ate one bad seaweed roll and decided all seaweed rolls were terrible
             forever..."
+            show s 12y1
             s "That would be correct."
+            show h 52
             h "That would be dramatic."
             s "It would be accurate though."
             "The owner smiled faintly."
             h "Maybe, but it would still be one meal."
             "Stella lowered her eyes again."
+            show h 13
             h "This was one contest, one model."
+            show h 52
             h "One left wing that may or may not have been crooked."
             "Stella's face warmed."
             s "It was a little crooked."
+            show h 13
             h "Then now you know something about wings."
             s "That I hate them?"
+            show h 52
             h "That they are harder than they look."
             "Stella did not answer, she was not ready to feel better."
             "But the thought stayed there anyway."
@@ -2289,24 +2391,33 @@ label StoryStart:
             "Something that made her sound less like a person who had folded a participation
             certificate twice because she could not stand looking at it."
             "But… nothing came."
+            show s 12y7
             s "I don't really know..."
             "Her voice was quiet."
             "The owner nodded."
             h "That's alright, most people don't."
             "Stella looked up."
+            show s 12y5
             s "Really?"
+            show h 13
             h "Really."
+            show h 14
             h "People usually pretend they know, and then they walk very confidently in the
             wrong direction."
             "Stella thought about that."
+            show s 12y1
             s "That sounds a bit stupid."
+            show h 52
             h "Hey, believe it or not, it is very popular."
             "That made her give a small, tired laugh."
             "The owner leaned back slightly."
+            show h 13
             h "Not knowing is not the same as giving up."
+            show h 31
             h "Sometimes it just means you need to sit with the disappointment for a while
             before the next step becomes visible."
             "Stella looked toward her bag."
+            show s 12y7
             s "I don't like sitting with it."
             h "No… disappointment is not very polite company."
             "Stella picked up another cookie and broke it in half."
@@ -2328,8 +2439,11 @@ label StoryStart:
     "The owner looked over, but did not come too close."
     "He waited as if he understood that this was not the kind of thing someone should touch without asking."
     "Stella adjusted the left wing with one finger."
+    show s 12y2
     s "Hmm, It looked better at home."
+    show h 13
     h "Most things do."
+    show s 12y3
     s "Haha… That's not helpful."
     h "True, but it is honest."
     "Stella looked at the model again."
@@ -2392,6 +2506,7 @@ label StoryStart:
     "Stella waved back, then immediately wished she had not."
     "Because now she was standing there alone, with her hand in the air like an idiot."
     "She lowered it quickly."
+    show s 12y7
     s "Fine."
     "She said it under her breath."
     "For the next few days, Mina stayed strange."
@@ -2412,6 +2527,7 @@ label StoryStart:
     "Actually, maybe she had said it too many times."
     "But that was not about Mina, it was about the contest."
     "Stella kicked a pebble across the road and watched it skip into the gutter."
+    show s 12y1
     s "If she has a problem, she can just say it."
     "The pebble did not answer that made Stella like it slightly more than most people."
     "After school that day, Stella did not wait by the gate."
@@ -2435,9 +2551,11 @@ label StoryStart:
     "He placed it in front of her."
     h "Hmm, just you today?"
     "Stella looked at the glass."
+    show s 12y2
     s "Yuh."
     h "No Mina?"
     "Stella's fingers tightened around the edge of the table."
+    show s 12y1
     s "Well apparently not."
     "The owner did not comment on that, he only nodded and went back to the counter."
     "Stella stared at the menu board, even though she already knew what was on it."
@@ -2463,22 +2581,33 @@ label StoryStart:
             $ emotional_honesty =- 1
 
             "Stella's arms tightened across her chest."
+            show s 12y9
             s "She's throwing a fit for nothing."
+            show s 12y1
             s "And she wouldn't even tell me."
+            show s 12y9
             s "She should just say it… If I somehow pissed her off."
             "The owner placed the plates he was holding onto the counter."
+            show h 52
             h "That would be convenient, and people rarely choose convenient when they're hurt."
             "Stella frowned."
+            show s 12y7
             s "But, like… I didn't even hurt her. I didn’t even do anything…"
+            show h 13
             h "…Maybe not on purpose."
+            show s 12y9
             s "Well that's not fair."
             h "No, it usually isn't."
             "Stella looked away, she hated that answer."
             "Mostly because it did not give her anyone simple to blame."
+            show s 12y1
             s "So what, am I supposed to guess?"
+            show h 52
             h "No. Don’t need to do that. Guessing and speculations usually makes people
             worse at seeing what is actually there."
+            show s 12y5
             s "Okay, then what?"
+            show h 13
             h "…Ask."
             "Stella went quiet."
             "That sounded obvious."
@@ -2493,20 +2622,27 @@ label StoryStart:
 
             "Stella looked at the empty chair across from her."
             "The question sat in her mouth for a while before she let it out."
+            show s 12y1
             s "…Do you think I did something wrong?"
             "The owner did not answer immediately."
             "He looked at her the way he sometimes looked at soup before deciding whether it needed more salt."
             h "Maybe, or… maybe not."
             "Stella's shoulders fell."
+            show s 12y2
             s "Bruh, that's not a good answer."
             h "It is an honest one though."
             "He pulled out the chair across from her, but did not sit."
+            show h 52
             h "I don't know what Mina is thinking."
             h "But you know, asking is usually kinder than guessing."
             "Stella looked down at her hands."
+            show s 12y1
             s "But what if she says yes?"
+            show h 13
             h "Then you will know where the hurt is."
+            show s 12y9
             s "Ugh, that sounds worse."
+            show h 52
             h "It might feel worse for a moment, but unknown hurt has a way of becoming much larger than real hurt."
             "Stella did not like that, but she understood it. A little."
 
@@ -2518,19 +2654,26 @@ label StoryStart:
             $ trust =+ 1
 
             "Stella uncrossed her arms, for a moment, she looked younger than twelve."
+            show s 12y2
             s "What… What should I do?"
             "The owner leaned against the table beside her."
             "His expression stayed gentle, but he did not answer right away."
+            show h 13
             h "I could tell you."
             "Stella looked up quickly."
+            show s 12y1
             s "Then… tell me."
             h "I could."
             h "But I think it would mean more if the question came from you."
             "Stella stared at him."
+            show s 12y3
             s "That is a very annoying way to help, thanks man."
             "The owner smiled."
+            show h 52
             h "Ha, I've been told."
+            show s 12y1
             s "So you're not going to tell me what to say?"
+            show h 13
             h "No."
             h "If I give you the words, Mina will hear me, not you."
             "Stella looked at the empty chair."
@@ -2538,6 +2681,7 @@ label StoryStart:
             "The thought made her chest feel tight."
             s "But what if I say it wrong?"
             h "Then say the next thing honestly."
+            show h 52
             h "People fix many conversations that way."
 
 
@@ -2556,12 +2700,16 @@ label StoryStart:
     s "I'll ask her tomorrow."
     "The owner looked over."
     h "That sounds like a good place to start."
+    show s 12y7
     s "But I'm not apologizing if I didn't do anything."
     h "Haha, I didn't say you had to. Asking is not the same as surrendering."
     "Stella considered that."
+    show s 12y1
     s "It kind of feels like it."
+    show h 13
     h "Many useful things do."
     "Stella made a face."
+    show s 12y9
     s "Why do you always say things like that."
     h "Only when they are true."
     s "That's worse."
@@ -2600,10 +2748,12 @@ label StoryStart:
     "Stella found her near the lockers, Mina stood with several books held against her chest, arranging something inside her bag."
     "And nobody else was close by, it was probably the best chance Stella was going to get."
     "She tightened her grip on her own bag and walked toward her."
+    show s 12y1
     s "Mina—"
     "Mina looked up."
     "For a second, their eyes met."
     "Then Mina closed her locker."
+    show m 5
     m "I need to get to class."
     "Before Stella could say anything else, Mina adjusted the books in her arms and walked away."
     "Stella remained beside the lockers, her unfinished greeting stayed somewhere in her throat."
@@ -2650,11 +2800,13 @@ label StoryStart:
     "Another day of short answers, of pretending she did not care."
     "And another afternoon with an empty chair at Home Plate."
     "Stella's fingers tightened around the strap of her bag."
+    show s 12y11
     s "Oh, come on..."
     "She took one step forward."
     "Then another."
     "Mina was getting farther away."
     "Stella drew in a breath and started running."
+    show s 12y1
     s "Mina!"
     "Mina slowed."
     "Stella ran past two other students and nearly tripped stepping off the pavement."
@@ -2677,40 +2829,55 @@ label StoryStart:
             $ mina_confrontation = "direct"
 
             "Stella forced the words out before she could rethink them."
+            show s 12y9
             s "Are you mad at me?"
             "Mina's grip tightened around the books in her arms, she looked surprised."
             "Almost as if she had expected Stella to say anything except that."
+            show m 2
             m "What?"
+            show s 12y1
             s "You've been avoiding me, you stopped waiting after school. Y-you barely talk to me in class."
             s "And yesterday, you walked right past me."
             "The words came faster once they started."
             "Stella had spent days pretending not to count these things, but apparently, she had counted every single one."
+            show s 12y9
             s "So if you're mad at me, just say it."
             "Mina looked down."
+            show m 7
             m "I wasn't trying to make you mad."
+            show s 12y1
             s "Yeah, well, you did."
             "Mina flinched slightly."
             "Stella immediately wished she had said it differently."
             "But it was already there between them."
             "Mina adjusted the books against her chest."
             m "You kept saying you wanted to prove you could do everything by yourself."
+            show m 1
             m "During the contest."
+            show m 7
             m "Every time I offered to help, you said you didn't need it."
             "Stella frowned."
             s "Because it was my model."
+            show m 1
             m "I know."
             m "But you said it so many times."
+            show m 7
             m "You kept saying you didn't need anyone."
             "Mina's voice became quieter."
+            show m 5
             m "So I thought..."
+            show m 7
             m "Maybe you didn't want me there."
             "Stella stared at her."
             "For several seconds, she could not think of anything to say."
             "That had not been what she meant."
             s "I was talking about the contest, I wanted to prove I could build it myself."
+            show m 1
             m "…I know that now."
+            show s 12y11
             s "I didn't mean I didn't want you around."
             "Mina looked at her carefully."
+            show m 2
             m "Then why didn't you talk to me after you lost?"
             "Stella opened her mouth, but nothing came out."
             "It was because she had been embarrassed."
@@ -2719,10 +2886,12 @@ label StoryStart:
             "All of those answers felt uncomfortably true."
             s "I… don't know."
             "Mina looked down again."
+            show s 12y7
             s "But I wasn't trying to get rid of you."
             "Stella's voice softened."
             s "I thought you were the one getting rid of me."
             "Mina's expression changed."
+            show m 1
             m "I wasn't."
             "Neither of them knew what to say after that."
             "But the silence no longer felt like a wall."
@@ -2742,25 +2911,35 @@ label StoryStart:
             "Inside were the two halves of the honey cake."
             "They had become slightly squashed during the afternoon."
             "Stella held one half out."
+            show s 12y1
             s "Here."
             "Mina looked at the cake, then at Stella."
+            show m 2
             m "What is that?"
             s "A honey cake."
+            show m 3
             m "I can see that."
             s "Uh then why did you ask?"
             "Mina did not answer, she still had not taken it."
             "Stella felt increasingly stupid standing there with her hand stretched out."
             s "I saved half."
+            show m 2
             m "For me?"
+            show s 12y9
             s "No."
             "The answer came automatically."
             "Stella frowned at herself."
+            show s 12y1
             s "I mean..."
+            show s 12y2
             s "Yeah… maybe."
             "Mina's expression softened, but only slightly."
             "She shifted the books into one arm and took the piece of cake."
+            show m 3
             m "Thanks."
+            show s 12y1
             s "It's a little crushed."
+            show m 1
             m "Yeah I noticed."
             s "You don't have to eat it."
             m "I didn't say I wouldn't."
@@ -2771,20 +2950,28 @@ label StoryStart:
             "They were still standing outside school, they were still upset."
             "But Mina was holding half of Stella's dessert."
             "That had to mean something. Right?"
+            show m 2
             m "Why did you save this for me?"
             "Stella looked away."
             s "Well, because you like them."
+            show m 5
             m "I thought you didn't need me anymore."
             "Stella turned back."
+            show s 12y5
             s "What?"
             "Mina stared at the cake in her hand."
+            show m 7
             m "Before the contest, you kept saying you wanted to do everything yourself."
+            show m 1
             m "Whenever I asked if you wanted help, you said no."
             m "Then after the contest, you wouldn't talk to me."
             "Her fingers pressed lightly into the napkin."
+            show m 5
             m "So I thought you didn't need me anymore."
             "Stella's chest tightened."
+            show s 12y1
             s "That's… not what I meant."
+            show m 7
             m "It felt like it."
             "Stella wanted to argue."
             "She wanted to explain that building the model herself had been important."
@@ -2794,6 +2981,7 @@ label StoryStart:
             s "Not prove I could do everything without you."
             "Mina looked up."
             s "Those aren't the same."
+            show m 1
             m "They kind of sounded the same."
             "Stella pressed her lips together."
             "She could not say Mina was completely wrong."
@@ -2804,11 +2992,13 @@ label StoryStart:
             m "You did."
             "She broke the piece in half once more."
             "Then she held one of the smaller pieces back toward Stella."
+            show m 3
             m "Do you want some?"
             "Stella looked at it."
             s "That's my half of your half."
             m "Do you want it or not?"
             "Stella took it."
+            show s 12y3
             s "Yes."
             "They ate the pieces quietly."
             "The problem was not completely solved."
@@ -2833,14 +3023,17 @@ label StoryStart:
             "Then two."
             "Then long enough for Stella to become painfully aware of how hard she was breathing."
             "Mina adjusted the books in her arms."
+            show m 5
             m "Did you need something?"
             "This was the opportunity, Stella knew it."
             "She could ask right now."
             "But instead, the old irritation rose inside her."
             "Why did she have to be the one to fix this?"
+            show s 12y9
             s "No."
             "The answer was out before she could stop it."
             "Mina's expression closed again."
+            show m 1
             m "Okay."
             "She stepped around Stella, and Stella remained where she was."
             "She listened to Mina's footsteps move farther down the road."
@@ -2892,15 +3085,20 @@ label StoryStart:
             "In the end, Stella waited until the next break and found Mina near the classroom window."
             "For a moment, neither of them knew how to begin."
             "Then Stella held up the folded note."
+            show s 12y11
             s "I didn't mean that I didn't need you."
             "Mina looked down."
+            show m 7
             m "It sounded like you did."
+            show s 12y3
             s "I know."
+            show s 12y1
             s "I wanted to prove I could build the model myself."
             s "That wasn't the same as wanting to do everything alone."
             "Mina was quiet for a moment."
             m "You could have told me that."
             s "You could have told me you were upset."
+            show m 1
             m "…I know."
             "Neither of them sounded particularly proud."
             "But this time, the silence did not end the conversation."
@@ -2926,6 +3124,7 @@ label StoryStart:
     "Then to the poorly hidden smile on Stella's face."
     "He did not ask what had happened, he did not need to."
     h "Well."
+    show h 52
     h "The quiet table appears to have recovered."
     "Stella's smile disappeared at once."
     s "It wasn't that quiet."
@@ -2935,13 +3134,18 @@ label StoryStart:
     m "Exactly."
     "The owner gave Stella a knowing look."
     "Stella narrowed her eyes at him."
+    show s 12y9
     s "Don't."
     h "I haven't said anything."
+    show s 12y1
     s "You're thinking something."
+    show h 13
     h "Such wild accusations."
     "He placed two glasses of water on their usual table."
+    show h 52
     h "What can I get you two?"
     "Mina sat in her usual chair and looked toward Stella."
+    show m 2
     m "What are you having?"
 
 
@@ -2949,28 +3153,40 @@ label StoryStart:
 
         "Stella glanced toward the counter."
         s "The usual."
+        show h 13
         h "Salmon sashimi?"
         s "With rice."
         h "And something sweet on the side?"
         "Stella paused."
+        show s 12y2
         s "Maybe."
+        show m 1
         m "That means yes."
         s "I know what maybe means…"
         h "One salmon sashimi with rice."
+        show h 42
         h "And one very uncertain dessert."
 
     else:
         "Stella glanced toward the counter."
+        show s 12y1
         s "The usual."
+        show h 13
         h "Chicken thigh rice bowl?"
+        show s 12y3
         s "Yes."
         s "A normal-sized one."
         h "No plans to defeat the bowl today?"
         "Stella gave him a flat look."
+        show s 12y1
         s "I was eight."
+        show h 52
         h "It was a legendary battle."
+        show m 2
         m "Did you win?"
+        show s 12y3
         s "Obviously."
+        show h 13
         h "The records remain disputed."
         "Mina laughed."
         "Stella tried to look offended, but the smile returned anyway."
@@ -2989,23 +3205,29 @@ label StoryStart:
 
     if mina_confrontation == "direct":
 
+        show s 12y5
         s "How did you know asking her would work?"
         "The owner continued arranging the food."
         h "I… didn't."
         "Stella frowned."
+        show s 12y1
         s "You sounded like you did."
+        show h 52
         h "Sounding certain is much easier than being certain. Is it not?"
+        show s 12y7
         s "Then what if it had gone badly?"
         h "It might have."
         h "But asking gave Mina a chance to answer."
         h "Guessing only gave you a chance to answer for her."
         "Stella thought about that."
         "She did not entirely like how sensible it was."
+        show s 12y1
         s "You understand people too well."
         "The owner glanced at her."
         h "I've had a lot of practice."
         "There was something odd in the way he said it."
         "Before Stella could ask, he winked and lifted the plates."
+        show h 13
         h "Now, move, your food is getting cold."
 
 
@@ -3018,6 +3240,7 @@ label StoryStart:
         h "Hmm, I knew Mina liked honey cakes."
         s "That's basically the same thing."
         h "Not at all."
+        show h 52
         h "The cake opened the door, but you still had to walk through it."
         "Stella glanced toward Mina, she was turning the pages of the book carefully, exactly as she always did."
         s "I didn't really say much though."
@@ -3029,6 +3252,7 @@ label StoryStart:
         s “People."
         "The owner smiled and gave her a small wink."
         h "People are usually more complicated than desserts."
+        show h 42
         h "But occasionally, dessert helps."
 
 
@@ -3037,26 +3261,34 @@ label StoryStart:
 
         s "We talked."
         "The owner looked over."
+        show h 13
         h "I noticed."
         s "She gave me a note first."
         h "Oh, she reached out huh."
         "Stella looked toward Mina."
         "She hesitated."
+        show s 12y7
         s "I should have asked her yesterday."
         h "…Yeah, probably."
         "Stella frowned."
         s "Wha- You're supposed to say it was fine."
         h "It became fine."
+        show h 52
         h "That isn't quite the same."
         "Stella thought about the difference, then she gave a reluctant nod."
+        show s 12y3
         s "Thanks."
         "The owner smiled."
+        show h 13
         h "Hey, you did the difficult part."
         h "Although next time, I recommend using words before stationery becomes
         necessary."
+        show s 12y1
         s "There won't be a next time."
+        show h 52
         h "Of course not."
         "He winked."
+        show h 42
         h "People famously misunderstand each other only once."
 
 
@@ -3070,6 +3302,7 @@ label StoryStart:
     "Stella did not know how he did it."
     "That only made her want to know more."
     "Mina pushed the plate of honey cakes toward the middle of the table."
+    show m 3
     m "Half?"
     "Stella looked at her."
     "Then she picked up one of the cakes and broke it into two pieces."
@@ -3102,9 +3335,12 @@ label StoryStart:
     "They were stacked high enough that she could only see over the top if she lifted her
     chin."
     h "Careful, the tables will survive without being buried alive."
+    show s 12y3
     s "I can see."
+    show h 13
     h "Your forehead can see, I'm less certain about the rest of you."
     "Stella shifted the pile in her arms."
+    show s 12y1
     s "Hey, I know where I'm going."
     "Her foot caught lightly against the leg of a chair."
     "She stopped."
@@ -3121,6 +3357,7 @@ label StoryStart:
 
     extra "There she is."
     extra "Home Plate's youngest manager."
+    show s 12y3
     s "Haha… yeah I'm not the manager."
     extra "Not yet."
     "The woman sitting across from him smiled."
@@ -3129,6 +3366,7 @@ label StoryStart:
 
     extra "Give it another year."
     extra "She already tells everyone where the forks go."
+    show s 12y1
     s "Because people keep putting them in the wrong place."
 
     $ extra_name = "Customer 1"
@@ -3143,13 +3381,17 @@ label StoryStart:
     s "Stacked."
     h "Napkins?"
     s "Folded."
+    show h 52
     h "Chairs?"
     s "Counted."
     "The owner looked around."
+    show h 13
     h "Should I be worried?"
+    show s 12y5
     s "About what?"
     h "At this rate, I may become unnecessary."
     "Stella leaned against the counter."
+    show s 12y3
     s "You still have to cook."
     h "Ah. Right! My position is safe."
     "She smiled."
@@ -3163,6 +3405,7 @@ label StoryStart:
     "She even liked the smell of cleaning cloths and warm bread mixing in the afternoon air."
     "One customer asked Stella whether the community dinner would have the spicy soup
     from last year."
+    show s 12y1
     s "Probably, unless he forgets."
     "Another asked whether there would be enough honey cakes."
     s "There are never enough honey cakes."
@@ -3175,27 +3418,37 @@ label StoryStart:
     "The bell above the door rang again."
     "Mina stepped inside with her school bag hanging from both shoulders."
     m "Am I late?"
+    show s 12y3
     s "Yes."
     "Mina looked toward the clock."
     m "By three minutes!"
     s "Still late~"
     h "Welcome, Mina."
+    show h 52
     h "Ignore the supervisor, power has changed her."
+    show s 12y1
     s "I heard that too."
     "Mina set her bag beside Stella's usual table."
+    show m 2
     m "So, what are we doing?"
     "Stella pointed toward a box near the bookshelf."
     s "The handwritten menus need to be checked."
     m "For spelling?"
     s "And because someone apparently wrote the same soup twice."
+    show h 42
     h "It is a very good soup."
     m "Can I draw little pictures beside the desserts?"
+    show s 12y9
     s "No."
+    show h 13
     h "Yes."
     "Stella turned toward him."
+    show s 12y1
     s "That will make the menus look childish."
+    show h 42
     h "We're serving honey cakes, not negotiating a peace treaty."
     "Mina had already taken out a pen."
+    show m 3
     m "I'm drawing a bee."
     s "At least make it look like a bee."
     m "What else would it look like?"
@@ -3225,6 +3478,7 @@ label StoryStart:
 
     extra "So you'll be closing right after the dinner?"
     "The owner nodded."
+    show h 13
     h "For a little while."
     "Stella's hands stopped."
     "The top napkin slid sideways."
@@ -3232,10 +3486,13 @@ label StoryStart:
     extra "Going somewhere?"
     h "Possibly, there are a few things I need to take care of outside town."
     extra "How long will you be gone?"
+    show h 52
     h "I haven't decided yet."
+    show h 13
     h "But… not too long, I expect."
     "The customer nodded as though this were ordinary information."
     extra "Well, you deserve the break, you barely close this place."
+    show h 42
     h "Home Plate will survive without me for a while."
     "They both laughed softly."
     "..."
@@ -3255,6 +3512,7 @@ label StoryStart:
     "Then she carried the stack to the counter."
     "The owner looked at her."
     "He seemed to notice something in her face."
+    show h 13
     h "Home Plate might be closed for a little while after the dinner."
     "He said it gently."
     "Stella stared at him."
@@ -3272,19 +3530,26 @@ label StoryStart:
 
             "Stella answered before she had properly decided what to say."
             s "Oh."
+            show s 12y7
             s "That's fine."
             "Her voice sounded light, almost careless."
             "The owner watched her for a moment."
+            show h 52
             h "That was a very quick 'fine.'"
             "Stella adjusted the napkins in her arms."
+            show s 12y5
             s "What does that mean? How else do you want me to answer?"
+            show h 13
             h "Nothing."
+            show h 52
             h "Only that the quickest 'fine' is usually the least fine."
             "Stella frowned."
+            show s 12y9
             s "I said it was fine."
             h "You did."
             "He did not argue."
             "Stella placed the napkins on the counter and pressed the stack flat."
+            show s 12y1
             s "You can close whenever you want, it's your restaurant afterall."
             h "That is technically true."
             s "So there."
@@ -3304,12 +3569,17 @@ label StoryStart:
 
             "Stella tried to keep her voice casual."
             "It did not quite work."
+            show s 12y7
             s "So, um. H-how long will you be gone?"
             "The owner leaned one hand against the counter."
+            show h 12
             h "Not long."
+            show s 12y1
             s "How long is not long?"
+            show h 52
             h "I haven't decided yet."
             "Stella's expression tightened."
+            show h 13
             h "…But I wasn't planning on disappearing without telling you."
             "She looked up at him."
             s "I didn't think you were."
@@ -3317,17 +3587,21 @@ label StoryStart:
             "The owner seemed to know it, but he was kind enough not to say so."
             h "Even though Home Plate will be closed for a little while."
             h "Then I'll come back, reopen the door…
+            show h 42
             h “And probably complain about how much dust collected while I was away."
             s "You could clean it before opening."
+            show h 52
             h "And lose the opportunity to complain? Never."
             "Stella let out a quiet breath."
             "That hollow feeling inside her did not disappear. But it became a little
             smaller."
             s "You should probably put up a sign."
+            show h 12
             h "I will."
             s "A clear one."
             h "With dates."
             s "And don't write it in tiny letters."
+            show h 13
             h "I'll submit the final design for your approval."
             "Stella gave him a look."
             "Still, she felt slightly better knowing that he understood why she had asked."
@@ -3345,13 +3619,19 @@ label StoryStart:
             "If Home Plate was going to close afterward, then tonight had to matter."
             s "…Then I'll help make tonight perfect."
             "The owner tilted his head."
+            show h 42
             h "Hmm, perfect is a dangerous word."
+            show s 12y5
             s "Why?"
+            show h 52
             h "Because… it usually means someone is about to work much harder than
             necessary."
+            show s 12y1
             s "There's a lot to do, and… and you need help."
+            show h 13
             h "Well, yes, I do."
             "He smiled."
+            show h 42
             h "Help would be nice, perfect is optional."
             "Stella lifted the stack of napkins again."
             "If this was the last dinner before he left, even temporarily, Stella did not want
@@ -3383,10 +3663,12 @@ label StoryStart:
         "Every chair had to sit at exactly the right distance from the table." 
         
     "When Mina moved one by a few inches, Stella quietly moved it back." 
+    show m 5
     m "You know people can move chairs themselves, right?" 
     s "…They shouldn't have to." 
     m "Why?" 
     s "Because we're helping." 
+    show m 1
     m "That did not answer the question." 
     "Stella ignored her." 
     "The first guests arrived before sunset." 
@@ -3404,12 +3686,15 @@ label StoryStart:
     "He stopped." 
     "For one brief moment, surprise crossed his face." 
     "Then his expression opened into a warm smile." 
+    show h 13
     h "Ah, Lena." 
     "The woman smiled back." 
     l "Hello." 
     l "It has been a while." 
+    show h 12
     h "Seven years." 
     l "You counted?" 
+    show h 13
     h "I remember things." 
     "Stella slowed beside a nearby table." 
     "Seven years." 
@@ -3417,6 +3702,7 @@ label StoryStart:
     "The owner placed the tray on the counter." 
     h "You still drink spiced pear tea?" 
     l "No cinnamon." 
+    show h 12
     h "No cinnamon. I remember." 
     "Lena laughed softly." 
     l "I was wondering if you would." 
@@ -3432,8 +3718,10 @@ label StoryStart:
     "It was her table." 
     "Or at least, the table she and Mina always used." 
     "The owner carried Lena's tea over and placed it there." 
+    show h 13
     h "I kept the window seat open." 
     l "Wow, you remembered that too?" 
+    show h 52
     h "You used to complain that every other seat made the room feel too crowded." 
     l "I know, I was difficult." 
     "Lena sat beside the window." 
@@ -3456,16 +3744,21 @@ label StoryStart:
     "She did not." 
     "Her tea was full, her table was ready." 
     "Everything had already been remembered." 
+    show m 5
     m "Stella." 
     "Stella did not respond." 
     "Mina appeared beside her, holding a small basket of cutlery." 
     m "Stella." 
+    show s 12y5
     s "What?" 
     "Mina followed her gaze toward the window." 
     "Then she looked back at Stella." 
+    show m 1
     m "You're staring." 
+    show s 12y1
     s "No, I'm not." 
     "Mina raised an eyebrow." 
+    show m 2
     m "Wait, are you mad or something?" 
 
     menu:
@@ -3477,6 +3770,7 @@ label StoryStart:
             "Stella looked away at once." 
             s "I'm not." 
             "Mina glanced at her, then toward Lena by the window." 
+            show m 5
             m "You were literally staring at her." 
             s "I was checking whether she needed anything." 
             m "Why?" 
@@ -3508,32 +3802,45 @@ label StoryStart:
             "Stella looked down at the menus in her arms." 
             "She knew the words would sound childish." 
             "Still, she said them." 
+            show s 12y7
             s "I thought that was our table." 
             "Mina blinked." 
+            show m 2
             m "Ours?" 
+            show s 12y1
             s "The one we always sit at." 
+            show m 1
             m "Oh." 
             "Mina looked toward the window." 
             m "But there are a lot of people here tonight." 
+            show s 12y3
             s "…Yeah, I know." 
             "Stella's voice grew quieter." 
             "Mina watched her for a moment." 
+            show m 2
             m "You… don't like her sitting there?" 
+            show s 12y1
             s "I don't… I don’t dislike her." 
             "That was true. Lena did not seem unpleasant." 
             "She just looked too natural sitting in a place that did not feel as though it should belong to her." 
             s "It's just... Like..." 
             "Stella stopped." 
+            show s 12y2
             s "Never mind." 
             "Mina shifted the basket of cutlery into her other hand." 
+            show m 1
             m "We can sit there again after tonight." 
             "Stella looked toward the window." 
             "Lena lifted the cup of pear tea without cinnamon." 
+            show s 12y7
             s "He's leaving after this." 
             "The words came out more softly than she expected." 
             "Mina's expression softened." 
+            show m 2
             m "Oh… really? …Only for a while, right?" 
+            show s 12y1
             s "That's what he said." 
+            show m 1
             m "But then he'll come back." 
             "Stella nodded." 
             "Still, she wanted to do something." 
@@ -3547,27 +3854,40 @@ label StoryStart:
             $ last_summer_jealousy_response = "work" 
 
             "Stella straightened the menus in her arms." 
+            show s 12y9
             s "Ugh, I just need to work harder." 
             "Mina frowned." 
+            show m 5
             m "What does that have to do with her?" 
+            show s 12y2
             s "Uh, nothing." 
+            show m 2
             m "Then why do you keep looking at her?" 
+            show s 12y1
             s "What do you mean? I don't keep looking at her." 
             "Stella reached for the basket of cutlery in Mina's hands." 
+            show m 1
             m "Hey." 
             s "There are still tables that need setting." 
+            show m 5
             m "I can do that." 
+            show s 12y9
             s "I'll do it." 
             "She answered too quickly, as if the task might disappear if she hesitated." 
             "Mina did not let go of the basket." 
             m "Stella." 
+            show s 12y5
             s "What?" 
+            show m 1
             m "You've already done a lot." 
+            show s 12y9
             s "Not enough." 
             "The moment the words left her mouth, even Stella seemed surprised by them." 
             "Mina heard it too." 
+            show m 2
             m "Why isn't it enough?" 
             "Stella released the basket." 
+            show s 12y1
             s "Because tonight is important." 
             m "To who?" 
             "Stella did not answer." 
@@ -3579,15 +3899,19 @@ label StoryStart:
     "By the time dinner officially began, Home Plate was packed." 
     "Stella barely stopped moving." 
     "Mina followed close behind, repeatedly trying to take something from her hands." 
+    show m 1
     m "I can bring water to that table." 
     s "I already have it." 
     m "Then I'll get the bread." 
     s "The owner is already preparing it." 
+    show m 2
     m "Then what can I do?" 
     s "Check the menus." 
+    show m 1
     m "I've checked them three times." 
     s "Check them again." 
     "Mina stared at her." 
+    show m 2
     m "Do you actually want me to help, or do you just want me to stay out of your way?" 
     "Stella did not answer." 
     "She picked up a stack of clean plates and carried them toward another table." 
@@ -3615,10 +3939,13 @@ label StoryStart:
 
     "The owner emerged from the kitchen carrying a large tray." 
     "It held several hot dishes, a small bowl of soup, and a freshly refilled cup of pear tea." 
+    show h 13
     h "I'll take this one." 
     "Stella immediately approached him." 
+    show s 12y9
     s "I can do it." 
     h "The tray is pretty heavy." 
+    show s 12y1
     s "I can carry it." 
     "The owner looked at her." 
     "Stella stood straight and held out both hands." 
@@ -3626,7 +3953,9 @@ label StoryStart:
     h "…Are you sure?" 
     s "I'm sure." 
     "Mina stepped closer." 
+    show m 1
     m "I can go with you." 
+    show s 12y9
     s "No." 
     m "Stella—" 
     s "I said I can do it." 
@@ -3635,7 +3964,9 @@ label StoryStart:
     "The owner continued watching Stella." 
     "That only made her want to prove herself more." 
     "At last, he carefully passed the tray into her hands." 
+    show h 52
     h "Both hands, and walk slowly." 
+    show s 12y3
     s "I know." 
     "The tray really was heavy. heavier than Stella had expected." 
     "The bowl of soup near one edge trembled with the movement." 
@@ -3651,6 +3982,7 @@ label StoryStart:
     "Her palms were starting to sweat." 
     m "Slow down." 
     "Mina's voice came from behind her." 
+    show s 12y1
     s "I am going slowly." 
     "She was not." 
     "The window table was only a few steps away." 
@@ -3668,6 +4000,7 @@ label StoryStart:
     "The bowl of soup slid across the tray." 
     "The cup overturned." 
     "A plate covered in sauce slipped over the edge." 
+    show s 12y11
     s "Wait—!" 
     "Warm soup and pear tea spilled across Lena's sleeve and coat." 
     "The plate struck the edge of the table, then crashed onto the floor." 
@@ -3679,6 +4012,7 @@ label StoryStart:
     "The remaining dishes trembled on the surface." 
     "Lena looked down at her soaked sleeve." 
     "Mina covered her mouth." 
+    show m 5
     m "Stella..." 
     "Stella's mind went completely blank." 
     "Then every sound returned at once." 
@@ -3688,6 +4022,7 @@ label StoryStart:
     "The owner hurried toward them." 
     "Stella stared down at the broken pieces on the floor." 
     "Her chest tightened painfully." 
+    show s 12y1
     s "I..." 
     "The owner reached Stella before she could move." 
     "He took the tilted tray from her hands and set it safely on the nearest table." 
@@ -3698,6 +4033,7 @@ label StoryStart:
     "The owner crouched and began moving the larger pieces aside with a folded cloth." 
     "Lena looked down at her soaked sleeve." 
     l "If anyone’s wondering, I'm alright. It wasn't hot enough to burn." 
+    show s 12y11
     s "I'm so sorry." 
     "Stella's voice shook." 
     s "I didn't mean to—" 
@@ -3707,32 +4043,41 @@ label StoryStart:
     "She gave Stella a small, reassuring smile." 
     "The stain spread across the fabric, soup had reached the floor." 
     "Mina stepped closer and carefully picked up one of the fallen napkins." 
+    show m 1
     m "I'll get more towels." 
     "The owner nodded." 
     h "Thank you." 
     "Mina hurried toward the counter." 
     "Stella remained where she was, staring at the mess." 
     s "I… ruined everything." 
+    show h 13
     h "You spilled one tray." 
+    show s 12y1
     s "On her." 
     h "Well, yes." 
     s "And I broke a plate." 
+    show h 52
     h "I have others." 
     "The owner looked up at her." 
     "His expression was calm, it’s not disappointed, not angry." 
+    show s 12y11
     s "I was supposed to help." 
+    show h 13
     h "You were helping." 
+    show s 12y1
     s "No, I wasn't, I kept getting in the way." 
     "She looked toward Lena's table." 
     "The window seat was wet." 
     "One of Mina's illustrated menus had fallen into the soup." 
     "Everything Stella had tried so hard to make right now looked careless and broken." 
+    show s 12y7
     s "I just wanted tonight to be good." 
     "The owner placed another piece of porcelain into the cloth." 
     h "Stella." 
     "She looked at him." 
     "He spoke quietly enough that the surrounding conversations began to fade back into 
     the room." 
+    show h 52
     h "You don't have to earn your seat here." 
 
     $ memory_earn_your_seat = True 
@@ -3749,24 +4094,35 @@ label StoryStart:
             $ emotional_honesty += 2 
 
             "Stella's hands curled at her sides." 
+            show s 12y1
             s "But I wanted it to be perfect." 
             "Her voice cracked slightly on the last word." 
+            show s 12y7
             s "You're leaving, and everyone came here, and I thought..." 
             "She stopped." 
             "But the owner seemed to understand the unfinished sentence anyway." 
+            show h 12
             h "I know." 
             "He stood and placed the wrapped pieces of porcelain on the table." 
+            show h 52
             h "That's why I'm telling you it didn't need to be." 
+            show s 12y1
             s "But now it's a mess." 
+            show h 13
             h "Hey, community dinners usually are." 
+            show h 52
             h "Someone spills something, someone sits in the wrong chair." 
+            show h 42
             h "…Someone burns the bread and quietly hopes nobody notices." 
             "Stella looked toward the kitchen." 
             s "Did you burn the bread?" 
+            show h 52
             h "That information is not relevant." 
             "Despite herself, Stella let out a small breath that was almost a laugh." 
             "The owner smiled gently." 
+            show h 14
             h "A perfect evening would give everyone nothing to talk about afterward." 
+            show h 52
             h "This one already has a story." 
             s "A bad story." 
             h "Well, that depends on how it ends." 
@@ -3778,29 +4134,41 @@ label StoryStart:
             $ trust += 1 
 
             "Stella looked down at the wet floor." 
+            show s 12y7
             s "I just wanted to help." 
+            show h 13
             h "You did help." 
             "Stella frowned." 
+            show s 12y1
             s "How?" 
             h "Well, let’s see… you prepared the tables, you checked the menus." 
+            show h 52
             h "You welcomed half the people in this room." 
+            show h 13
             h "You reminded me about the glasses twice." 
             s "I think three times." 
             h "Three times." 
             "He nodded solemnly." 
+            show h 14
             h "See, you helped." 
+            show h 13
             h "Just not in the way you were trying to at the end." 
             "Stella looked at him." 
+            show s 12y5
             s "What does that mean?" 
+            show h 14
             h "It means helping is not the same as proving nobody else is needed." 
             "Her eyes moved briefly toward Mina, who was returning with towels." 
             "Stella remembered taking the basket from her, refusing to let her carry the tray." 
             "Trying to do everything herself." 
+            show s 12y7
             s "I thought I could handle it." 
+            show h 52
             h "You probably could have, but you didn't have to handle it alone." 
             "Mina arrived and held out one of the towels." 
             m "Here." 
             "Stella hesitated, then took it." 
+            show s 12y3
             s "…Thanks." 
             "Mina gave her a small nod." 
 
@@ -3811,29 +4179,34 @@ label StoryStart:
             $ emotional_honesty -= 2 
 
             "Stella looked away." 
+            show s 12y1
             s "It wasn't for you." 
             "The answer came too quickly." 
             "She crossed her arms, although one sleeve was still damp from the spilled tea." 
             s "I was helping with the dinner." 
             s "For everyone..." 
             "The owner watched her quietly." 
+            show h 13
             h "Of course." 
             "Stella waited." 
             "She expected him to challenge her." 
             "But he did not." 
             h "Then I'll pretend I didn't notice." 
             "Her eyes snapped back toward him." 
+            show s 12y5
             s "Notice what?" 
             h "Nothing." 
             "He picked up the last large piece of porcelain." 
             h "You just told me there was nothing to notice." 
             "Stella's face grew warm." 
+            show s 12y1
             s "There isn't." 
             h "Then we agree." 
             "His voice remained light, but his expression was too gentle." 
             "It made Stella feel as though he had heard every word she had refused to 
             say." 
             s "You're annoying sometimes." 
+            show h 52
             h "I've had a great deal of practice." 
             "Stella looked toward the window seat." 
             "Lena was helping Mina move the wet menus away from the table." 
@@ -3844,11 +4217,14 @@ label StoryStart:
 
 
     "The owner stood and checked the floor for any remaining pieces." 
+    show h 13
     h "Alright, no permanent injuries." 
     h "One plate lost in service." 
+    show h 42
     h "And Lena's coat will survive." 
     "Lena lifted the stained coat from the back of her chair." 
     l "Probably." 
+    show h 13
     h "Very reassuring." 
     "He handed Stella a clean towel." 
     h "Start with the table, slowly." 
@@ -3861,18 +4237,22 @@ label StoryStart:
     "The tables had slowly emptied, the laughter had faded into footsteps outside, then disappeared down the street." 
     "Mina stayed long enough to help collect the final cups." 
     "Before leaving, she stopped beside Stella." 
+    show m 2
     m "So, are you going home soon?" 
     "Stella glanced toward the owner." 
     "He was behind the counter, counting something in a small notebook." 
     s "In a minute." 
     "Mina followed her gaze." 
     "Then she looked back at Stella." 
+    show m 1
     m "Alright. Don't stay here all night!" 
     s "Don’t worry." 
     m "You say that like you own the place." 
     s "Someone has to make sure he closes properly." 
     "The owner looked up from across the room." 
+    show h 52
     h "I have been closing restaurants for several years without supervision." 
+    show m 3
     m "Good luck!" 
     "Mina adjusted her bag and headed toward the door." 
     m "See you tomorrow." 
@@ -3889,9 +4269,11 @@ label StoryStart:
     "Nothing about the evening had been perfect." 
     "The owner approached carrying two cups." 
     "He placed one in front of Stella." 
+    show h 13
     h "Warm milk." 
     "Stella looked into the cup." 
     s "I'm twelve." 
+    show h 52
     h "Congratulations." 
     s "Twelve year olds don't need warm milk." 
     h "Then I suppose I'll have to drink both." 
@@ -3910,28 +4292,40 @@ label StoryStart:
     "No towel wrapped around her shoulders." 
     "No thunder outside." 
     "Still, the quiet restaurant made her feel strangely close to the little girl she had been." 
+    show s 12y7
     s "When are you leaving?" 
     "The owner rested one hand around his cup." 
+    show h 13
     h "Tomorrow morning." 
     "Stella's fingers stopped against the warm ceramic." 
+    show s 12y11
     s "That soon?" 
+    show h 14
     h "I thought a quick goodbye might be easier." 
+    show s 12y5
     s "For who?" 
     "He considered the question." 
+    show h 12
     h "Possibly me." 
     "Stella looked at him." 
+    show s 12y7
     s "And you still don't know how long you'll be gone?" 
+    show h 13
     h "Not exactly." 
     "Stella lowered her eyes." 
     h "But, I will come back." 
+    show s 12y1
     s "You keep saying that." 
     h "Would you prefer I stop?" 
+    show s 12y9
     s "No." 
     "The answer came quickly." 
     "Stella pressed her lips together." 
+    show s 12y1
     s "Just..." 
     s "Don't say it unless you mean it." 
     "The owner's expression softened." 
+    show h 12
     h "I mean it." 
     "The room remained still around them." 
     "Stella wanted to ask him to promise." 
@@ -3939,18 +4333,27 @@ label StoryStart:
     "Something she could write down and count." 
     "But she did not ask." 
     "Instead, she looked at the stained table." 
+    show s 12y11
     s "I really did make a mess." 
+    show h 52
     h "Yeah… you did." 
     "Stella frowned at him." 
+    show s 12y1
     s "You're supposed to disagree." 
+    show h 13
     h "But the floor would object." 
     "She looked down." 
+    show h 31
     h "But the mess is gone, Lena forgave you." 
+    show h 13
     h "The plate can be replaced." 
+    show h 52
     h "And everyone still ate far too much, which I’m very happy about." 
     s "The dinner wasn't perfect." 
+    show h 13
     h "No." 
     "He looked around the empty room." 
+    show h 42
     h "It was alive though." 
     "Stella followed his gaze." 
     "The chairs were not perfectly straight." 
@@ -3962,29 +4365,38 @@ label StoryStart:
     "She paused." 
     s "What did you mean?" 
     "The owner looked toward the chair beneath her." 
+    show h 52
     h "Exactly what I said." 
     h "You come here when you're happy, you come here when you're disappointed." 
+    show h 14
     h "You come here when your friends stop talking to you, or when the weather tries to 
     drown the entire town." 
     "Stella stared into her cup." 
+    show h 42
     h "You help, you complain. 
     H “You rearrange my furniture without permission." 
     s "The chairs look better my way..." 
+    show h 52
     h "That’s a controversial opinion." 
     "He smiled." 
+    show h 14
     h "But you do not need to be useful every moment in order to belong somewhere." 
     h "Sometimes, a seat is yours because people are glad when you sit in it." 
     "Stella became very still, and she looked at the empty seat across from her." 
+    show s 12y5
     s "Are you glad when I sit here?" 
     "The question escaped before she could stop it." 
     "Her face warmed immediately." 
     "The owner did not laugh." 
+    show h 13
     h "Very." 
     "He answered without hesitation." 
     "That made Stella's chest feel strangely full." 
     "She covered it by taking another drink." 
+    show s 12y3
     s "Good." 
     h "Good?" 
+    show s 12y1
     s "It would be awkward otherwise." 
     h "Oh, terribly." 
     "Stella looked back toward the window." 
@@ -4006,6 +4418,7 @@ label StoryStart:
     s "It's ruined." 
     "He picked it up and examined Mina's bee, Stella's corrections, and the pale stain near the corner." 
     h "I think I'll keep it." 
+    show s 12y5
     s "Why?" 
     h "It tells the truth about the evening." 
     "Stella looked at him." 
@@ -4017,15 +4430,19 @@ label StoryStart:
     "The scraped knee had healed years ago." 
     "She no longer needed someone to walk her home." 
     "Still, leaving felt harder tonight." 
+    show s 12y1
     s "You'll be here when I come back?" 
     "The owner leaned against the counter." 
+    show h 52
     h "Perhaps not tomorrow." 
+    show h 13
     h "Or the day after." 
     "Stella frowned." 
     h "But yes." 
     h "I'll be here." 
     "She watched him for another moment." 
     "Then she nodded." 
+    show s 12y3
     s "Okay." 
     "She opened the door." 
     "Before stepping outside, Stella looked back at the window table." 
@@ -4040,7 +4457,7 @@ label StoryStart:
     "By sixteen, Stella would understand that some places could become part of a person." 
     "What she did not yet understand was that sometimes..." 
     "A person could too." 
-    # End of Year 12 
+
 
 
     "Year 16 Story 1: Before Opening"

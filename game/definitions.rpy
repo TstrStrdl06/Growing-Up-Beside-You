@@ -144,9 +144,24 @@ image dad 6 = "images/dad/6.png"
 
 
 
+# Mina ----------------------------------------------------------
+
+image mina 1 = "images/mina/1.png"
+image mina 2 = "images/mina/2.png"
+image mina 3 = "images/mina/3.png"
+image mina 4 = "images/mina/4.png"
+image mina 5 = "images/mina/5.png"
+image mina 6 = "images/mina/6.png"
+image mina 7 = "images/mina/7.png"
+image mina 8 = "images/mina/8.png"
+
+
+
+
 # Stella: Age 8 -------------------------------------------------
 
 image 8yblush = "images/stella/1/blush.png"
+image 8ytears = "images/stella/1/tears.png"
 
 image stella 8y1 = "images/stella/1/1.png"
 image stella 8y2 = "images/stella/1/2.png"
@@ -160,6 +175,28 @@ image stella 8y9 = "images/stella/1/9.png"
 image stella 8y10 = "images/stella/1/10.png"
 image stella 8y11 = "images/stella/1/11.png"
 image stella 8y12 = "images/stella/1/12.png"
+
+# Stella: Age 12 ------------------------------------------------
+
+image 12yblush = "images/stella/2/blush.png"
+image 12ytears = "images/stella/2/tears.png"
+
+image stella 12y1 = "images/stella/2/1.png"
+image stella 12y2 = "images/stella/2/2.png"
+image stella 12y3 = "images/stella/2/3.png"
+image stella 12y4 = "images/stella/2/4.png"
+image stella 12y5 = "images/stella/2/5.png"
+image stella 12y6 = "images/stella/2/6.png"
+image stella 12y7 = "images/stella/2/7.png"
+image stella 12y8 = "images/stella/2/8.png"
+image stella 12y9 = "images/stella/2/9.png"
+image stella 12y10 = "images/stella/2/10.png"
+image stella 12y11 = "images/stella/2/11.png"
+image stella 12y12 = "images/stella/2/12.png"
+image stella 12y13 = "images/stella/2/13.png"
+image stella 12y14 = "images/stella/2/14.png"
+
+
 
 
 
