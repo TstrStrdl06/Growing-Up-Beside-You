@@ -146,17 +146,37 @@ image dad 6 = "images/dad/6.png"
 
 # Mina ----------------------------------------------------------
 
-image mina 1 = "images/mina/1.png"
-image mina 2 = "images/mina/2.png"
-image mina 3 = "images/mina/3.png"
-image mina 4 = "images/mina/4.png"
-image mina 5 = "images/mina/5.png"
-image mina 6 = "images/mina/6.png"
-image mina 7 = "images/mina/7.png"
-image mina 8 = "images/mina/8.png"
+image mina 1 = "images/mina/1/1.png"
+image mina 2 = "images/mina/1/2.png"
+image mina 3 = "images/mina/1/3.png"
+image mina 4 = "images/mina/1/4.png"
+image mina 5 = "images/mina/1/5.png"
+image mina 6 = "images/mina/1/6.png"
+image mina 7 = "images/mina/1/7.png"
+image mina 8 = "images/mina/1/8.png"
 
+# Mina 2 ---------------------------------------------------------
 
+image mina 21 = "images/mina/2/1.png"
+image mina 22 = "images/mina/2/2.png"
+image mina 23 = "images/mina/2/3.png"
+image mina 24 = "images/mina/2/4.png"
+image mina 25 = "images/mina/2/5.png"
+image mina 26 = "images/mina/2/6.png"
+image mina 27 = "images/mina/2/7.png"
 
+# lena ----------------------------------------------------------
+
+image lena 1 = "images/lena/1.png"
+image lena 2 = "images/lena/2.png"
+image lena 3 = "images/lena/3.png"
+image lena 4 = "images/lena/4.png"
+image lena 5 = "images/lena/5.png"
+
+# old man -------------------------------------------------------
+
+image oldman 1 = "images/oldman/1.png"
+image oldman 2 = "images/oldman/2.png"
 
 # Stella: Age 8 -------------------------------------------------
 
@@ -195,6 +215,24 @@ image stella 12y11 = "images/stella/2/11.png"
 image stella 12y12 = "images/stella/2/12.png"
 image stella 12y13 = "images/stella/2/13.png"
 image stella 12y14 = "images/stella/2/14.png"
+
+# Stella: Age 16 ------------------------------------------------
+
+image 16yblush = "images/stella/3/blush.png"
+image 16ytears = "images/stella/3/tears.png"
+
+image stella 16y1 = "images/stella/3/1.png"
+image stella 16y2 = "images/stella/3/2.png"
+image stella 16y3 = "images/stella/3/3.png"
+image stella 16y4 = "images/stella/3/4.png"
+image stella 16y5 = "images/stella/3/5.png"
+image stella 16y6 = "images/stella/3/6.png"
+image stella 16y7 = "images/stella/3/7.png"
+image stella 16y8 = "images/stella/3/8.png"
+image stella 16y9 = "images/stella/3/9.png"
+image stella 16y10 = "images/stella/3/10.png"
+image stella 16y11 = "images/stella/3/11.png"
+image stella 16y12 = "images/stella/3/12.png"
 
 
 
