@@ -25,17 +25,17 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#484444'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#888888'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#484444'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#078007'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -50,26 +50,26 @@ define gui.muted_color = '#003d51'
 define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#ffffff'
+define gui.text_color = '#484444'
+define gui.interface_text_color = '#484444'
 
 
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/Caveat-VariableFont_wght.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/Caveat-VariableFont_wght.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/Caveat-VariableFont_wght.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 44
+define gui.text_size = 65
 
 ## The size of character names.
-define gui.name_text_size = 60
+define gui.name_text_size = 75
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 44
@@ -97,17 +97,17 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## a time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 370
+define gui.textbox_height = 200
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5
 ## is center, and 1.0 is the bottom.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.985
 
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 480
-define gui.name_ypos = 0
+define gui.name_xpos = 580
+define gui.name_ypos = -212
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -115,8 +115,8 @@ define gui.name_xalign = 0.0
 
 ## The width, height, and borders of the box containing the character's name,
 ## or None to automatically size it.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 411
+define gui.namebox_height = 129
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
@@ -432,12 +432,12 @@ init python:
     def small():
 
         ## Font sizes.
-        gui.text_size = 60
-        gui.name_text_size = 72
-        gui.notify_text_size = 50
-        gui.interface_text_size = 60
-        gui.button_text_size = 60
-        gui.label_text_size = 68
+        gui.text_size = 80
+        gui.name_text_size = 95
+        gui.notify_text_size = 70
+        gui.interface_text_size = 80
+        gui.button_text_size = 80
+        gui.label_text_size = 95
 
         ## Adjust the location of the textbox.
         gui.textbox_height = 480
@@ -449,7 +449,7 @@ init python:
         gui.slider_size = 72
 
         gui.choice_button_width = 2480
-        gui.choice_button_text_size = 60
+        gui.choice_button_text_size = 95
 
         gui.navigation_spacing = 40
         gui.pref_button_spacing = 20
