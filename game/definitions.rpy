@@ -2,13 +2,13 @@ transform t11:
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
-        zoom 1.15
+        zoom 1.25
         xcenter 1280 yoffset -20
-        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+        easein .25 yoffset 0 zoom 1.35 alpha 1.0
     on replace:
         alpha 1.00 
         parallel:
-            easein .25 xcenter 1280 zoom 1.20 
+            easein .25 xcenter 1280 zoom 1.35 
         parallel:
             easein .15 yoffset 0 ypos 1.03 
 
@@ -17,13 +17,13 @@ transform t21:
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
-        zoom 1.15
+        zoom 1.25
         xcenter 850 yoffset -20
-        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+        easein .25 yoffset 0 zoom 1.35 alpha 1.0
     on replace:
         alpha 1.00 
         parallel:
-            easein .25 xcenter 850 zoom 1.20 
+            easein .25 xcenter 850 zoom 1.35 
         parallel:
             easein .15 yoffset 0 ypos 1.03 
 
@@ -31,13 +31,13 @@ transform t22:
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
-        zoom 1.15
+        zoom 1.25
         xcenter 1700 yoffset -20
-        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+        easein .25 yoffset 0 zoom 1.35 alpha 1.0
     on replace:
         alpha 1.00 
         parallel:
-            easein .25 xcenter 1700 zoom 1.20 
+            easein .25 xcenter 1700 zoom 1.35 
         parallel:
             easein .15 yoffset 0 ypos 1.03 
 
@@ -45,13 +45,13 @@ transform t31:
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
-        zoom 1.15
+        zoom 1.25
         xcenter 640 yoffset -20
-        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+        easein .25 yoffset 0 zoom 1.35 alpha 1.0
     on replace:
         alpha 1.00 
         parallel:
-            easein .25 xcenter 640 zoom 1.20 
+            easein .25 xcenter 640 zoom 1.35 
         parallel:
             easein .15 yoffset 0 ypos 1.03 
 
@@ -59,13 +59,13 @@ transform t32:
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
-        zoom 1.15
+        zoom 1.25
         xcenter 1280 yoffset -20
-        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+        easein .25 yoffset 0 zoom 1.35 alpha 1.0
     on replace:
         alpha 1.00 
         parallel:
-            easein .25 xcenter 1280 zoom 1.20 
+            easein .25 xcenter 1280 zoom 1.35 
         parallel:
             easein .15 yoffset 0 ypos 1.03 
 
@@ -73,18 +73,21 @@ transform t33:
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
-        zoom 1.15
+        zoom 1.25
         xcenter 1920 yoffset -20
-        easein .25 yoffset 0 zoom 1.20 alpha 1.0
+        easein .25 yoffset 0 zoom 1.35 alpha 1.0
     on replace:
         alpha 1.00 
         parallel:
-            easein .25 xcenter 1920 zoom 1.20 
+            easein .25 xcenter 1920 zoom 1.35 
         parallel:
             easein .15 yoffset 0 ypos 1.03 
 
 transform lhide:
     ease 0.4 xoffset -2000
+
+#transform dissolve:
+
 
 
 
@@ -240,6 +243,26 @@ image stella 16y12 = "images/stella/3/12.png"
 
 
 
+# Backgrounds ---------------------------------------------------
+
+image bg classroom = "images/bg/classroom.png"
+image bg home_table = "images/bg/home_table.png"
+image bg homeplate_ext = "images/bg/homeplate_ext.png"
+image bg homeplate_ext2 = "images/bg/homeplate_ext2.png"
+image bg homeplate_int = "images/bg/homeplate_int.png"
+image bg homeplate_int2 = "images/bg/homeplate_int2.png"
+image bg school_hall = "images/bg/school_hall.png"
+image bg stella_room = "images/bg/stella_room.png"
+image bg table = "images/bg/table.png"
+image bg town = "images/bg/town.png"
+image bg town2 = "images/bg/town2.png"
+
+
+
+
+
+
+
 
 
 
@@ -250,4 +273,4 @@ define dad = DynamicCharacter('dad_name', image='dad', what_prefix='"', what_suf
 define mom = DynamicCharacter('mom_name', image='mom', what_prefix='"', what_suffix='"', ctc_position="fixed")
 define m = DynamicCharacter('m_name', image='mina', what_prefix='"', what_suffix='"', ctc_position="fixed")
 define extra = DynamicCharacter('extra_name', image='extra', what_prefix='"', what_suffix='"', ctc_position="fixed")
-define lena = DynamicCharacter('l_name', image='lena', what_prefix='"', what_suffix='"', ctc_position="fixed")
+define l = DynamicCharacter('l_name', image='lena', what_prefix='"', what_suffix='"', ctc_position="fixed")

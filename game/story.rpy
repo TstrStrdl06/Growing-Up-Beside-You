@@ -4,9 +4,11 @@ label StoryStart:
 
     "It was finally sunny again." 
     "For the past few days, it had felt like the rain would never stop." 
+    scene bg town
     show stella 8y1 at t32
     show mom 1 at t31
     show dad 1 at t33
+    with dissolve
     "Stella looked up at the blue sky with wide, curious eyes." 
     "She did not like rainy days." 
     "Rain made the ground dirty." 
@@ -90,6 +92,11 @@ label StoryStart:
     "Stella blinked." 
     s 8y7 "What's a young lady?" 
     s 8y4 "Can I eat it?" 
+    scene bg homeplate_ext
+    show stella 8y4 at t32
+    show mom 1 at t31
+    show dad 1 at t33
+    with dissolve
     "They stopped in front of a small house." 
     show stella 8y1
     "Stella did not even realise they had arrived." 
@@ -110,6 +117,11 @@ label StoryStart:
     "It sounded strange." 
     "But also a little friendly." 
     "Her father reached for the door and pulled it open." 
+    scene bg homeplate_int
+    show stella 8y5 at t32
+    show dad 1 at t33
+    show mom 1 at t31
+    with dissolve
     "A bell rang above them." 
     "Jingle." 
     "The sound was bright and small."
@@ -156,7 +168,6 @@ label StoryStart:
     "Then a voice came from behind the counter." 
     hide mom
     hide dad
-    #hide stella
     show stella 8y5 at t22
     show him 52 at t21
     h "Ah!" 
@@ -204,10 +215,13 @@ label StoryStart:
     dad "The weather finally cleared up, so we thought we'd take our girl around town." 
     dad "And of course, we had to come here for something good." 
     dad "We'll sit over here, if that's alright."
-    show dad 1
-    show him 12 
-    show stella:
-        ease 0.2 xoffset 0
+    scene bg table
+    show him 12 at t31 
+    show dad 1 at t33:
+        xoffset 300
+    show stella 8y5 at t22
+    show mom 1 at t11
+    with dissolve
     "The man smiled and nodded."
     "He moved with easy practice." 
     "Before Stella knew it, there were three glasses of water on the table." 
@@ -498,7 +512,9 @@ label StoryStart:
     hide stella
     hide him
 
+    scene bg table
     show stella 8y1 at t11
+    with dissolve
 
     "After dinner, Stella's parents stayed at the table and kept talking." 
     "Stella wiped her oily little mouth with a napkin." 
@@ -514,6 +530,9 @@ label StoryStart:
     mom 2 "You can go and look, sweetheart." 
     mom 2 "Just walk slowly." 
     mom 1 "And don't bother the other guests, alright?" 
+
+    scene bg homeplate_int
+    show stella 8y5 at t11
 
     "The big brother was still there."
     "Stella's eyes brightened." 
@@ -560,8 +579,8 @@ label StoryStart:
         
         "Approach him.": 
 
-            $ dependency =+ 1 
-            $ emotional_honesty =+ 1 
+            $ dependency += 1 
+            $ emotional_honesty += 1 
 
             "Stella held her hands behind her back." 
             "She took one more step forward." 
@@ -738,6 +757,10 @@ label StoryStart:
             show stella 8y5
             "She was still embarrassed. But she did not walk away." 
 
+        
+    scene black
+    with dissolve
+
 
     "Year 8 - Story 2: The Scraped Knee"
 
@@ -750,6 +773,9 @@ label StoryStart:
     "They did not find a single grouse." 
     "What Stella found instead was a squirrel." 
     "It burst out of the grass right in front of her." 
+    scene bg town2
+    show stella 8y4 at t11
+    with dissolve
     s 8y4 "Ah!" 
     "Stella jumped back." 
     "Her foot caught on a root." 
@@ -774,6 +800,8 @@ label StoryStart:
     "After walking for a while, she noticed something familiar." 
     "Warm light. A wide window." 
     "A small sign above the door. Home Plate." 
+    scene bg homeplate_ext2
+    show stella 8y10 at t11
     "Stella slowed down." 
     "This was the restaurant her parents had brought her to before." 
     "Home was still a little farther away." 
@@ -802,7 +830,9 @@ label StoryStart:
 
     $ h_name = "???"
 
-    h 11 "Hey." 
+    show him 11 at t21
+    show stella at t22
+    h "Hey." 
 
     $ h_name = "Him"
 
@@ -818,8 +848,8 @@ label StoryStart:
 
         "Tell him she's fine.": 
 
-            $ dependency =- 1 
-            $ emotional_honesty =- 1
+            $ dependency -= 1 
+            $ emotional_honesty -= 1
             $ scraped_knee_response = "fine"
 
             show stella 8y5
@@ -841,7 +871,7 @@ label StoryStart:
 
         "Admit it hurts.": 
 
-                $ emotional_honesty =+ 1
+                $ emotional_honesty += 1
                 $ scraped_knee_response = "hurts"
 
                 show stella 8y5
@@ -862,8 +892,8 @@ label StoryStart:
 
         "Cry.":
 
-                $ dependency =+ 1 
-                $ emotional_honesty =+ 1 
+                $ dependency += 1 
+                $ emotional_honesty += 1 
                 $ scraped_knee_response = "cry"
 
                 show stella 8y5
@@ -891,6 +921,10 @@ label StoryStart:
                 h 12 "Come inside." 
                 h 11 "We'll clean this up." 
 
+    scene homeplate_int
+    show stella 8y7 at t22
+    show him 11 at t21
+    with dissolve
     "The bell above the door rang as Stella stepped into Home Plate." 
     "The restaurant was quieter than the last time she had been there." 
     "There were only a few guests, and most of them were busy with their own food." 
@@ -933,7 +967,11 @@ label StoryStart:
     "Stella looked down at the star-shaped Band-Aid on her knee." 
     "It still hurt, but not as much as before. Or maybe it only felt that way because someone had cleaned it." 
     "He glanced toward the window." 
-    "The sky outside had grown softer and darker." 
+    "The sky outside had grown softer and darker."
+    scene bg homeplate_ext2
+    show stella 8y1 at t22
+    show him 52 at t21 
+    with dissolve
 
     h 32 "It's getting late." 
     h 11 "Do you want me to walk you home?" 
@@ -957,13 +995,18 @@ label StoryStart:
         "For a second, she almost said yes immediately." 
         "The thought of walking home alone suddenly did not sound very appealing." 
 
+    scene bg town2
+    show stella 8y1 at t22
+    show him 52 at t21
+    with dissolve
+
     menu:
 
         "Yes.": 
 
-            $ dependency =+ 1 
-            $ emotional_honesty =+ 1 
-            $ trust =+ 1 
+            $ dependency += 1 
+            $ emotional_honesty += 1 
+            $ trust += 1 
 
             "Stella held the edge of the chair for a moment." 
             s 8y11 "Yes, please." 
@@ -1065,6 +1108,9 @@ label StoryStart:
             "The streetlamp was small in the distance. He was still standing beneath it." 
             "Only after Stella waved did he turn back toward Home Plate."
 
+    scene black
+    with dissolve
+
     "Year 8 - Story 3: The Storm"
 
     "A few weeks later, Stella went out to play with the children from town again. Not hunting for squirrels or specific creatures this time…"
@@ -1074,6 +1120,10 @@ label StoryStart:
     "Then she had immediately followed her friends farther than she probably should have."
     "The sky had been cloudy all afternoon, but nobody paid much attention to it. The rain from earlier that week had finally stopped, and the grass near the old path was soft enough to run on."
     "Stella was halfway through chasing one of the older children around a tree when the first drop touched her nose."
+
+    scene bg town2
+    show stella 8y4 at t11
+
     s 8y4 "Huh?"
     "She looked up."
     "Another drop landed on her cheek."
@@ -1093,6 +1143,15 @@ label StoryStart:
     "Home Plate was closer."
     "The thought came so quickly that Stella barely noticed making a decision."
     "She turned toward the familiar warm window and ran."
+    scene bg homeplate_ext2
+    with dissolve
+    pause 0.4
+    scene bg homeplate_int
+    show him 11 at t11
+    with dissolve
+    pause 0.4
+    show stella 8y6 at t22
+    show him 31 at t21
     "The bell above the door rang loudly when she pushed it open."
     h 24 "Stella?"
     "She stood in the doorway, dripping rain onto the floor."
@@ -1127,7 +1186,6 @@ label StoryStart:
     "The sound was so sudden that Stella jumped." 
     "Her hands tightened around the towel."
     "The big brother looked over."
-    h "Oh wow, that was a loud one."
     h 21 "Oh wow, that was a loud one." 
     "Stella forced herself to sit up straighter." 
     s 8y6 "Ha, I'm not scared." 
@@ -1144,7 +1202,7 @@ label StoryStart:
 
         "Yes...":
             
-            $ emotional_honesty =+ 1
+            $ emotional_honesty += 1
             
             show stella 8y7
             "Stella held the towel closer around her shoulders, for a moment, she looked like she wanted to deny it again."
@@ -1174,7 +1232,7 @@ label StoryStart:
 
         "Not really.":
 
-            $ emotional_honesty =- 1
+            $ emotional_honesty -= 1
 
             show stella 8y6
             "Stella frowned. She had already said she was not scared."
@@ -1208,8 +1266,8 @@ label StoryStart:
 
         "Sometimes.":
 
-            $ emotional_honesty =+ 1
-            $ trust =+ 1
+            $ emotional_honesty += 1
+            $ trust += 1
 
             show stella 8y10
             "Stella thought about it properly this time. She did not want to lie."
@@ -1843,6 +1901,9 @@ label StoryStart:
         "And by the time Stella was twelve, she no longer needed rain, scraped knees, or her
         parents' invitation to find her way back there."
 
+    scene black
+    with dissolve
+
     "Year 12 - Story 1: The Competition"
 
     "It’s been a while."
@@ -1926,13 +1987,20 @@ label StoryStart:
     "Stella stepped inside without saying hello."
     "The big brother, well, Stella doesn’t call him that now – the owner was behind the counter, wiping a glass with a clean cloth."
     "He looked up when the bell rang."
+    scene bg homeplate_int
+    show him 13 at t11
+    with dissolve
     "For some reason, he did not seem surprised to see her."
     show him 13
     h "Good afternoon."
     "Stella made a small sound."
-    show stella 12y1
+    show him at t21
+    show stella 12y1 at t22
     s "Mm."
     "That was almost a greeting."
+    scene bg table
+    show stella 12y1 at t11 
+    with dissolve
     "She walked to her usual seat near the shelf and dropped her bag beside the chair."
     "The bag hit the floor harder than she meant it to."
     "Something inside gave a dull little knock."
@@ -1948,6 +2016,8 @@ label StoryStart:
     "It was a neat little thing, all silver curves and clean wings."
     "Usually, Stella liked looking at it, but today, it looked deeply annoying."
     "She rolled her eyes and looked away."
+    show stella at t22
+    show him 13 at t21
     "A moment later, the owner came over and placed a small paper bag on the table."
     "Stella looked at it."
     show stella 12y5
@@ -1997,7 +2067,7 @@ label StoryStart:
 
         "The judging wasn't fair.":
 
-            $ emotional_honesty =- 1
+            $ emotional_honesty -= 1
 
             "Stella's fingers curled around the edge of the paper bag."
             show stella 12y1
@@ -2027,7 +2097,7 @@ label StoryStart:
 
         "I just wasn't good enough.":
 
-            $ emotional_honesty =+ 1
+            $ emotional_honesty += 1
 
             "Stella stared at the folded certificate in her bag."
             "For a moment, she looked like she might blame the judges, or the other students."
@@ -2057,7 +2127,7 @@ label StoryStart:
 
         "It's no big deal.":
 
-            $ emotional_honesty =- 2
+            $ emotional_honesty -= 2
 
             "Stella shrugged, it was too big a shrug."
             show stella 12y1
@@ -2308,7 +2378,7 @@ label StoryStart:
     menu:
         "I'll try again.":
 
-            $ trust =+ 1
+            $ trust += 1
 
             "Stella looked at her bag for a long moment."
             show stella 12y1
@@ -2340,7 +2410,7 @@ label StoryStart:
 
         "Maybe I'm not meant for this...":
 
-            $ trust =- 1
+            $ trust -= 1
 
             "Stella stared down at the table."
             "The sentence came out before she could stop it."
@@ -2383,7 +2453,7 @@ label StoryStart:
 
         "I don't really know...":
 
-            $ emotional_honesty =+ 1
+            $ emotional_honesty += 1
 
             "Stella opened her mouth."
             "Then closed it again."
@@ -2468,7 +2538,8 @@ label StoryStart:
 
 
 
-
+    scene black
+    with dissolve
 
     "Year 12 - Story 2: The Missing Friend"
     "Before the spaceship model contest, Stella and Mina had a routine."
@@ -2506,7 +2577,9 @@ label StoryStart:
     "Stella waved back, then immediately wished she had not."
     "Because now she was standing there alone, with her hand in the air like an idiot."
     "She lowered it quickly."
-    show stella 12y7
+    scene bg school_hall
+    show stella 12y7 at t11
+    with dissolve
     s "Fine."
     "She said it under her breath."
     "For the next few days, Mina stayed strange."
@@ -2524,6 +2597,9 @@ label StoryStart:
     "If anything, she had been the one that got upset by the contest."
     "She had talked a lot about wanting to prove she could build something by herself."
     "Maybe she had said it more than once."
+    scene bg town
+    show stella 12y7 at t11
+    with dissolve
     "Actually, maybe she had said it too many times."
     "But that was not about Mina, it was about the contest."
     "Stella kicked a pebble across the road and watched it skip into the gutter."
@@ -2536,11 +2612,22 @@ label StoryStart:
     "The streets were bright with late afternoon sun, but Home Plate looked warm anyway."
     "The sign above the door moved gently in the breeze."
     "Stella paused outside for only a second before going in."
+    scene bg homeplate_int
+    show stella 12y1 at t11
+    with dissolve
     "Jingle."
     "The owner looked up from behind the counter."
+    show him 12 at t21
+    show stella at t22
     h "Afternoon, Stella."
     s "Hi."
     "Her answer was not rude, but it was not very alive either."
+
+    scene bg table
+    show him 12 at t21
+    show stella 12y1 at t22
+    with dissolve
+
     "She walked to their usual table."
     "For a second, the empty chair across from her looked almost too obvious."
     "Stella frowned at it."
@@ -2577,8 +2664,8 @@ label StoryStart:
 
         "She's throwing a fit for nothing, and she wouldn't even tell me...":
 
-            $ trust =- 1
-            $ emotional_honesty =- 1
+            $ trust -= 1
+            $ emotional_honesty -= 1
 
             "Stella's arms tightened across her chest."
             show stella 12y9
@@ -2617,8 +2704,8 @@ label StoryStart:
 
         "Do you think I did something wrong?":
 
-            $ trust =+ 1
-            $ emotional_honesty =+ 1
+            $ trust += 1
+            $ emotional_honesty += 1
 
             "Stella looked at the empty chair across from her."
             "The question sat in her mouth for a while before she let it out."
@@ -2650,8 +2737,8 @@ label StoryStart:
 
         "What should I do?":
 
-            $ dependency =+ 1
-            $ trust =+ 1
+            $ dependency += 1
+            $ trust += 1
 
             "Stella uncrossed her arms, for a moment, she looked younger than twelve."
             show stella 12y2
@@ -2685,8 +2772,10 @@ label StoryStart:
             h "People fix many conversations that way."
 
 
-
+    show him at lhide
+    show stella at t11
     "Stella sat there for a while after that."
+    hide him
     "The owner went back to the counter, giving her enough space to think."
     "That was another annoying thing about him."
     "He never made silence feel empty."
@@ -2702,6 +2791,8 @@ label StoryStart:
     h "That sounds like a good place to start."
     show stella 12y7
     s "But I'm not apologizing if I didn't do anything."
+    show stella at t22
+    show him 13 at t21
     h "Haha, I didn't say you had to. Asking is not the same as surrendering."
     "Stella considered that."
     show stella 12y1
@@ -2723,9 +2814,14 @@ label StoryStart:
     "Tomorrow, then."
     "She would ask tomorrow."
 
+    scene black
+    with dissolve
 
     "The next day."
 
+    scene bg school_hall
+    show stella 12y1 at t11
+    with dissolve
 
     "The next morning, Stella arrived at school with a plan."
     "It was not a particularly complicated plan:"
@@ -2742,9 +2838,19 @@ label StoryStart:
     "Or stood up."
     "Actually when she did almost anything at all."
     "Which, Stella eventually realized was probably quite obvious."
+    
+    scene bg classroom
+    show stella 12y1 at t11
+    with dissolve
+
     "During the first lesson, Mina sat two rows away."
     "During the second, the teacher kept talking long after the bell should have rung."
     "And by the time class finally ended, Mina had already left the room."
+
+    scene bg school_hall
+    show stella 12y1 at t11
+    with dissolve
+
     "Stella found her near the lockers, Mina stood with several books held against her chest, arranging something inside her bag."
     "And nobody else was close by, it was probably the best chance Stella was going to get."
     "She tightened her grip on her own bag and walked toward her."
@@ -2753,17 +2859,29 @@ label StoryStart:
     "Mina looked up."
     "For a second, their eyes met."
     "Then Mina closed her locker."
-    show mina 5
+    show mina 5 at t21
+    show stella at t22
     m "I need to get to class."
     "Before Stella could say anything else, Mina adjusted the books in her arms and walked away."
     "Stella remained beside the lockers, her unfinished greeting stayed somewhere in her throat."
+    show mina at lhide
+    show stella 12y8 at t11
     s "We have the same class..."
+    hide mina
+    show stella 12y7
     "Mina was already too far away to hear."
     "Stella frowned at the closed locker, part of her wanted to follow."
     "Another part told her that chasing someone down a hallway would look desperate."
     "Stella was not desperate."
     "She was only trying to have a normal conversation with someone who was making it unnecessarily difficult."
     "She would try again at lunch."
+
+    show black
+    with dissolve
+    pause 0.5
+    hide black
+    with dissolve
+
     "By the time Stella reached the cafeteria, it was already crowded."
     "Students filled the tables in noisy groups, carrying trays and talking over one another."
     "Stella searched the room, she spotted Mina near the far wall."
@@ -2809,6 +2927,8 @@ label StoryStart:
     show stella 12y1
     s "Mina!"
     "Mina slowed."
+    show stella at t22
+    show mina 1 at t21
     "Stella ran past two other students and nearly tripped stepping off the pavement."
     "She caught herself, kept going, and moved directly into Mina's path."
     "Mina stopped."
@@ -2824,8 +2944,8 @@ label StoryStart:
 
         "Are you mad at me?":
 
-            $ emotional_honesty =+ 1
-            $ trust =+ 1
+            $ emotional_honesty += 1
+            $ trust += 1
             $ mina_confrontation = "direct"
 
             "Stella forced the words out before she could rethink them."
@@ -2901,7 +3021,7 @@ label StoryStart:
 
         "Give Mina half of the honey cake.":
 
-            $ trust =+ 1
+            $ trust += 1
             $ shared_dessert_with_mina = True
             $ mina_confrontation = "dessert"
 
@@ -3008,8 +3128,8 @@ label StoryStart:
 
         "Wait for Mina to speak first.":
 
-            $ trust =- 1
-            $ emotional_honesty =- 1
+            $ trust -= 1
+            $ emotional_honesty -= 1
             $ mina_reason_learned_late = True
             $ mina_confrontation = "wait"
 
@@ -3108,6 +3228,11 @@ label StoryStart:
 
 
 
+    scene bg town
+    show stella 12y1 at t22
+    show mina 1 at t21
+    with dissolve
+
     "After school, Stella and Mina walked through town together."
     "It was the first time in several days."
     "Neither of them mentioned how strange that felt."
@@ -3117,12 +3242,25 @@ label StoryStart:
     "She kept her expression under control."
     "She did not want Mina to think she was excessively pleased."
     "Still, a small smile stayed at the corner of her mouth no matter how many times she tried to flatten it."
+
+    scene bg homeplate_ext
+    show stella 12y1 at t22
+    show mina 1 at t21
+    with dissolve
+
     "When they reached Home Plate, Mina opened the door first."
+
+    scene bg homeplate_int
+    show stella 12y1 at t22
+    show mina 1 at t21
     "Jingle."
     "The owner looked up from behind the counter."
     "His eyes moved from Mina to Stella."
     "Then to the poorly hidden smile on Stella's face."
     "He did not ask what had happened, he did not need to."
+    show him 52 at t31
+    show mina at t32
+    show stella at t33
     h "Well."
     show him 52
     h "The quiet table appears to have recovered."
@@ -3141,6 +3279,13 @@ label StoryStart:
     s "You're thinking something."
     show him 13
     h "Such wild accusations."
+
+    scene bg table
+    show him 13 at t31
+    show mina 1 at t32
+    show stella 12y1 at t33
+    with dissolve
+
     "He placed two glasses of water on their usual table."
     show him 52
     h "What can I get you two?"
@@ -3193,13 +3338,20 @@ label StoryStart:
 
 
     "Mina ordered a smaller rice bowl and asked if they could have honey cakes afterward."
+    show him at lhide
     "The owner nodded and disappeared into the kitchen."
+    hide him
     "For the first time in days, the empty chair across from Stella was no longer empty."
     "Everything seemed to have returned to its proper place."
     "Stella knew now that routines did not simply exist by themselves."
     "Sometimes, people had to choose to return to them."
     "Later, while Mina was looking through one of the books near the shelf, Stella
     approached the counter."
+
+    scene bg homeplate_int
+    show him 13 at t21
+    show stella 12y3 at t22
+
     "Stella lowered her voice."
 
 
@@ -3292,6 +3444,11 @@ label StoryStart:
         h "People famously misunderstand each other only once."
 
 
+    scene bg table
+    show stella 12y1 at t22
+    show mina 1 at t21
+    with dissolve
+
     "Stella returned to the table as the owner brought their food over."
     "She watched him set down the plates with the same easy care he gave every customer."
     "But now, she noticed something she had not understood when she was younger."
@@ -3314,6 +3471,8 @@ label StoryStart:
     "Inside Home Plate, their usual table was noisy again."
     # End of Year 12 — Story 2
 
+    scene black
+    with dissolve
 
     "Year 12 - Story 3: The Last Summer Table"
 
@@ -3321,8 +3480,13 @@ label StoryStart:
     "At least, that was what Stella thought."
     "Summer is ending."
     "The late-summer sun hung low above the town, turning the windows along the street a soft shade of gold."
+    
+    scene bg homeplate_int
+    with dissolve
+
     "Home Plate was busier than usual."
-    "The annual end-of-summer community dinner was taking place later that evening, and the restaurant seemed to have collected twice as many chairs, boxes, plates, and handwritten lists as it normally needed."
+    "The annual end-of-summer community dinner was taking place later that evening."
+    "The restaurant seemed to have collected twice as many chairs, boxes, plates, and handwritten lists as it normally needed."
     "Stella had come after school to help."
     "Nobody had officially asked her."
     "She simply arrived, put her bag beneath her usual table, and started moving things."
@@ -3334,6 +3498,8 @@ label StoryStart:
     "Today, Stella was carrying folded tablecloths from the storage room to the dining area."
     "They were stacked high enough that she could only see over the top if she lifted her
     chin."
+    show him 11 at t21
+    show stella 12y1 at t22
     h "Careful, the tables will survive without being buried alive."
     show stella 12y3
     s "I can see."
@@ -3417,6 +3583,9 @@ label StoryStart:
     "Ordinary, exactly where it belonged."
     "The bell above the door rang again."
     "Mina stepped inside with her school bag hanging from both shoulders."
+    show him at t31
+    show mina 2 at t32
+    show stella at t33
     m "Am I late?"
     show stella 12y3
     s "Yes."
@@ -3467,12 +3636,15 @@ label StoryStart:
     "Chairs scraped gently across the floor."
     "People talked about school, weather, travel, and what they planned to bring to the dinner."
     "Stella moved between them easily."
-    "She carried water, answered questions, collected empty cups when the owner was
-    busy."
+    "She carried water, answered questions, collected empty cups when the owner was busy."
     "At one point, Stella passed the counter carrying a stack of napkins."
     "Two customers were standing near the register, speaking with the owner."
     "Stella was not trying to listen."
     "She only slowed because the stack of napkins had started slipping."
+
+    hide stella
+    hide mina
+    show him at t11
 
     $ extra_name = "Customer 1"
 
@@ -3496,6 +3668,8 @@ label StoryStart:
     h "Home Plate will survive without me for a while."
     "They both laughed softly."
     "..."
+    hide him
+    show stella 12y1 at t11
     "Stella did not."
     "She stood a few steps away, still holding the napkins."
     "For a moment, the room seemed to continue without her."
@@ -3512,7 +3686,8 @@ label StoryStart:
     "Then she carried the stack to the counter."
     "The owner looked at her."
     "He seemed to notice something in her face."
-    show him 13
+    show him 13 at t21
+    show stella at t22
     h "Home Plate might be closed for a little while after the dinner."
     "He said it gently."
     "Stella stared at him."
@@ -3525,7 +3700,7 @@ label StoryStart:
     menu:
         "Oh. That's fine.":
 
-            $ emotional_honesty =- 1
+            $ emotional_honesty -= 1
             $ last_summer_response = "fine"
 
             "Stella answered before she had properly decided what to say."
@@ -3563,8 +3738,8 @@ label StoryStart:
 
         "How long will you be gone?":
 
-            $ emotional_honesty =+ 1
-            $ trust =+ 1
+            $ emotional_honesty += 1
+            $ trust += 1
             $ last_summer_response = "ask"
 
             "Stella tried to keep her voice casual."
@@ -3610,7 +3785,7 @@ label StoryStart:
 
         "Then I'll help make tonight perfect.":
 
-            $ dependency =+ 1
+            $ dependency += 1
             $ last_summer_response = "perfect"
 
             "Stella looked around the restaurant."
@@ -3662,6 +3837,9 @@ label StoryStart:
         "The forks had to point in the same direction, the menus had to be spotless." 
         "Every chair had to sit at exactly the right distance from the table." 
         
+    show him at t31
+    show mina 1 at t32
+    show stella at t33
     "When Mina moved one by a few inches, Stella quietly moved it back." 
     show mina 5
     m "You know people can move chairs themselves, right?" 
@@ -3679,16 +3857,22 @@ label StoryStart:
     "For a while, the strange feeling from earlier faded beneath the noise." 
     "She felt useful." 
     "She felt as though she belonged there." 
+    hide him
+    hide mina
+    hide stella
     "Then the bell above the door rang again." 
+    show lena 1 at t11
     "A woman Stella did not recognize stepped inside." 
     "She looked a little older than the owner's usual customers, though not old enough for Stella to call her elderly." 
     "The owner was carrying a tray when he saw her." 
     "He stopped." 
     "For one brief moment, surprise crossed his face." 
     "Then his expression opened into a warm smile." 
-    show him 13
+    show him 11 at t21
+    show lena at t22
     h "Ah, Lena." 
     "The woman smiled back." 
+    $ l_name = "Lena"
     l "Hello." 
     l "It has been a while." 
     show him 12
@@ -3726,6 +3910,9 @@ label StoryStart:
     l "I know, I was difficult." 
     "Lena sat beside the window." 
     "The late sunlight touched the side of her cup." 
+    hide lena
+    hide him
+    show stella 12y1 at t11
     "Stella stood near the counter with a pile of menus in her arms." 
     "Nothing unusual had happened." 
     "The owner was being kind to an old customer." 
@@ -3744,7 +3931,8 @@ label StoryStart:
     "She did not." 
     "Her tea was full, her table was ready." 
     "Everything had already been remembered." 
-    show mina 5
+    show mina 5 at t21
+    show stella at t22
     m "Stella." 
     "Stella did not respond." 
     "Mina appeared beside her, holding a small basket of cutlery." 
@@ -3937,6 +4125,10 @@ label StoryStart:
         "She treated her speed like some kind of proof." 
         "Proof that she was useful, that the owner needed her." 
 
+    show him 11 at t31
+    show mina at t32
+    show stella at t33
+
     "The owner emerged from the kitchen carrying a large tray." 
     "It held several hot dishes, a small bowl of soup, and a freshly refilled cup of pear tea." 
     show him 13
@@ -3969,6 +4161,9 @@ label StoryStart:
     show stella 12y3
     s "I know." 
     "The tray really was heavy. heavier than Stella had expected." 
+    hide him
+    hide mina
+    show stella at t11
     "The bowl of soup near one edge trembled with the movement." 
     "She quickly adjusted her grip and steadied it." 
     "It was fine." 
@@ -3985,7 +4180,9 @@ label StoryStart:
     show stella 12y1
     s "I am going slowly." 
     "She was not." 
-    "The window table was only a few steps away." 
+    "The window table was only a few steps away."
+    show stella at t22
+    show lena 1 at t21 
     "Lena was leaning down to adjust the travel bag beside her chair." 
     "The owner stood nearby, speaking with another guest." 
     "Stella saw him glance in her direction." 
@@ -4002,6 +4199,7 @@ label StoryStart:
     "A plate covered in sauce slipped over the edge." 
     show stella 12y11
     s "Wait—!" 
+    show lena 3
     "Warm soup and pear tea spilled across Lena's sleeve and coat." 
     "The plate struck the edge of the table, then crashed onto the floor." 
     "Crash—!" 
@@ -4012,8 +4210,13 @@ label StoryStart:
     "The remaining dishes trembled on the surface." 
     "Lena looked down at her soaked sleeve." 
     "Mina covered her mouth." 
-    show mina 5
+    show mina 7 at t31
+    show lena at t32
+    show stella at t33
     m "Stella..." 
+    hide lena
+    hide mina
+    show stella at t11
     "Stella's mind went completely blank." 
     "Then every sound returned at once." 
     "Chairs moved." 
@@ -4022,35 +4225,51 @@ label StoryStart:
     "The owner hurried toward them." 
     "Stella stared down at the broken pieces on the floor." 
     "Her chest tightened painfully." 
-    show stella 12y1
+    show stella 12y12
     s "I..." 
+    show him 31 at t21
+    show stella 12y11 at t22
     "The owner reached Stella before she could move." 
     "He took the tilted tray from her hands and set it safely on the nearest table." 
+    show him 32
     h "Hang on, don't step back." 
     "Stella froze." 
     "Only then did she realize that broken pieces of porcelain had scattered around her 
     shoes." 
     "The owner crouched and began moving the larger pieces aside with a folded cloth." 
     "Lena looked down at her soaked sleeve." 
+    show lena 5 at t31
+    show him at t32
+    show stella at t33
     l "If anyone’s wondering, I'm alright. It wasn't hot enough to burn." 
     show stella 12y11
+    show him at lhide
+    show lena at t21
+    show stella at t22
     s "I'm so sorry." 
     "Stella's voice shook." 
+    hide him
     s "I didn't mean to—" 
-    l "I know." 
+    l 2 "I know." 
     "Lena removed her coat and held it away from herself." 
     l "It needs washing, but it is hardly the end of the world." 
+    show lena 4
     "She gave Stella a small, reassuring smile." 
     "The stain spread across the fabric, soup had reached the floor." 
     "Mina stepped closer and carefully picked up one of the fallen napkins." 
-    show mina 1
-    m "I'll get more towels." 
+    show mina 1 at t31
+    m "I'll get more towels."
+    show mina at lhide 
     "The owner nodded." 
+    hide mina
     h "Thank you." 
     "Mina hurried toward the counter." 
+    hide lena
+    show stella at t11
     "Stella remained where she was, staring at the mess." 
-    s "I… ruined everything." 
-    show him 13
+    s 12y12 "I… ruined everything." 
+    show him 13 at t21
+    show stella at t22
     h "You spilled one tray." 
     show stella 12y1
     s "On her." 
@@ -4230,18 +4449,22 @@ label StoryStart:
     h "Start with the table, slowly." 
 
 
-
+    scene black
+    with dissolve
 
     #Year 12 epilogue
     "By the time the last guests left, it was already late." 
     "The tables had slowly emptied, the laughter had faded into footsteps outside, then disappeared down the street." 
     "Mina stayed long enough to help collect the final cups." 
     "Before leaving, she stopped beside Stella." 
-    show mina 2
+    scene homeplate_int
+    show mina 2 at t21
+    show stella 12y1 at t22
+    with dissolve
     m "So, are you going home soon?" 
     "Stella glanced toward the owner." 
     "He was behind the counter, counting something in a small notebook." 
-    s "In a minute." 
+    s 12y2 "In a minute." 
     "Mina followed her gaze." 
     "Then she looked back at Stella." 
     show mina 1
@@ -4250,21 +4473,31 @@ label StoryStart:
     m "You say that like you own the place." 
     s "Someone has to make sure he closes properly." 
     "The owner looked up from across the room." 
-    show him 52
+    show him 52 at t31
+    show mina at t32
+    show stella at t33
     h "I have been closing restaurants for several years without supervision." 
     show mina 3
     m "Good luck!" 
     "Mina adjusted her bag and headed toward the door." 
     m "See you tomorrow." 
     s "See you Mina." 
+    show mina at lhide
+    show him at t21
+    show stella at t22
     "The bell rang softly as Mina stepped outside." 
+    hide mina
     "Then the door closed." 
     "Home Plate became quiet." 
     "Not completely silent, there was still the soft clink of glasses behind the counter." 
     "But without the guests, the restaurant seemed way larger." 
+    scene table
+    show stella 12y1 at t22
+    show him 12 at t21
+    with dissolve
     "Stella sat at the table beside the window." 
     "Her table." 
-    "Is it…still her table?" 
+    "Is it... still her table?" 
     "The surface was still a little sticky where the soup had spilled." 
     "Nothing about the evening had been perfect." 
     "The owner approached carrying two cups." 
@@ -4459,6 +4692,8 @@ label StoryStart:
     "A person could too." 
 
     # END year 12
+    scene black
+    with dissolve
 
 
 
@@ -4484,8 +4719,7 @@ label StoryStart:
     "She was sixteen, technically too old to walk like that, but she did it anyway." 
     "School would not begin for another hour." 
     "Normally, Stella arrived at Home Plate shortly before the morning rush." 
-    "That gave her enough time to buy something warm, complain about whichever assignment she had left unfinished, and sit beside the window until she absolutely had 
-    to leave." 
+    "That gave her enough time to buy something warm, complain about whichever assignment she had left unfinished, and sit beside the window until she absolutely had to leave." 
     "Today, however, she had woken earlier than usual." 
     "She had simply opened her eyes and found herself unable to fall asleep again." 
     "So, she had left home before her parents could give her anything useful to do." 
@@ -4496,6 +4730,7 @@ label StoryStart:
     "The sign on the door read CLOSED." 
     "She checked the time." 
     "She was twenty three minutes early." 
+    show s 16y2
     s "Oh. Whoops." 
     "Apparently, time continued to matter even when she was awake before everyone else." 
     "Stella considered turning around." 
@@ -4536,6 +4771,7 @@ label StoryStart:
     "He paused halfway through the second attempt and looked down at the cup of coffee resting on the top step of the ladder." 
     "Then, without looking, he lowered the chalk toward it." 
     "Stella's eyes widened." 
+    show s 16y5
     s "No, no—" 
     "The chalk stopped less than an inch above the coffee." 
     "The owner looked at his hand." 
@@ -4579,15 +4815,18 @@ label StoryStart:
     "Back to Stella." 
     "Then toward the clock above the counter." 
     "Stella straightened and tried to look as though standing outside a closed restaurant at this hour had been a completely deliberate decision." 
-    "The owner raised one eyebrow, Stella lifted one hand in a small wave." 
+    "The owner raised one eyebrow, Stella lifted one hand in a small wave."
     "He looked at her for another moment, then smiled." 
     "He set down the cloth and walked toward the door. Stella stepped back as the lock clicked." 
     "The door opened only slightly." 
+    show h 11
     h "Well, you're early." 
+    show s 16y1
     s "You're uh… you’re here." 
     h "Yes, an excellent observation." 
     "Stella pointed at the open door." 
     s "Sooo you're open." 
+    show h 21
     h "Hmm, I think the sign disagrees." 
     "Stella tilted her head." 
     s "Are you going to make me stand outside?" 
@@ -4596,8 +4835,10 @@ label StoryStart:
     "Stella folded her arms." 
     s "I saw you nearly put chalk in your coffee." 
     "He became very still." 
+    show h 13
     h "Welcome young miss, come inside!" 
     s "Whoa, Is that a bribe?" 
+    show h 11
     h "It is damage control." 
     "He opened the door wider." 
     "Stella stepped past him with a victorious little smile." 
@@ -4609,6 +4850,7 @@ label StoryStart:
     "The restaurant looked different before opening." 
     "Without customers, voices, or the constant movement of plates, every small sound seemed clearer." 
     "Stella placed her bag beside the window table." 
+    show h 13
     h "You can sit there while I finish prep." 
     s "I could help." 
     h "… True, you could." 
@@ -4616,228 +4858,280 @@ label StoryStart:
     s "Excuse me?" 
     h "Hey, you have very strong opinions about menu design." 
     s "Because yours is bad." 
+    show h 11
     h "There it is." 
     "He returned to the short ladder and picked up the chalk." 
     "Stella sat down and watched him rewrite the final line." 
     "She tried not to." 
     "She had several useful things she could have been doing." 
     "Instead, she watched him stand on the ladder and stare critically at the board." 
+    show h 14
     h "Which sounds better Summer fruit toast...or..." 
+    show h 13
     h "Toast with summer fruit?" 
     "Stella looked at the two lines." 
     s "Those are the same thing." 
-    h "I think one sounds more expensive." 
-    s "Which one?" 
-    h "…I was hoping you would tell me." 
-    s "I think neither." 
-    h "Bruh, devastating." 
-    "He erased both versions." 
-    "Chalk dust fell lightly across the front of his shirt." 
-    "Stella tried to focus on the menu." 
-    "But his handwriting leaned at three different angles, and one of the letters looked as 
-    though it had given up halfway through." 
-    "She lasted another ten seconds." 
-    s "Move." 
-    "The owner looked over his shoulder." 
-    h "Well, that’s very politely phrased." 
-    s "Your handwriting is kind of painful to look at." 
-    h "…Then look somewhere else!" 
-    s "Customers can't do that." 
-    "Stella stood and walked toward the board, she held out her hand for the chalk." 
-    s "Give it to me." 
-    "The owner looked at the chalk, then at her." 
-    "He seemed to be considering whether surrendering it would damage his professional dignity." 
-    "Apparently deciding he had very little left to protect, he passed it over." 
-    h "Try not to destroy my artistic vision." 
-    s "There was no artistic vision." 
-    "Stella stepped onto the first rung of the ladder." 
-    "The board was higher than it looked, she reached up and began rewriting the first line." 
-    "The owner remained beside her, one hand resting lightly against the ladder to keep it 
-    steady." 
-    "Stella had climbed much taller things without anyone watching." 
-    "Still, she became suddenly aware of how close he was." 
-    "Close enough that she could hear his quiet breathing beneath the morning sounds." 
-    "Close enough that when she looked down, she found him already looking up at her." 
-    "Stella paused with the chalk against the board." 
-    s "…What?" 
-    h "What what?" 
-    s "You're… staring." 
-    h "I'm supervising." 
-    "He kept looking at her work." 
-    "At least, Stella assumed he was looking at the writing." 
-    "His attention felt strangely warm against the side of her face." 
-    "She turned back to the board before he could notice the color rising into her cheeks." 
-    s "Stop watching me." 
-    h "You're literally standing on my ladder, writing on my menu, where would you prefer I look?" 
-    s "Like… Somewhere else." 
-    h "That’s some very specific instructions." 
-    "Stella pressed the chalk harder against the board, it came out thicker than the others." 
-    "She frowned and tried to correct it, but her jacket sleeve slipped down over her hand." 
-    s "Oh, come on." 
-    "She shook her wrist, but the fabric only fell farther." 
-    "The owner reached up without thinking." 
-    h "Hold still." 
-    "His fingers closed gently around her wrist." 
-    "Stella stopped moving." 
-    "He folded the loose cuff back once, and then again." 
-    "His hand was warm." 
-    "And for one brief moment, Stella could feel the light pressure of his fingers against the inside of her wrist." 
-    "Her face grew hot so quickly that she was grateful she was facing the board." 
-    h "Nice, there." 
-    "He released her." 
-    h "Now the sleeve has one less opportunity to ruin everything." 
-    "Stella stared at the word she had been writing." 
-    "The letters no longer seemed to belong to any language she recognized." 
-    s "…Right." 
-    "Her voice sounded strange." 
-    "The owner had already stepped back." 
-    "He picked up his coffee and studied the board as though nothing had happened." 
-    "He probably had not noticed." 
-    h "Hmm, I feel like the second line is crooked." 
-    "Stella looked down at him." 
-    s "Nooo, it is not." 
-    h "It is kind of leaning though." 
-    s "That’s because the whole board is leaning." 
-    h "The board has stood there for nine years without complaint." 
-    s "Maybe it was just waiting for someone to ask." 
-    "The owner smiled." 
-    "Stella looked away too late, she had already noticed it." 
-    "Again." 
-    "She finished the final word and climbed down." 
-    "The owner moved closer to inspect her work." 
-    "Stella stepped aside, but there was not much room between the ladder and the 
-    counter." 
-    "For a moment, they stood shoulder to shoulder." 
-    "His sleeve brushed lightly against hers." 
-    "Stella immediately became very interested in cleaning chalk from her fingers." 
-    h "Better." 
-    h "…The price still seems too low." 
-    s "Just raise it." 
-    h "You objected to making it sound expensive." 
-    s "I objected to pretending the word order changed anything." 
-    "He reached past her to correct the price." 
-    "Stella caught the faint smell of coffee, flour, and whatever soap he used in the kitchen." 
-    "She had probably smelled all of those things hundreds of times." 
-    "Today, for some reason, she noticed each one separately." 
-    "She took half a step away, the owner glanced at her." 
-    h "Something wrong?" 
-    s "Uh, no." 
-    h "You moved as though I was about to step on you." 
-    s "You take up too much space." 
-    h "In my own restaurant?" 
-    s "Yes." 
-    "He gave her an amused look and finished changing the number." 
-    "Stella crossed her arms, hoping that made her appear more composed." 
-    "It probably would have worked better if her face had not still been warm." 
-    "The owner returned the chalk to the shelf." 
-    h "Since you have rescued the menu, I suppose you've earned breakfast." 
-    s "I was going to buy something anyway." 
-    h "Supporting my business like always." 
-    "He moved behind the counter and reached for a cup." 
-    h "Still less sugar?" 
-    s "Yes." 
-    h "Good. I was worried you might have developed terrible taste overnight." 
-    s "Heyyy, I already come here every morning." 
-    h "A compelling argument against my own business." 
-    "Stella returned to her usual table and opened her school bag and took out a notebook." 
-    "Behind the counter, the owner continued preparing her drink." 
-    "Nothing about him had changed." 
-    "Still moving through Home Plate as though he had always belonged there." 
-    "But Stella could still feel the brief warmth around her wrist." 
-    "She pressed her sleeve back into place." 
-    "Then, almost immediately, rolled it up again." 
-    "She frowned at herself." 
-    s "This is stupid." 
-    h "Did you say something?" 
-    "Stella looked up." 
-    s "No." 
-    h "Must’ve been the wind…" 
-    "She lowered her eyes to the notebook." 
-    "The words on the page remained completely useless." 
-    "Stella lowered her eyes and tried again." 
-    "The paragraph in front of her seemed simple enough." 
-    "She read the first line, then the second." 
-    "By the time she reached the third, she had already forgotten what the first one said." 
-    "Behind the counter, the owner poured hot water into her cup." 
-    "He added less sugar without asking." 
-    "That was normal, he had known her order for years." 
-    "Nothing about it should have held her attention." 
-    "Still, Stella watched." 
-    "She watched him stir the drink, tap the spoon once against the edge of the cup." 
-    "Stella rested her chin against her palm, she told herself she was only waiting for her drink." 
-    "That explanation worked for several seconds." 
-    "But when the owner turned around." 
-    "Their eyes met." 
-    h "…Something wrong?" 
-    "Stella blinked." 
-    s "What? N-no? Why’d you ask that?" 
-    h "You've been… ferociously staring at me for the past ten seconds." 
-    s "N-no I was looking at the menu." 
-    "The owner glanced past her." 
-    h "The menu is behind you." 
-    "Stella remained very still, slowly, she turned her head." 
-    "The board was, in fact, behind her." 
-    "She looked back at him, he was trying not to smile." 
-    "That made the warmth in her face spread even faster." 
+    h "I think one sounds more expensive."
+    s "Which one?"
+    h "…I was hoping you would tell me."
+    s "I think neither."
+    show h 11
+    h "Bruh, devastating."
+    "He erased both versions."
+    "Chalk dust fell lightly across the front of his shirt."
+    "Stella tried to focus on the menu."
+    "But his handwriting leaned at three different angles, and one of the letters looked as
+    though it had given up halfway through."
+    "She lasted another ten seconds."
+    s "Move."
+    "The owner looked over his shoulder."
+    show h 13
+    h "Well, that’s very politely phrased."
+    show s 16y5
+    s "Your handwriting is kind of painful to look at."
+    show h 14
+    h "…Then look somewhere else!"
+    show s 16y1
+    s "Customers can't do that."
+    "Stella stood and walked toward the board, she held out her hand for the chalk."
+    s "Give it to me."
+    "The owner looked at the chalk, then at her."
+    "He seemed to be considering whether surrendering it would damage his professional dignity."
+    "Apparently deciding he had very little left to protect, he passed it over."
+    show h 13
+    h "Try not to destroy my artistic vision."
+    s "There was no artistic vision."
+    "Stella stepped onto the first rung of the ladder."
+    "The board was higher than it looked, she reached up and began rewriting the first line."
+    "The owner remained beside her, one hand resting lightly against the ladder to keep it
+    steady."
+    "Stella had climbed much taller things without anyone watching."
+    "Still, she became suddenly aware of how close he was."
+    "Close enough that she could hear his quiet breathing beneath the morning sounds."
+    "Close enough that when she looked down, she found him already looking up at her."
+    "Stella paused with the chalk against the board."
+    show s 16y2
+    s "…What?"
+    show h 21
+    h "What what?"
+    show s 16y1
+    s "You're… staring."
+    show h 13
+    h "I'm supervising."
+    "He kept looking at her work."
+    "At least, Stella assumed he was looking at the writing."
+    "His attention felt strangely warm against the side of her face."
+    "She turned back to the board before he could notice the color rising into her cheeks."
+    show s 16y5
+    s "Stop watching me."
+    show h 14
+    h "You're literally standing on my ladder, writing on my menu, where would you prefer I look?"
+    show s 16y1
+    s "Like… Somewhere else."
+    show h 13
+    h "That’s some very specific instructions."
+    "Stella pressed the chalk harder against the board, it came out thicker than the others."
+    "She frowned and tried to correct it, but her jacket sleeve slipped down over her hand."
+    show s 16y5
+    s "Oh, come on."
+    "She shook her wrist, but the fabric only fell farther."
+    "The owner reached up without thinking."
+    h "Hold still."
+    "His fingers closed gently around her wrist."
+    "Stella stopped moving."
+    "He folded the loose cuff back once, and then again."
+    "His hand was warm."
+    "And for one brief moment, Stella could feel the light pressure of his fingers against the inside of her wrist."
+    "Her face grew hot so quickly that she was grateful she was facing the board."
+    h "Nice, there."
+    "He released her."
+    h "Now the sleeve has one less opportunity to ruin everything."
+    "Stella stared at the word she had been writing."
+    "The letters no longer seemed to belong to any language she recognized."
+    show s 16y1
+    s "…Right."
+    "Her voice sounded strange."
+    "The owner had already stepped back."
+    "He picked up his coffee and studied the board as though nothing had happened."
+    "He probably had not noticed."
+    show h 21
+    h "Hmm, I feel like the second line is crooked."
+    "Stella looked down at him."
+    s "Nooo, it is not."
+    show h 13
+    h "It is kind of leaning though."
+    s "That’s because the whole board is leaning."
+    h "The board has stood there for nine years without complaint."
+    s "Maybe it was just waiting for someone to ask."
+    "The owner smiled."
+    "Stella looked away too late, she had already noticed it."
+    "Again."
+    "She finished the final word and climbed down."
+    "The owner moved closer to inspect her work."
+    "Stella stepped aside, but there was not much room between the ladder and the
+    counter."
+    "For a moment, they stood shoulder to shoulder."
+    "His sleeve brushed lightly against hers."
+    "Stella immediately became very interested in cleaning chalk from her fingers."
+    h "Better."
+    h "…The price still seems too low."
+    s "Just raise it."
+    h "You objected to making it sound expensive."
+    show s 16y5
+    s "I objected to pretending the word order changed anything."
+    "He reached past her to correct the price."
+    "Stella caught the faint smell of coffee, flour, and whatever soap he used in the kitchen."
+    "She had probably smelled all of those things hundreds of times."
+    "Today, for some reason, she noticed each one separately."
+    "She took half a step away, the owner glanced at her."
+    show h 21
+    h "Something wrong?"
+    show s 16y1
+    s "Uh, no."
+    show h 13
+    h "You moved as though I was about to step on you."
+    show s 16y5
+    s "You take up too much space."
+    h "In my own restaurant?"
+    show s 16y1
+    s "Yes."
+    "He gave her an amused look and finished changing the number."
+    "Stella crossed her arms, hoping that made her appear more composed."
+    "It probably would have worked better if her face had not still been warm."
+    "The owner returned the chalk to the shelf."
+    h "Since you have rescued the menu, I suppose you've earned breakfast."
+    s "I was going to buy something anyway."
+    show h 11
+    h "Supporting my business like always."
+    "He moved behind the counter and reached for a cup."
+    show h 13
+    h "Still less sugar?"
+    s "Yes."
+    h "Good. I was worried you might have developed terrible taste overnight."
+    show s 16y2
+    s "Heyyy, I already come here every morning."
+    show h 11
+    h "A compelling argument against my own business."
+    "Stella returned to her usual table and opened her school bag and took out a notebook."
+    "Behind the counter, the owner continued preparing her drink."
+    "Nothing about him had changed."
+    "Still moving through Home Plate as though he had always belonged there."
+    "But Stella could still feel the brief warmth around her wrist."
+    "She pressed her sleeve back into place."
+    "Then, almost immediately, rolled it up again."
+    "She frowned at herself."
+    show s 16y5
+    s "This is stupid."
+    show h 13
+    h "Did you say something?"
+    "Stella looked up."
+    show s 16y1
+    s "No."
+    h "Must’ve been the wind…"
+    "She lowered her eyes to the notebook."
+    "The words on the page remained completely useless."
+    "Stella lowered her eyes and tried again."
+    "The paragraph in front of her seemed simple enough."
+    "She read the first line, then the second."
+    "By the time she reached the third, she had already forgotten what the first one said."
+    "Behind the counter, the owner poured hot water into her cup."
+    "He added less sugar without asking."
+    "That was normal, he had known her order for years."
+    "Nothing about it should have held her attention."
+    "Still, Stella watched."
+    "She watched him stir the drink, tap the spoon once against the edge of the cup."
+    "Stella rested her chin against her palm, she told herself she was only waiting for her drink."
+    "That explanation worked for several seconds."
+    "But when the owner turned around."
+    "Their eyes met."
+    show h 21
+    h "…Something wrong?"
+    "Stella blinked."
+    show s 16y4
+    s "What? N-no? Why’d you ask that?"
+    show h 13
+    h "You've been… ferociously staring at me for the past ten seconds."
+    s "N-no I was looking at the menu."
+    "The owner glanced past her."
+    h "The menu is behind you."
+    "Stella remained very still, slowly, she turned her head."
+    "The board was, in fact, behind her."
+    "She looked back at him, he was trying not to smile."
+    "That made the warmth in her face spread even faster."
 
-    menu: 
+    menu:
 
-        "You look different today.": 
+        "You look different today.":
 
-            $ emotional_honesty += 1 
-            $ trust += 1 
+            $ emotional_honesty += 1
+            $ trust += 1
             $ year16_morning_response = "different" 
 
-            "Stella looked down at her notebook." 
-            s "You, kind of look different today." 
-            "The owner glanced at his clothes, then he touched the side of his hair." 
-            h "Different good… Or different concerning?" 
-            "Stella looked at him again." 
-            s "I don't know." 
-            h "Well that’s not very useful feedback now is it." 
-            s "Hey, you asked." 
-            h "Man, now I know that I look different in an entirely unidentified way." 
-            s "I guess, maybe it's your hair." 
-            "He touched it again." 
-            h "Is it that bad?" 
-            s "I… didn't say it was bad." 
-            "The words escaped before Stella had time to inspect them, the owner paused." 
-            h "Ah." 
-            "Stella immediately looked back at her notebook." 
-            s "I mean..." 
-            s "It just doesn't look like it usually does." 
-            h "Because usually, customers arrive after I've had time to negotiate with it." 
-            "He tried to press the stubborn section down." 
-            "It rose again the moment he removed his hand." 
-            "Stella laughed softly." 
-            h "A difficult morning for both of us." 
-            "He turned back toward her drink." 
-            "Stella watched him for another second." 
-            "The strange part was not that he looked different." 
-            "The strange part was how badly she had wanted to keep looking." 
-
+            "Stella looked down at her notebook."
+            show s 16y1
+            s "You, kind of look different today."
+            "The owner glanced at his clothes, then he touched the side of his hair."
+            show h 21
+            h "Different good… Or different concerning?"
+            "Stella looked at him again."
+            show s 16y4
+            s "I don't know."
+            h "Well that’s not very useful feedback now is it."
+            show s 16y2
+            s "Hey, you asked."
+            show h 13
+            h "Man, now I know that I look different in an entirely unidentified way."
+            show s 16y1
+            s "I guess, maybe it's your hair."
+            "He touched it again."
+            show h 21
+            h "Is it that bad?"
+            s "I… didn't say it was bad."
+            "The words escaped before Stella had time to inspect them, the owner paused."
+            show h 13
+            h "Ah."
+            "Stella immediately looked back at her notebook."
+            s "I mean..."
+            s "It just doesn't look like it usually does."
+            h "Because usually, customers arrive after I've had time to negotiate with it."
+            "He tried to press the stubborn section down."
+            "It rose again the moment he removed his hand."
+            "Stella laughed softly."
+            show h 21
+            h "A difficult morning for both of us."
+            "He turned back toward her drink."
+            "Stella watched him for another second."
+            "The strange part was not that he looked different."
+            "The strange part was how badly she had wanted to keep looking."
 
 
         "Your handwriting is still terrible.": 
 
             $ emotional_honesty -= 2 
             $ year16_morning_response = "handwriting" 
-            
-            "Stella crossed her arms." 
-            s "Your handwriting is still terrible." 
-            "The owner looked toward the menu board." 
-            h "Sigh, There it is." 
-            s "What." 
-            h "The reason you were staring." 
-            s "Ah… y-yes." 
-            h "Such a devastating review from my harshest critic." 
-            s "Well someone has to tell you." 
-            h "You already rewrote it." 
-            s "And yet I can still see the damage underneath." 
-            "He placed one hand over his heart." 
-            h "Dang." 
-            "The excuse had worked." 
-            "As long as he did not ask why she had been watching his hands instead of the menu." 
+
+            "Stella crossed her arms."
+            show s 16y5
+            s "Your handwriting is still terrible."
+            "The owner looked toward the menu board."
+            show h 11
+            h "Sigh, There it is."
+            show s 16y1
+            s "What."
+            show h 13
+            h "The reason you were staring."
+            s "Ah… y-yes."
+            show h 11
+            h "Such a devastating review from my harshest critic."
+            s "Well someone has to tell you."
+            show h 13
+            h "You already rewrote it."
+            s "And yet I can still see the damage underneath."
+            "He placed one hand over his heart."
+            h "Dang."
+            "The excuse had worked."
+            "As long as he did not ask why she had been watching his hands instead of the menu."
+
 
 
 
@@ -4847,142 +5141,167 @@ label StoryStart:
             $ dependency += 1 
             $ year16_morning_response = "quiet" 
 
-            "Stella thought for a bit. And gazed around the empty restaurants." 
-            s "I just like it here before opening." 
-            "The owner followed her gaze around the room." 
-            h "So do I." 
-            h "Everything is quiet before people begin asking for things." 
-            "Stella tilted her head." 
-            s "But, I'm asking for something." 
-            h "You don't count." 
-            "She looked at him." 
-            s "Whaaa, why not?" 
-            "The owner placed the finished drink in front of her." 
-            h "You were already here." 
-            "He said it lightly, as though it were obvious." 
-            "Then he turned back toward the counter to finish preparing the room." 
-            "Stella stayed very still." 
-            "The words should not have meant anything unusual, he only meant that she was familiar." 
-            "That she belonged to the quiet part of the morning as much as the chairs, the menu board, and the bell above the door." 
-            "Still, Stella wrapped both hands around the cup." 
-            "The warmth against her fingers did very little to explain the warmth in her face." 
-            s "That doesn't really make sense." 
-            h "It made sense to me." 
-            "Stella looked down into her drink." 
-            "For some reason, she knew she would remember that sentence." 
+            "Stella thought for a bit. And gazed around the empty restaurants."
+            show s 16y4
+            s "I just like it here before opening."
+            "The owner followed her gaze around the room."
+            show h 12
+            h "So do I."
+            show h 13
+            h "Everything is quiet before people begin asking for things."
+            "Stella tilted her head."
+            show s 16y1
+            s "But, I'm asking for something."
+            show h 12
+            h "You don't count."
+            "She looked at him."
+            show s 16y2
+            s "Whaaa, why not?"
+            "The owner placed the finished drink in front of her."
+            show h 13
+            h "You were already here."
+            "He said it lightly, as though it were obvious."
+            "Then he turned back toward the counter to finish preparing the room."
+            "Stella stayed very still."
+            "The words should not have meant anything unusual, he only meant that she was familiar."
+            "That she belonged to the quiet part of the morning as much as the chairs, the menu board, and the bell above the door."
+            "Still, Stella wrapped both hands around the cup."
+            "The warmth against her fingers did very little to explain the warmth in her face."
+            show s 16y1
+            s "That doesn't really make sense."
+            show h 12
+            h "It made sense to me."
+            "Stella looked down into her drink."
+            "For some reason, she knew she would remember that sentence."
 
 
-
-    "The owner returned to the counter and continued preparing for the morning." 
-    "Stella sat beside the window with her less-sweet drink and her unfinished homework." 
-    "The bell had not started ringing for customers yet, and the restaurant was still quiet." 
-    "The clock above the counter clicked forward." 
-    "Stella finally looked up from her notebook." 
-    s "Oh." 
-    "School." 
-    "Apparently, it was still happening today." 
-    "She closed the notebook and shoved it into her bag, the owner glanced toward the clock." 
-    h "You should probably start walking." 
-    s "Yeah, I know, I know." 
-    h "Unless being late has become part of your academic strategy, I hope not." 
-    s "It's called making an entrance." 
-    h "I'm sure your teachers appreciate that." 
-    "Stella pulled the strap of her bag over one shoulder." 
-    "In a few minutes, the sign would turn around." 
-    "People would come in." 
-    "And the quiet little version of Home Plate from this morning would disappear." 
-    "Stella walked toward the door." 
-    h "Have a good day1" 
-    s "I… I will try." 
-    "She reached for the handle." 
+    "The owner returned to the counter and continued preparing for the morning."
+    "Stella sat beside the window with her less-sweet drink and her unfinished homework."
+    "The bell had not started ringing for customers yet, and the restaurant was still quiet."
+    "The clock above the counter clicked forward."
+    "Stella finally looked up from her notebook."
+    s "Oh."
+    "School."
+    "Apparently, it was still happening today."
+    "She closed the notebook and shoved it into her bag, the owner glanced toward the clock."
+    show h 13
+    h "You should probably start walking."
+    show s 16y2
+    s "Yeah, I know, I know."
+    h "Unless being late has become part of your academic strategy, I hope not."
+    show s 16y1
+    s "It's called making an entrance."
+    h "I'm sure your teachers appreciate that."
+    "Stella pulled the strap of her bag over one shoulder."
+    "In a few minutes, the sign would turn around."
+    "People would come in."
+    "And the quiet little version of Home Plate from this morning would disappear."
+    "Stella walked toward the door."
+    h "Have a good day1"
+    s "I… I will try."
+    "She reached for the handle."
 
 
     if emotional_honesty > 10 and dependency > 5 and trust > 5: 
+
         $ memory_before_opening_hidden = True 
-        "But before opening the door, Stella stopped." 
-        "She looked back." 
-        "The owner had already returned to the counter." 
-        "His sleeves were still rolled up, hair was still slightly untidy." 
-        "One hand rested beside his coffee while the other straightened something beneath the counter." 
-        "It was such an ordinary sight." 
-        "So ordinary that Stella could not understand why it suddenly hurt a little to imagine it changing." 
+
+        "But before opening the door, Stella stopped."
+        "She looked back."
+        "The owner had already returned to the counter."
+        "His sleeves were still rolled up, hair was still slightly untidy."
+        "One hand rested beside his coffee while the other straightened something beneath the counter."
+        "It was such an ordinary sight."
+        "So ordinary that Stella could not understand why it suddenly hurt a little to imagine it changing."
         "For one brief, ridiculous moment…"
-        "She wished she could keep seeing this forever." 
-        "Not just tomorrow, not just until graduation." 
-        "Forever." 
-        "The thought arrived so naturally that Stella almost missed how frightening it was." 
-        "Her fingers remained around the door handle." 
-        "The owner looked up." 
-        h "Stella?" 
-        "She blinked." 
-        h "You're staring again." 
-        "She would probably have denied it immediately, but this time, she didn't." 
-        s "Yep, I know." 
-        "That seemed to surprise him more than the staring itself." 
-        h "Oh." 
-        h "Is there anything I should be concerned about?" 
-        "Stella smiled faintly." 
-        s "No." 
-        "She hesitated." 
-        "There were much larger words sitting somewhere inside her." 
-        "Words she was nowhere near ready to understand." 
-        "So she chose something smaller." 
-        s "Just..." 
-        s "Don't change too much, okay?" 
-        "The owner's expression softened." 
-        h "Hmm." 
-        h "I can make no promises about the menu." 
-        s "I'm serious." 
-        "He looked at her properly then." 
-        "The answer was quiet." 
-        h "I'll do my best." 
-        "Stella stood there for another second." 
-        "That was not a promise, she knew that." 
-        "But, she trusted it anyway." 
-        s "Okay, that’s good." 
-        "She opened the door." 
-        h "And Stella?" 
-        "She looked back." 
-        h "Try not to fail math now because you were correcting my handwriting." 
-        s "Your handwriting would deserve it." 
-        h "Go to school." 
-        "Stella laughed and stepped outside." 
-        "The door closed behind her." 
-        "She walked several steps before the thought returned." 
-        "Forever." 
-        "Her face warmed again." 
-        s "Oh, shut up." 
-        "There was nobody beside her." 
-        "Unfortunately, that meant she had been talking to herself." 
+        "She wished she could keep seeing this forever."
+        "Not just tomorrow, not just until graduation."
+        "Forever."
+        "The thought arrived so naturally that Stella almost missed how frightening it was."
+        "Her fingers remained around the door handle."
+        "The owner looked up."
+        h "Stella?"
+        "She blinked."
+        h "You're staring again."
+        "She would probably have denied it immediately, but this time, she didn't."
+        s "Yep, I know."
+        "That seemed to surprise him more than the staring itself."
+        h "Oh."
+        show h 21
+        h "Is there anything I should be concerned about?"
+        "Stella smiled faintly."
+        s "No."
+        "She hesitated."
+        "There were much larger words sitting somewhere inside her."
+        "Words she was nowhere near ready to understand."
+        "So she chose something smaller."
+        s "Just..."
+        s "Don't change too much, okay?"
+        "The owner's expression softened."
+        h "Hmm."
+        show h 12
+        h "I can make no promises about the menu."
+        s "I'm serious."
+        "He looked at her properly then."
+        "The answer was quiet."
+        h "I'll do my best."
+        "Stella stood there for another second."
+        "That was not a promise, she knew that."
+        "But, she trusted it anyway."
+        show s 16y2
+        s "Okay, that’s good."
+        "She opened the door."
+        show h 13
+        h "And Stella?"
+        "She looked back."
+        h "Try not to fail math now because you were correcting my handwriting."
+        show s 16y5
+        s "Your handwriting would deserve it."
+        show h 11
+        h "Go to school."
+        "Stella laughed and stepped outside."
+        "The door closed behind her."
+        "She walked several steps before the thought returned."
+        "Forever."
+        "Her face warmed again."
+        show s 16y1
+        s "Oh, shut up."
+        "There was nobody beside her."
+        "Unfortunately, that meant she had been talking to herself."
         "But she felt happy."
 
 
+
     else: 
-        "Stella glanced back once." 
-        "The owner had already returned to preparing the counter." 
-        "For some reason, she almost said something." 
-        "She did not know what." 
-        "So she simply lifted a hand." 
-        s "See you later." 
-        h "See you, Stella." 
-        "She opened the door and headed toward school." 
-        "By the time Stella reached the school road, the town was fully awake." 
-        "But her mind was somewhere else." 
-        "Back inside a quiet restaurant." 
-        "The untidy golden hair." 
-        "And a warm hand around her wrist." 
-        "Stella pulled her sleeve down." 
-        "Three steps later, she pushed it back up again." 
-        s "Seriously... what the heck…" 
-        "She had no idea what was happening to her." 
+
+        "Stella glanced back once."
+        "The owner had already returned to preparing the counter."
+        "For some reason, she almost said something."
+        "She did not know what."
+        "So she simply lifted a hand."
+        show s 16y2
+        s "See you later."
+        show h 13
+        h "See you, Stella."
+        "She opened the door and headed toward school."
+        "By the time Stella reached the school road, the town was fully awake."
+        "But her mind was somewhere else."
+        "Back inside a quiet restaurant."
+        "The untidy golden hair."
+        "And a warm hand around her wrist."
+        "Stella pulled her sleeve down."
+        "Three steps later, she pushed it back up again."
+        show s 16y5
+        s "Seriously... what the heck…"
+        "She had no idea what was happening to her."
         "That was becoming difficult to ignore." 
-    # End of Year 16 - Story 1 
+
+    # End of Year 16 - Story 1* 
 
 
     "Year 16 - Story 2: After Hours"
-
-    "A few days passed."
-    "Then a few more."
+    "A few days passed."    
+    "Then a few more."    
     "Stella developed a problem."
     "At first, she blamed sleep, then she blamed school."
     "Then she blamed one particularly boring history teacher whose voice seemed specifically designed to make human consciousness leave the body."
@@ -5001,17 +5320,24 @@ label StoryStart:
     "Stella blinked, and she looked down at her notebook."
     "She had drawn a tiny rectangle in the corner of the page, with a window inside it."
     "Then, without realising it, a little hanging sign above the door."
+    show s 16y1
     s "..."
     "She immediately scribbled over it."
+    show m 25
     m "What did that poor rectangle do to you?"
     "Mina was watching her from the next desk."
     s "Uhh, nothing."
+    show m 22
     m "You murdered it."
     s "That rectangle knew too much."
     "Mina looked at the black patch of pencil, then back at Stella."
+    show m 25
     m "Are you okay?"
+    show s 16y2
     s "Yeah I’m okay."
+    show m 21
     m "You… sure?"
+    show s 16y1
     s "Why wouldn't I be?"
     m "Because you've been staring at the window for like ten minutes."
     s "I was thinking."
@@ -5020,20 +5346,26 @@ label StoryStart:
     "The teacher had apparently filled half of it while she was gone."
     s "..."
     "Mina stared at her."
+    show s 16y2
     s "What?"
     m "You're being really weird recently."
+    show s 16y1
     s "You're always saying that."
+    show m 22
     m "Yeah, but normally you're a more active kind of weird."
     s "What is that supposed to mean?"
     m "Normally you argue with people, but now you just..."
     "Mina waved one hand vaguely in front of Stella's face."
+    show m 21
     m "Do this."
+    show s 16y2
     s "Do what?"
     m "Exactly that."
     "Stella frowned. She then picked up her pencil and forced herself to look at the board."
     "Then a thought arrived."
     "She wondered what the owner was making for lunch."
     "Stella's pencil stopped, she squeezed her eyes shut."
+    show s 16y5
     s "Oh, come on."
     m "See?"
     "Stella ignored her."
@@ -5044,26 +5376,39 @@ label StoryStart:
     "Mina waited."
     "Stella continued staring at nothing."
     m "Stella."
+    show s 16y1
     s "Hm?"
     m "I asked if you wanted half."
+    show s 16y2
     s "Half of what?"
     "Mina slowly lifted the sandwich in her hand."
+    show m 22
     m "You actually scare me sometimes."
+    show s 16y5
     s "Ugh… Sorry."
     "Stella rubbed one hand over her face."
+    show m 25
     m "Did you sleep last night?"
+    show s 16y1
     s "Yes."
+    show m 21
     m "Are you sick?"
     s "No."
+    show m 25
     m "Did you fail something?"
     s "No."
     m "Did your parents find the thing?"
     "Stella looked at her."
+    show s 16y2
     s "What thing?"
+    show m 21
     m "I don't know."
+    show m 25
     m "Something you really didn't want them to find."
+    show s 16y1
     s "Wha- Mina I don't have that kind of stuff!"
     "Mina gave her a long look."
+    show m 21
     m "Hmm, but you look like your brain left without telling you."
     "Stella dropped her forehead onto one hand."
     "That was unfortunately close to the truth."
@@ -5083,11 +5428,14 @@ label StoryStart:
     "Happy ones were much harder to argue with."
     "When the final bell finally rang, Stella packed her bag faster than usual."
     "Mina noticed."
+    show m 22
     m "Suddenly awake?"
     s "What you mean, school's over."
     m "I see that you discovered that at least?"
+    show s 16y2
     s "Yeah, yeah exactly."
     "Stella threw the strap of her bag over one shoulder."
+    show m 21
     m "So, want to walk together?"
     s "Sure."
     "They left the classroom with the rest of the students."
@@ -5097,7 +5445,9 @@ label StoryStart:
     m "Well, see you tomorrow."
     s "Yeah."
     m "And try sleeping tonight."
+    show s 16y1
     s "I sleep!"
+    show m 22
     m "With your eyes open, apparently."
     "Stella made a face at her."
     "Mina laughed and headed down the opposite road."
@@ -5110,6 +5460,7 @@ label StoryStart:
     "She looked ahead."
     "At the far end of the street, beyond two rows of buildings, she could already see part of Home Plate's hanging sign."
     "Stella stared at it."
+    show s 16y2
     s "Huh?"
     "She had not even decided to come here."
     "She had simply started walking, as though this was where every school day naturally ended."
@@ -5125,6 +5476,7 @@ label StoryStart:
     the same time again."
     "..."
     "Stella turned around."
+    show s 16y5
     s "Nope."
     "She began walking in the opposite direction."
     "She did not need to go to Home Plate every day."
@@ -5146,6 +5498,7 @@ label StoryStart:
     "Her eyes moved toward the clock."
     "Home Plate would be entering the afternoon rush around now."
     "Stella looked back at the page."
+    show s 16y1
     s "No."
     "She read the question again, her eyes reached the end."
     "Nothing entered her brain."
@@ -5178,6 +5531,7 @@ label StoryStart:
     "The table had already been set."
     "Stella sat down."
     "Her mother placed a bowl in front of her."
+    show mom 5
     mom "Careful now, it's hot."
     s "Mm."
     "She took one bite, then stared into the bowl."
@@ -5189,37 +5543,50 @@ label StoryStart:
     "Her spoon stopped halfway to her mouth."
     "Tomorrow."
     "The thought made her feel embarrassingly pleased."
+    show mom 1
     mom "Stella?"
     s "Hm?"
     "Her mother was looking at her."
+    show s 16y2
     s "What?"
     mom "You've been holding that spoon in the air for a while."
     "Stella looked at it."
+    show s 16y1
     s "I was thinking."
     mom "I've noticed that."
     "Stella took another bite."
     "Her mother continued eating."
     "Ten seconds passed."
+    show mom 2
     mom "Are you alright?"
+    show s 16y2
     s "Yeah."
+    show mom 1
     mom "School?"
+    show s 16y1
     s "Fine."
     mom "Something happen with Mina?"
     s "No."
     mom "Your father?"
     s "He's literally away."
+    show mom 5
     mom "That has never stopped him from causing problems before."
     "Stella almost smiled."
     s "No. Dad's fine."
     "Her mother nodded."
     "She did not ask another question."
     "However, Stella became increasingly aware that her mother was occasionally looking at her."
+    show s 16y2
     s "What?"
+    show mom 1
     mom "Hmm?"
+    show s 16y1
     s "You're looking at me."
     mom "I'm your mother, I've been looking at you for sixteen years."
+    show s 16y5
     s "That's creepy when you say it like that."
     mom "And you've been somewhere else all evening."
+    show s 16y1
     s "I'm right here."
     mom "Maybe physically."
     mom "The rest of you seems to be having a very interesting day somewhere else."
@@ -5232,7 +5599,7 @@ label StoryStart:
     "Tonight however, she remained."
     "Stella stood beside the counter with a glass of water in her hands."
     "Her mother dried her hands."
-    mom "You know... If you stand there long enough, I may eventually give you another
+    mom "You know\... If you stand there long enough, I may eventually give you another
     chore."
     s "I'm just drinking water."
     mom "For six minutes?"
@@ -5246,29 +5613,38 @@ label StoryStart:
     "Her mother stopped."
     s "Let's say... There's someone."
     "Her mother did not react dramatically."
+    show mom 2
     mom "Alright."
     s "And..."
+    show s 16y4
     s "I keep thinking about him."
     "Her mother remained quiet, and Stella continued before she could lose her nerve."
+    show s 16y1
     s "Like..."
     s "A lot."
     "Her mother gave a small nod."
     s "I'll be doing homework, and then suddenly I'm thinking about something he said."
     s "Or I'll be in class and wonder what he's doing."
     s "And then I realize I haven't heard anything the teacher said for the last five minutes."
+    show mom 1
     mom "That does sound kind of inconvenient."
     "Stella frowned."
     s "And stupid."
+    show mom 5
     mom "Why stupid though?"
     s "Because nothing even happened. It's not like he suddenly did something."
     s "He's just..."
     "She stopped, her mother waited again."
     s "He's just himself."
     s "And for some reason, lately..."
+    show s 16y5
     s "That's enough."
+    show mom 1
     mom "Enough for what?"
     s "Ugh, I don't know. That's the problem."
+    show s 16y4
     s "Sometimes I just want to see him."
+    show s 16y1
     s "Not even talk. Just..."
     "She searched for the words."
     s "Be there."
@@ -5279,49 +5655,74 @@ label StoryStart:
     mom "What happens when he looks at you?"
     s "Mommmm."
     mom "You brought this up."
+    show s 16y4
     s "I just feel..."
     s "Warm, I guess."
     s "And kind of nervous."
     s "But not bad nervous."
+    show s 16y1
     s "More like..."
     "She pressed her lips together."
     s "Like there's too much energy inside me and nowhere for it to go."
+    show s 16y4
     s "And then he says something stupid and I want him to keep talking anyway."
     "Her mother smiled."
     "Not teasingly. Just knowingly."
+    show s 16y5
     s "Don't look at me like that."
+    show mom 2
     mom "Like what?"
+    show s 16y1
     s "Like you know something!"
+    show mom 1
     mom "I do know something though!"
+    show s 16y2
     s "What?"
+    show mom 7
     mom "I remember being sixteen."
     "Stella stared at her."
+    show s 16y1
     s "That's not the same."
+    show mom 1
     mom "Oh, you think so?"
     "Her mother leaned lightly against the opposite counter."
+    show mom 7
     mom "When I first started liking your father, I became incredibly interested in very unimportant things."
     s "Dad?"
+    show mom 1
     mom "Yes, your father."
     s "The same Dad who once tried to repair the sink with tape?"
     mom "The very same."
     "Stella looked genuinely troubled by this information."
+    show mom 7
     mom "I noticed how he laughed."
+    show mom 1
     mom "The way he pushed his hair back when he was concentrating."
+    show mom 7
     mom "I remembered things he said that weren't particularly important."
+    show mom 1
     mom "And sometimes..."
     "Her mother's smile became a little more distant, caught somewhere in an old memory."
+    show mom 7
     mom "I simply wanted him nearby."
+    show mom 1
     mom "Even when neither of us was saying anything."
     "Stella went quiet."
     "That sounded uncomfortably familiar."
+    show mom 7
     mom "I used to find reasons to take the longer route between classes."
+    show s 16y2
     s "Why?"
+    show mom 1
     mom "Because it passed the building where he studied."
     "Stella's eyes widened."
+    show s 16y1
     s "Mom."
     mom "I know."
+    show s 16y5
     s "That's terrible."
     mom "Hey, mama survived."
+    show s 16y1
     s "That's basically stalking."
     mom "Wha… I walked past a building."
     s "With intent."
@@ -5332,21 +5733,27 @@ label StoryStart:
     "Stella looked down."
     s "Then what does it sound like?"
     "Her mother paused."
+    show mom 2
     mom "It sounds like you really like someone."
     "..."
     "The sentence was not surprising."
     "Some part of her had probably known it already."
     "But hearing someone else say it made the feeling suddenly solid. Real."
     s "Oh."
+    show mom 1
     mom "Oh?"
+    show s 16y4
     s "I don't know, it sounds different when you say it."
+    show mom 2
     mom "Can I ask you something?"
     "Her mother considered her for a moment."
-    mom "When you imagine seeing him tomorrow..."
+    show mom 1
+    mom "When you imagine seeing him tomorrow\..."
     mom "What do you actually want?"
     "Stella blinked."
 
     menu:
+
         "I want to be close to him.":
 
             $ emotional_honesty += 3
@@ -5355,35 +5762,50 @@ label StoryStart:
             "The answer frightened Stella by how quickly it appeared."
             s "I want to be close to him."
             "Her mother watched her carefully."
+            show s 16y1
             s "I don't even mean..."
             "Stella struggled for the rest."
+            show s 16y4
             s "I don't know what happens after that."
             s "I just know I want more."
+            show mom 2
             mom "More?"
+            show s 16y1
             s "More time, more conversations."
             s "More..."
             "Her face warmed again."
+            show s 16y4
             s "Him, I guess."
             "Her mother nodded slowly."
+            show mom 1
             mom "Then that's worth being honest with yourself about."
             "The feeling inside her had not become simpler."
             "But for the first time, she had given it somewhere to stand."
-            "B. I honestly don't know.":
+
+
+        "I honestly don't know.":
+
             $ story2_mother_response = "unsure"
+
             "Stella looked toward the dark kitchen window."
+            show s 16y1
             s "I honestly don't know."
             "She expected her mother to look disappointed."
             "She didn't."
+            show s 16y4
             s "I want to see him."
             s "And then when I see him, I don't really know what I want after that."
             s "I just feel..."
             "She made a vague gesture with both hands."
+            show s 16y1
             s "Like this."
             mom "That’s not very descriptive."
             s "You know what I mean."
             mom "I think I do."
             "Stella sighed."
+            show s 16y4
             s "Maybe I just need time."
+            show mom 2
             mom "Probably, not knowing yet is fine, you know?"
             "That helped a bit."
 
@@ -5394,13 +5816,17 @@ label StoryStart:
 
             "Stella looked down."
             s "I want it to stop being so distracting."
+            show s 16y1
             s "I have school, I have things I need to do!"
             s "I can't just spend all day thinking about some person."
+            show mom 1
             mom "You can want the distraction to stop."
             mom "That isn't quite the same as wanting the feeling to disappear."
             "Stella frowned."
+            show s 16y4
             s "Maybe I want both."
             "The words sounded firmer than she felt."
+            show s 16y1
             s "It's just a crush, I think those go away."
             mom "Yeah, sometimes they do."
             "Stella looked away."
@@ -5409,8 +5835,10 @@ label StoryStart:
     "Her mother picked up Stella's empty glass and placed it beside the sink."
     mom "There is one other thing."
     s "Oh of course there is."
+    show mom 5
     mom "Hey, I'm your mother, unsolicited advice is part of the contract."
     s "Fine."
+    show mom 1
     mom "Liking someone can feel very certain, especially when thinking about them already makes you happy."
     "Her expression softened."
     mom "But feelings can make us fill in things we don't actually know."
@@ -5419,27 +5847,38 @@ label StoryStart:
     mom "When I realised I liked your father, that wasn't enough for me to decide I wanted
     a life with him."
     s "Really?"
+    show mom 2
     mom "Really."
+    show mom 1
     mom "Your father was charming."
     s "Was?"
+    show mom 5
     mom "Careful now."
     "Stella smiled."
+    show mom 1
     mom "But before I trusted that feeling..."
+    show mom 7
     mom "I needed to know who he was when things were difficult."
+    show mom 1
     mom "How he treated people who couldn't give him anything."
     mom "Whether he kept his word, what happened when he was angry."
+    show mom 7
     mom "What mattered to him."
     "Stella listened."
     mom "Eventually, I realised the person I liked..."
+    show mom 1
     mom "And the person he actually was... Were the same man."
     mom "…Mostly."
     s "Mostly?"
+    show mom 5
     mom "Nobody survives close inspection completely."
     "Stella laughed softly."
     "Then her mother's expression grew gentler."
+    show mom 1
     mom "So whoever this person is..."
     "Stella looked away."
     mom "You don't have to stop liking him, don't have to decide anything tonight either."
+    show mom 7
     mom "Just make sure you know who you're giving all this space in your heart to."
     "Stella's smile slowly faded."
     mom "Make sure you know him."
@@ -5462,6 +5901,7 @@ label StoryStart:
     "She knew what his hand felt like around her wrist."
     "..."
     "Stella pulled the blanket slightly higher."
+    show s 16y5
     s "Ugh."
     "That last one had not been necessary."
     "She closed her eyes."
@@ -5484,7 +5924,7 @@ label StoryStart:
     "How much more could there possibly be?"
     "Stella stared into the darkness."
     "The question did not feel entirely rhetorical."
-    
+
     if memory_before_opening_hidden and emotional_honesty >= 9 and dependency >= 5 and trust >= 5:
 
         "Stella pulled the blanket over one shoulder."
@@ -5499,6 +5939,7 @@ label StoryStart:
         "When nobody needed food."
         "Nobody needed advice, nobody needed anything from him at all."
         "Stella rolled onto her back."
+        show s 16y1
         s "..."
         "She already knew what he did after closing."
         "He cleaned, he counted things."
@@ -5547,6 +5988,7 @@ label StoryStart:
         "But that was a problem for future Stella."
         "She took one step toward the restaurant."
         "Then suddenly, a voice came from somewhere beside the building."
+        show oldman 2
         oldman "You really did choose a quiet place."
         "Stella froze."
         "The voice had come from the narrow path beside Home Plate."
@@ -5566,8 +6008,10 @@ label StoryStart:
         "Like someone's grandfather, or a traveller who had stopped in town for the night."
         "Stella almost stepped away, this was clearly a private conversation."
         "Then the old man spoke again."
+        show oldman 1
         oldman "Five decades."
         "The old man studied him for a long moment."
+        show oldman 2
         oldman "Five decades since I last saw you."
         oldman "And you haven't changed."
         "Stella blinked."
@@ -5589,9 +6033,11 @@ label StoryStart:
         "This was probably the same kind of thing, some strange joke between old friends."
         "But the old man did not laugh."
         oldman "You knew eventually someone would come looking."
+        show h 12
         h "I did."
         oldman "And yet you stayed here."
         "The owner glanced toward Home Plate."
+        show h 13
         h "I found myself to like it here."
         oldman "You've always liked places you weren't meant to stay."
         h "That sounds a bit like criticism."
@@ -5599,6 +6045,7 @@ label StoryStart:
         "The old man tightened his hand around the top of his cane."
         oldman "What happened back then… that was never finished."
         "The owner's expression hardened slightly."
+        show h 12
         h "I know that."
         oldman "Then, I assume you know why I'm here."
         h "I do."
@@ -5614,6 +6061,7 @@ label StoryStart:
         "Only a while back, stella had stood at the door and wished for exactly that."
         "The owner's eyes moved toward the dark windows of Home Plate."
         "His answer was quiet."
+        show h 31
         h "I understand."
         "That was enough."
         "She did not want to hear anything else."
@@ -5621,9 +6069,7 @@ label StoryStart:
         "She could no longer tell."
         "Carefully, Stella stepped backward."
         "And quietly slipped away."
-
         $ memory_overheard_five_decades = True
-        
         "Stella walked away, fast."
         "Past the corner she had crossed thousands of times before."
         "Her heart beat hard enough that she could hear it."
@@ -5671,6 +6117,7 @@ label StoryStart:
         "Stella stared toward the dark bedroom door."
         "..."
         "Then she pulled the blanket higher."
+        show s 16y5
         s "Nahhh."
         "She was not doing that."
         "Sneaking out at night just because she could not stop thinking about someone?"
@@ -5685,6 +6132,7 @@ label StoryStart:
         "She had known him for years."
         "Longer than some of the people she spoke to at school every day."
         "Stella smiled into the pillow."
+        show s 16y1
         s "He's just some annoying guy who owns a restaurant."
         "The sentence felt reassuring."
         "Simple. Normal."
@@ -5704,6 +6152,7 @@ label StoryStart:
         "It had to be."
         "Her thoughts drifted back toward the morning."
         "Then Stella buried half her face into the pillow."
+        show s 16y5
         s "Ugh."
         "Maybe her mother was right about one thing."
         "She definitely liked him."
